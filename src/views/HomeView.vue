@@ -17,19 +17,19 @@
         <span class="text-lg font-medium text-gray-700">Datadog</span>
       </button>
 
-      <button 
+      <!-- <button 
         @click="irAQuiz('splunk')" 
         class="flex flex-col items-center p-6 bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 hover:bg-green-50 border border-gray-200"
       >
         <div class="w-24 h-24 md:w-32 md:h-32 mb-4 flex items-center justify-center">
           <img 
-            src="../assets/images/splunk.png" 
+            src="../assets/images/" 
             alt="Splunk" 
             class="max-w-full max-h-full object-contain" 
           />
         </div>
         <span class="text-lg font-medium text-gray-700">Splunk</span>
-      </button>
+      </button> -->
 
       
     </div>
