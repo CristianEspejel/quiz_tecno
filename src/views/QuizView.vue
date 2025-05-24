@@ -5,9 +5,9 @@
         {{ currentQuestionIndex + 1 }}. {{ currentQuestion.pregunta }}
       </h2>
 
-      <!-- Mensaje de respuesta correcta -->
+      
       <div v-if="showCorrectAnswer" class="mb-4 text-green-600 font-medium">
-        La respuesta correcta es la {{ correctAnswerLabel }}
+        The correct answer is {{ correctAnswerLabel }}
       </div>
 
       <div class="flex flex-col gap-3 sm:gap-4">
