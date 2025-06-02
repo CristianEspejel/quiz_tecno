@@ -5,29 +5,16 @@
         {{ currentQuestionIndex + 1 }}. {{ currentQuestion.pregunta }}
       </h2>
 
-      
-      <div v-if="showCorrectAnswer" class="mb-4 text-green-600 font-medium">
-        The correct answer is {{ correctAnswerLabel }}
-      </div>
-
       <div class="flex flex-col gap-3 sm:gap-4">
         <button
           v-for="(opcion, index) in shuffledOptions"
           :key="opcion.clave"
           :class="[
             'option text-left sm:text-center py-2 px-4 sm:py-3 sm:px-5 rounded-lg',
-            'text-base sm:text-lg font-normal transition-colors duration-300',
-            {
-              'bg-green-100 border-2 border-green-500 text-green-800': 
-                showCorrectAnswer && opcion.clave === currentQuestion.respuesta_correcta,
-              'bg-red-100 border-2 border-red-400 text-red-800': 
-                selectedAnswer === opcion.clave && opcion.clave !== currentQuestion.respuesta_correcta,
-              'bg-green-100 border-2 border-green-500 text-green-800': 
-                selectedAnswer === opcion.clave && opcion.clave === currentQuestion.respuesta_correcta,
-              'bg-white border border-gray-300 hover:bg-gray-50': 
-                !showCorrectAnswer && (selectedAnswer === null || 
-                (selectedAnswer !== opcion.clave && opcion.clave !== currentQuestion.respuesta_correcta))
-            }
+            'text-base sm:text-lg font-normal transition-colors duration-300 border',
+            selectedAnswer === opcion.clave 
+              ? 'bg-blue-100 border-blue-300' 
+              : 'bg-white border-gray-300 hover:bg-gray-50'
           ]"
           @click="handleAnswer(opcion.clave)"
           :disabled="selectedAnswer !== null"
@@ -56,21 +43,10 @@ const shuffledOptions = ref([])
 const score = ref(0)
 const incorrectCount = ref(0)
 const selectedAnswer = ref(null)
-const showCorrectAnswer = ref(false)
 const optionLabels = ['A', 'B', 'C', 'D', 'E']
+const userAnswers = ref([])
 
 const currentQuestion = computed(() => questions.value[currentQuestionIndex.value])
-
-// Obtener la letra de la respuesta correcta
-const correctAnswerLabel = computed(() => {
-  if (!currentQuestion.value) return ''
-  const correctOption = shuffledOptions.value.find(
-    op => op.clave === currentQuestion.value.respuesta_correcta
-  )
-  if (!correctOption) return ''
-  const index = shuffledOptions.value.indexOf(correctOption)
-  return optionLabels[index]
-})
 
 function shuffleArray(array) {
   const newArray = [...array]
@@ -88,19 +64,19 @@ onMounted(() => {
   score.value = 0
   incorrectCount.value = 0
   selectedAnswer.value = null
-  showCorrectAnswer.value = false
+  userAnswers.value = new Array(50).fill(null)
 })
 
 watch([currentQuestionIndex, questions], () => {
   if (questions.value.length > 0) {
     shuffledOptions.value = shuffleArray(currentQuestion.value.opciones)
-    showCorrectAnswer.value = false
     selectedAnswer.value = null
   }
 })
 
 function handleAnswer(selectedKey) {
   selectedAnswer.value = selectedKey
+  userAnswers.value[currentQuestionIndex.value] = selectedKey
   
   const isCorrect = selectedKey === currentQuestion.value.respuesta_correcta
   if (isCorrect) {
@@ -109,40 +85,38 @@ function handleAnswer(selectedKey) {
     incorrectCount.value++
   }
 
-  if (isCorrect) {
-    
-    setTimeout(() => {
-      nextQuestionOrResults()
-    }, 3000)
-  } else {
-    
-    setTimeout(() => {
-      showCorrectAnswer.value = true
-      setTimeout(() => {
-        nextQuestionOrResults()
-      }, 2000)
-    }, 1000)
-  }
-}
-
-function nextQuestionOrResults() {
-  if (currentQuestionIndex.value < questions.value.length - 1) {
-    currentQuestionIndex.value++
-  } else {
-    router.push({
-      path: '/result',
-      query: {
+  setTimeout(() => {
+    if (currentQuestionIndex.value < questions.value.length - 1) {
+      currentQuestionIndex.value++
+    } else {
+      localStorage.setItem('quizData', JSON.stringify({
+        questions: questions.value,
+        userAnswers: userAnswers.value,
         score: score.value,
         incorrect: incorrectCount.value,
-        total: questions.value.length,
-      },
-    })
-  }
+        total: questions.value.length
+      }))
+      
+      router.push({
+        path: '/result',
+        query: {
+          score: score.value,
+          incorrect: incorrectCount.value,
+          total: questions.value.length,
+        },
+      })
+    }
+  }, 1500)
 }
 </script>
 
 <style scoped>
+.option {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
 .option:disabled {
   cursor: not-allowed;
+  opacity: 1;
 }
 </style>
