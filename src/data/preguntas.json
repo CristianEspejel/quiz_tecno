@@ -450,7 +450,7 @@
         "respuesta_correcta": "c"
     },
     {
-        "pregunta": "<p>Which of the following syntax is not supported for Boolean filtered metric queries?",
+        "pregunta": "Which of the following syntax is not supported for Boolean filtered metric queries?",
         "opciones": [
             {
                 "clave": "a",
@@ -1066,7 +1066,7 @@
         "respuesta_correcta": "d"
     },
     {
-        "pregunta": "<p>What value will you get if your run the Python code below?",
+        "pregunta": "What value will you get if your run the Python code below?",
         "opciones": [
             {
                 "clave": "a",
@@ -1074,19 +1074,19 @@
             },
             {
                 "clave": "b",
-                "texto": "<p>10</p>"
+                "texto": "10"
             },
             {
                 "clave": "c",
-                "texto": "<p>16</p>"
+                "texto": "16"
             },
             {
                 "clave": "d",
-                "texto": "<p>24</p>"
+                "texto": "24"
             },
             {
                 "clave": "e",
-                "texto": "<p>36</p>"
+                "texto": "36"
             }
         ],
         "respuesta_correcta": "d"
@@ -1154,7 +1154,7 @@
         "respuesta_correcta": "a"
     },
     {
-        "pregunta": "<p>What does the Python code below do?",
+        "pregunta": "What does the Python code below do?",
         "opciones": [
             {
                 "clave": "a",
@@ -2330,7 +2330,7 @@
         "respuesta_correcta": "b"
     },
     {
-        "pregunta": "<p>The following output is part of the result of running which datadog-agent CLI sub command?",
+        "pregunta": "The following output is part of the result of running which datadog-agent CLI sub command?",
         "opciones": [
             {
                 "clave": "a",
@@ -2910,7 +2910,7 @@
         "respuesta_correcta": "b"
     },
     {
-        "pregunta": "<p>Which of the following is true about the given Python code?",
+        "pregunta": "Which of the following is true about the given Python code?",
         "opciones": [
             {
                 "clave": "a",
@@ -5326,7 +5326,7 @@
         "respuesta_correcta": "c"
     },
     {
-        "pregunta": "<p>Logs from Docker containers are not coming in Datadog so you run the Agent status command. The result is as shown below. What could be a possible reason for this issue?",
+        "pregunta": "Logs from Docker containers are not coming in Datadog so you run the Agent status command. The result is as shown below. What could be a possible reason for this issue?",
         "opciones": [
             {
                 "clave": "a",
@@ -6696,7 +6696,7 @@
         "respuesta_correcta": "c"
     },
     {
-        "pregunta": "<p>What could be a possible reason for the logs agent status to be pending?",
+        "pregunta": "What could be a possible reason for the logs agent status to be pending?",
         "opciones": [
             {
                 "clave": "a",
