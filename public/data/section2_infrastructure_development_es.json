@@ -1,0 +1,1307 @@
+[
+  {
+    "pregunta": "¿Para qué se instala el Agent de Datadog en un host?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Enviar métricas, eventos y logs desde el host a Datadog"
+      },
+      {
+        "clave": "b",
+        "texto": "Servir como interfaz gráfica para dashboards"
+      },
+      {
+        "clave": "c",
+        "texto": "Actuar como servidor de claves API"
+      },
+      {
+        "clave": "d",
+        "texto": "Reemplazar a Kubernetes"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El Agent recopila datos del sistema y los remite a Datadog periódicamente.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/agent/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué clave necesita el Agent para enviar datos a la plataforma de Datadog?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Application Key"
+      },
+      {
+        "clave": "b",
+        "texto": "Client Token"
+      },
+      {
+        "clave": "c",
+        "texto": "API Key"
+      },
+      {
+        "clave": "d",
+        "texto": "OAuth Token"
+      }
+    ],
+    "respuesta_correcta": "c",
+    "explicacion": "La API Key autentica envíos de métricas, logs y eventos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/account_management/api-app-keys/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Para qué se utiliza principalmente una Application Key en Datadog?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Autenticar lecturas y administración vía API"
+      },
+      {
+        "clave": "b",
+        "texto": "Abrir puertos de red del Agent"
+      },
+      {
+        "clave": "c",
+        "texto": "Habilitar DogStatsD"
+      },
+      {
+        "clave": "d",
+        "texto": "Activar APM automáticamente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Las Application Keys identifican usuarios/roles para operaciones de lectura y administración.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/account_management/api-app-keys/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué comando muestra el estado del Agent en un host Linux?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "dd-agent --info"
+      },
+      {
+        "clave": "c",
+        "texto": "agentctl state"
+      },
+      {
+        "clave": "d",
+        "texto": "dog status"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`datadog-agent status` imprime información detallada de checks, logs y runtime.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/basic_agent_usage/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿De dónde obtiene el Agent el hostname por defecto en Linux?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Del nombre de host del sistema"
+      },
+      {
+        "clave": "b",
+        "texto": "De la etiqueta kubernetes.namespace"
+      },
+      {
+        "clave": "c",
+        "texto": "De la variable DD_ENV"
+      },
+      {
+        "clave": "d",
+        "texto": "De `/etc/hosts` exclusivamente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Por defecto usa el hostname del sistema, configurable en `datadog.yaml` con `hostname:`.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/how-datadog-agent-determines-the-hostname/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué parámetro en `datadog.yaml` permite forzar un hostname específico?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "hostname"
+      },
+      {
+        "clave": "b",
+        "texto": "host_name"
+      },
+      {
+        "clave": "c",
+        "texto": "dd_hostname"
+      },
+      {
+        "clave": "d",
+        "texto": "agent_hostname"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`hostname:` establece un nombre de host estático para el Agent.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/how-datadog-agent-determines-the-hostname/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué puerto usa típicamente el Agent para enviar datos a Datadog SaaS?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "443/TCP"
+      },
+      {
+        "clave": "b",
+        "texto": "8125/UDP"
+      },
+      {
+        "clave": "c",
+        "texto": "22/TCP"
+      },
+      {
+        "clave": "d",
+        "texto": "53/UDP"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El tráfico de intake es HTTPS sobre 443/TCP hacia el sitio configurado.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué puerto escucha DogStatsD por defecto?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "8125/UDP"
+      },
+      {
+        "clave": "b",
+        "texto": "8126/TCP"
+      },
+      {
+        "clave": "c",
+        "texto": "4317/TCP"
+      },
+      {
+        "clave": "d",
+        "texto": "9000/UDP"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "DogStatsD escucha en 8125/UDP por defecto; puede cambiarse en la configuración.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué puerto usa el Trace Agent (APM) por defecto?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "8126/TCP"
+      },
+      {
+        "clave": "b",
+        "texto": "8125/UDP"
+      },
+      {
+        "clave": "c",
+        "texto": "4318/TCP"
+      },
+      {
+        "clave": "d",
+        "texto": "443/TCP"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El Trace Agent acepta trazas en 8126/TCP por defecto.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/tracing/trace_collection/agent/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué clave configura el destino de sitio (US/EU/etc.) en `datadog.yaml`?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "site"
+      },
+      {
+        "clave": "b",
+        "texto": "dd_site"
+      },
+      {
+        "clave": "c",
+        "texto": "dd_region"
+      },
+      {
+        "clave": "d",
+        "texto": "endpoint"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`site: datadoghq.com | datadoghq.eu | ddog-gov.com`, etc.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/site/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En contenedores, ¿qué variable de entorno define el sitio de Datadog?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DD_SITE"
+      },
+      {
+        "clave": "b",
+        "texto": "DD_REGION"
+      },
+      {
+        "clave": "c",
+        "texto": "DD_ENDPOINT"
+      },
+      {
+        "clave": "d",
+        "texto": "DD_SITE_URL"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`DD_SITE` define el sitio (p.ej. `datadoghq.eu`).",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/environment-variables/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué variable de entorno se usa para la API Key del Agent?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DD_API_KEY"
+      },
+      {
+        "clave": "b",
+        "texto": "DD_APP_KEY"
+      },
+      {
+        "clave": "c",
+        "texto": "DD_TOKEN"
+      },
+      {
+        "clave": "d",
+        "texto": "DD_KEY"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`DD_API_KEY` autentica el envío de datos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/agent/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué hace Autodiscovery en entornos de contenedores?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aplica checks basados en etiquetas/anotaciones y plantillas"
+      },
+      {
+        "clave": "b",
+        "texto": "Abre puertos automáticamente"
+      },
+      {
+        "clave": "c",
+        "texto": "Crea dashboards por defecto"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinicia fallas del contenedor"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Usa etiquetas/anotaciones y `auto_conf.yaml` para descubrir y configurar checks.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/containers/autodiscovery/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En Autodiscovery, ¿qué resuelve `%%host%%`?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La IP del contenedor"
+      },
+      {
+        "clave": "b",
+        "texto": "El nombre del servicio"
+      },
+      {
+        "clave": "c",
+        "texto": "La imagen de Docker"
+      },
+      {
+        "clave": "d",
+        "texto": "La ruta del socket"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Si falla, hace fallback a la IP del bridge.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/containers/guide/template_variables/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En Autodiscovery, `%%port%%` devuelve…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El puerto expuesto más alto numéricamente"
+      },
+      {
+        "clave": "b",
+        "texto": "Todos los puertos"
+      },
+      {
+        "clave": "c",
+        "texto": "El primer puerto por orden alfabético"
+      },
+      {
+        "clave": "d",
+        "texto": "Un puerto aleatorio"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Selecciona el puerto más alto cuando hay múltiples expuestos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/containers/guide/template_variables/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cómo referenciar una variable de entorno en plantillas Autodiscovery?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "%%env_VARNAME%%"
+      },
+      {
+        "clave": "b",
+        "texto": "${VARNAME}"
+      },
+      {
+        "clave": "c",
+        "texto": "$VARNAME"
+      },
+      {
+        "clave": "d",
+        "texto": "env(VARNAME)"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`%%env_FOO%%` inserta el valor de `$FOO`.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/containers/guide/template_variables/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Dónde colocar `auto_conf.yaml` para una integración?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "conf.d/<integration>.d/auto_conf.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/auto_conf.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "/var/log/datadog/auto_conf.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "En la UI"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El Agent escanea `conf.d` para plantillas de integraciones.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/containers/guide/auto_conf/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué comando ayuda a validar configuraciones cargadas por Autodiscovery?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "agent configcheck -v"
+      },
+      {
+        "clave": "b",
+        "texto": "agent diagnose"
+      },
+      {
+        "clave": "c",
+        "texto": "agent netcheck"
+      },
+      {
+        "clave": "d",
+        "texto": "agent lint"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Muestra plantillas y checks resultantes.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/autodiscovery-troubleshooting/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué claves configuran un proxy HTTP(S) en `datadog.yaml`?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "proxy: http: https:"
+      },
+      {
+        "clave": "b",
+        "texto": "http_proxy: https_proxy:"
+      },
+      {
+        "clave": "c",
+        "texto": "net.proxy:"
+      },
+      {
+        "clave": "d",
+        "texto": "agent.proxy:"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección `proxy:` con URLs para `http:` y `https:`.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/network/?tab=agentv6v7"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué clave habilita la recolección de logs en el Agent?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "logs_enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "enable_logs: true"
+      },
+      {
+        "clave": "c",
+        "texto": "logs: enabled"
+      },
+      {
+        "clave": "d",
+        "texto": "log_collection: on"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`logs_enabled: true` en `datadog.yaml`.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/logs/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué clave activa la recolección de procesos (Live Processes)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "process_config.enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "processes_enabled: true"
+      },
+      {
+        "clave": "c",
+        "texto": "enable_process: true"
+      },
+      {
+        "clave": "d",
+        "texto": "system_probe: true"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Configure `process_config.enabled: true`.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/process/?tab=linuxwindows"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para enviar datos a la región EU, en `datadog.yaml` debes usar…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "site: datadoghq.eu"
+      },
+      {
+        "clave": "b",
+        "texto": "site: eu.datadog.com"
+      },
+      {
+        "clave": "c",
+        "texto": "dd_site: eu"
+      },
+      {
+        "clave": "d",
+        "texto": "site: datadog.eu"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`site: datadoghq.eu` es el valor correcto.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/site/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué script oficial facilita la instalación del Agent en Linux?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "install_script.sh (one‑line install)"
+      },
+      {
+        "clave": "b",
+        "texto": "agent_install.py"
+      },
+      {
+        "clave": "c",
+        "texto": "dd_setup.ps1"
+      },
+      {
+        "clave": "d",
+        "texto": "apt_install_agent.sh"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Instalador de una línea documentado por Datadog.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/basic_agent_usage/#installation"
+      }
+    ]
+  },
+  {
+    "pregunta": "En Windows, ¿cómo se instala el servicio del Agent?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Con el MSI oficial que registra el servicio"
+      },
+      {
+        "clave": "b",
+        "texto": "Con `sc create datadog` manual"
+      },
+      {
+        "clave": "c",
+        "texto": "Con PowerShell `Install-Service Datadog`"
+      },
+      {
+        "clave": "d",
+        "texto": "No corre como servicio"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El MSI configura el servicio automáticamente.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/basic_agent_usage/windows/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para activar un check vía Autodiscovery en Docker, ¿qué se usa?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Etiquetas (labels) del contenedor"
+      },
+      {
+        "clave": "b",
+        "texto": "Cambios en el kernel"
+      },
+      {
+        "clave": "c",
+        "texto": "Entradas en `/etc/hosts`"
+      },
+      {
+        "clave": "d",
+        "texto": "Recompilar el Agent"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Se definen etiquetas con la plantilla de integración.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/containers/autodiscovery/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En Kubernetes, Autodiscovery usa…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Anotaciones en Pods/Services"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo ConfigMaps"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo CRDs"
+      },
+      {
+        "clave": "d",
+        "texto": "DaemonSets de terceros"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Las anotaciones indican qué check y parámetros aplicar.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/containers/autodiscovery/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué describe mejor DogStatsD?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un demonio compatible con StatsD que recibe métricas personalizadas"
+      },
+      {
+        "clave": "b",
+        "texto": "Un reemplazo de TCP para logs"
+      },
+      {
+        "clave": "c",
+        "texto": "Un colector de trazas APM"
+      },
+      {
+        "clave": "d",
+        "texto": "Un motor de dashboards"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Permite enviar métricas personalizadas vía UDP/8125.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para tiempos de respuesta personalizados en DogStatsD, usarías…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "histogram"
+      },
+      {
+        "clave": "b",
+        "texto": "gauge"
+      },
+      {
+        "clave": "c",
+        "texto": "set"
+      },
+      {
+        "clave": "d",
+        "texto": "count"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Los histogramas capturan distribución y percentiles.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/custom_metrics/dogstatsd_metrics_submission/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para atribuir contenedor/host correcto a métricas DogStatsD, habilita…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Origin detection"
+      },
+      {
+        "clave": "b",
+        "texto": "Auto tagging"
+      },
+      {
+        "clave": "c",
+        "texto": "APM discovery"
+      },
+      {
+        "clave": "d",
+        "texto": "Trace merging"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Origin detection añade `container_id`/`host` a las métricas recibidas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/unix_socket/#origin-detection"
+      }
+    ]
+  },
+  {
+    "pregunta": "DogStatsD puede recibir por…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "UDP y Unix Domain Socket"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo TCP"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo HTTP"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo gRPC"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Soporta UDP/8125 y UDS para performance local.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/unix_socket/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para permitir acceso saliente, ¿qué recomienda Datadog respecto a IPs?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permitir por dominios/puertos, no IPs estáticas"
+      },
+      {
+        "clave": "b",
+        "texto": "Fijar una sola IP estática"
+      },
+      {
+        "clave": "c",
+        "texto": "Usar solo lista de CIDR privada"
+      },
+      {
+        "clave": "d",
+        "texto": "Abrir todo el rango 0.0.0.0/0"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Los endpoints de SaaS pueden cambiar; filtra por dominios/puertos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para Network Performance Monitoring se requiere habilitar…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "system-probe"
+      },
+      {
+        "clave": "b",
+        "texto": "log_forwarder"
+      },
+      {
+        "clave": "c",
+        "texto": "trace_router"
+      },
+      {
+        "clave": "d",
+        "texto": "ntp_sync"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`system-probe` inspecciona conexiones a nivel de kernel.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/network_monitoring/performance/setup/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para recoger métricas de contenedores en Linux, habilita…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "container_collect_all: true"
+      },
+      {
+        "clave": "b",
+        "texto": "collect_containers: true"
+      },
+      {
+        "clave": "c",
+        "texto": "docker_metrics: true"
+      },
+      {
+        "clave": "d",
+        "texto": "kube_metrics: true"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Activa la recolección de métricas de todos los contenedores.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/containers/docker/integrations/?tab=docker"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para correlación entre productos, Datadog recomienda etiquetar…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "service, env, version"
+      },
+      {
+        "clave": "b",
+        "texto": "color, owner, hostname"
+      },
+      {
+        "clave": "c",
+        "texto": "region, vlan, mask"
+      },
+      {
+        "clave": "d",
+        "texto": "rack, row, zone"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Convención `service/env/version` unifica APM, logs y métricas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Ruta típica de `datadog.yaml` en Linux (Agent v6+)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc/datadog-agent/datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/datadog/datadog.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "/opt/datadog/datadog.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "~/datadog.yaml"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Ubicación estándar del archivo principal de configuración.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En Windows, el archivo principal `datadog.yaml` se ubica en…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "C:\\ProgramData\\Datadog\\datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "C:\\Datadog\\datadog.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "C:\\Windows\\datadog.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "C:\\Program Files\\datadog.yaml"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Ruta por defecto para configuración del Agent en Windows.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Tras cambiar `datadog.yaml` en Linux, normalmente debes…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reiniciar el servicio del Agent"
+      },
+      {
+        "clave": "b",
+        "texto": "Reiniciar el host"
+      },
+      {
+        "clave": "c",
+        "texto": "Ejecutar `agent compile`"
+      },
+      {
+        "clave": "d",
+        "texto": "Nada, se recarga automáticamente siempre"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Reinicia para aplicar cambios (p.ej., `systemctl restart datadog-agent`).",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para soporte, ¿qué comando recopila un paquete diagnóstico (“flare”)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent flare"
+      },
+      {
+        "clave": "b",
+        "texto": "datadog-agent support"
+      },
+      {
+        "clave": "c",
+        "texto": "agent diagpack"
+      },
+      {
+        "clave": "d",
+        "texto": "dog flare"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Genera un paquete con logs/config para soporte.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/basic_agent_usage/#agent-flare"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para recoger logs de un archivo, debes definir en YAML…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "logs: - type: file, path, service"
+      },
+      {
+        "clave": "b",
+        "texto": "logs_enabled: path: file"
+      },
+      {
+        "clave": "c",
+        "texto": "logfile: <ruta>"
+      },
+      {
+        "clave": "d",
+        "texto": "logs: enabled: true"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Bloque `logs:` con entradas por archivo y campos requeridos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/logs/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para evitar problemas de timestamps, Datadog recomienda…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sincronizar NTP en hosts/contendedores"
+      },
+      {
+        "clave": "b",
+        "texto": "Desactivar NTP"
+      },
+      {
+        "clave": "c",
+        "texto": "Usar hora local no sincronizada"
+      },
+      {
+        "clave": "d",
+        "texto": "Ajustar manualmente cada hora"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La sincronización horaria asegura correlación correcta de datos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/network/#time-synchronization"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para habilitar Runtime Security (detección a nivel kernel) debes…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Habilitar Security Agent y reglas"
+      },
+      {
+        "clave": "b",
+        "texto": "Abrir el puerto 22"
+      },
+      {
+        "clave": "c",
+        "texto": "Deshabilitar system-probe"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el kernel"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Security Agent + system-probe aplican reglas de runtime.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/security/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para recibir OTLP en el Agent, debes habilitar…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "otlp_config: receiver"
+      },
+      {
+        "clave": "b",
+        "texto": "grpc_enable: true"
+      },
+      {
+        "clave": "c",
+        "texto": "otlp: true en logs"
+      },
+      {
+        "clave": "d",
+        "texto": "dd_otlp_port: 8125"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`otlp_config` habilita el receptor para métricas/trazas OTLP.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/opentelemetry/collector_exporter/agent/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para excluir dominios del proxy, utiliza…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "no_proxy / NO_PROXY"
+      },
+      {
+        "clave": "b",
+        "texto": "proxy_bypass"
+      },
+      {
+        "clave": "c",
+        "texto": "skip_proxy"
+      },
+      {
+        "clave": "d",
+        "texto": "exclude_proxy"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Se puede definir lista separada por comas en env.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/network/?tab=agentv6v7#proxy"
+      }
+    ]
+  },
+  {
+    "pregunta": "En Windows, NPM requiere instalar…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un driver firmado por Datadog"
+      },
+      {
+        "clave": "b",
+        "texto": "Un servicio WMI adicional"
+      },
+      {
+        "clave": "c",
+        "texto": "El rol Hyper‑V"
+      },
+      {
+        "clave": "d",
+        "texto": "Nada adicional"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El driver de captura es necesario para flujos de red.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/network_monitoring/performance/setup/?tab=windows"
+      }
+    ]
+  },
+  {
+    "pregunta": "Al definir un check en etiquetas/anotaciones, la clave de identificación es…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "com.datadoghq.ad.check_names"
+      },
+      {
+        "clave": "b",
+        "texto": "com.datadoghq.ad.name"
+      },
+      {
+        "clave": "c",
+        "texto": "dd.check"
+      },
+      {
+        "clave": "d",
+        "texto": "ad.check"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`check_names`, `init_configs`, `instances` definen la plantilla.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/containers/autodiscovery/#configuration"
+      }
+    ]
+  }
+]

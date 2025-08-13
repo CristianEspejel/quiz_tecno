@@ -1,0 +1,1742 @@
+[
+  {
+    "pregunta": "¿Qué trío de etiquetas recomienda Datadog para correlacionar métricas, logs y trazas?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "service, env, version"
+      },
+      {
+        "clave": "b",
+        "texto": "team, owner, cost_center"
+      },
+      {
+        "clave": "c",
+        "texto": "region, az, rack"
+      },
+      {
+        "clave": "d",
+        "texto": "host, device, source"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El trío service/env/version unifica vistas entre productos (USM/UST).",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué variable de entorno establece el nombre del servicio para Unified Service Tagging?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DD_SERVICE"
+      },
+      {
+        "clave": "b",
+        "texto": "DD_SVC"
+      },
+      {
+        "clave": "c",
+        "texto": "DD_APP"
+      },
+      {
+        "clave": "d",
+        "texto": "DD_SVC_NAME"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "DD_SERVICE propaga el nombre del servicio a APM, logs y métricas.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué variable define el entorno (environment) en UST?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DD_ENV"
+      },
+      {
+        "clave": "b",
+        "texto": "ENV"
+      },
+      {
+        "clave": "c",
+        "texto": "DD_STAGE"
+      },
+      {
+        "clave": "d",
+        "texto": "DD_CONTEXT"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "DD_ENV aplica el entorno (por ejemplo: prod, staging, dev).",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué variable propaga la versión de despliegue en UST?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DD_VERSION"
+      },
+      {
+        "clave": "b",
+        "texto": "DD_RELEASE"
+      },
+      {
+        "clave": "c",
+        "texto": "DD_BUILD"
+      },
+      {
+        "clave": "d",
+        "texto": "DD_TAG"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "DD_VERSION facilita comparar lanzamientos y correlacionar cambios.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la recomendación para el formato de valores en service/env/version?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "minúsculas con guiones o guiones bajos"
+      },
+      {
+        "clave": "b",
+        "texto": "Mayúsculas y espacios"
+      },
+      {
+        "clave": "c",
+        "texto": "Caracteres arbitrarios UTF‑8"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo números"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Usar minúsculas y separadores simples facilita búsquedas y filtros consistentes.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Dónde puedes definir tags globales que el Agent adjunta a todos los datos?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog.yaml → tags:"
+      },
+      {
+        "clave": "b",
+        "texto": "ui.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "runtime.conf"
+      },
+      {
+        "clave": "d",
+        "texto": "No es posible"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La clave 'tags:' en datadog.yaml aplica metadatos globales.",
+    "recursos": [
+      {
+        "titulo": "Agent Configuration (tags)",
+        "url": "https://docs.datadoghq.com/agent/configuration/#global-options"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué campos mínimos recomiendan para identificar servicios en la plataforma?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "service, env, version"
+      },
+      {
+        "clave": "b",
+        "texto": "host, device, source"
+      },
+      {
+        "clave": "c",
+        "texto": "team, owner, email"
+      },
+      {
+        "clave": "d",
+        "texto": "region, zone, rack"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Ese trío habilita correlación de APM, logs, métricas y dashboards.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para microservicios, ¿qué práctica de tagging favorece trazabilidad entre servicios?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Etiquetar todos con el mismo 'env' y 'version' correctos"
+      },
+      {
+        "clave": "b",
+        "texto": "Evitar el uso de service"
+      },
+      {
+        "clave": "c",
+        "texto": "Usar valores distintos por instancia aleatoriamente"
+      },
+      {
+        "clave": "d",
+        "texto": "No usar tags"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Mantener 'env' y 'version' correctos por despliegue facilita correlación lateral.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué convención ayuda a que un mismo servicio en distintos runtimes se agrupe correctamente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usar el mismo valor de 'service' en todos los componentes"
+      },
+      {
+        "clave": "b",
+        "texto": "Prefijar cada servicio con el host"
+      },
+      {
+        "clave": "c",
+        "texto": "Incluir el PID en el nombre"
+      },
+      {
+        "clave": "d",
+        "texto": "Adicionar timestamp al servicio"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Un 'service' consistente evita fragmentación en vistas y monitores.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es el beneficio principal de UST en dashboards y monitors?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Filtrado y agregación coherente por service/env/version"
+      },
+      {
+        "clave": "b",
+        "texto": "Oculta datos sensibles automáticamente"
+      },
+      {
+        "clave": "c",
+        "texto": "Crea dashboards solos"
+      },
+      {
+        "clave": "d",
+        "texto": "Aumenta retención de datos"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "UST normaliza etiquetas clave para filtrar, agrupar y segmentar.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es el formato recomendado para tags en Datadog?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "clave:valor"
+      },
+      {
+        "clave": "b",
+        "texto": "solo clave sin valor siempre"
+      },
+      {
+        "clave": "c",
+        "texto": "JSON"
+      },
+      {
+        "clave": "d",
+        "texto": "XML"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Los tags tipo clave:valor son recomendados y ampliamente soportados.",
+    "recursos": [
+      {
+        "titulo": "Tags in Datadog",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/#defining-tags"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué separadores se sugieren en nombres de tag y valores?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "guiones (-) o guiones bajos (_)"
+      },
+      {
+        "clave": "b",
+        "texto": "espacios"
+      },
+      {
+        "clave": "c",
+        "texto": "puntos y comas"
+      },
+      {
+        "clave": "d",
+        "texto": "tabulaciones"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Evita espacios y caracteres especiales; usa '-' o '_' según convención.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué práctica ayuda a evitar explosión de cardinalidad en métricas?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No usar IDs únicos por usuario/sesión como tags"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar UUID por cada evento"
+      },
+      {
+        "clave": "c",
+        "texto": "Añadir timestamp en cada tag"
+      },
+      {
+        "clave": "d",
+        "texto": "Añadir el hash del payload"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Evita tags de alta cardinalidad (p.ej., user_id, request_id) en métricas.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué hacer con valores libres con muchas variantes (p.ej., user_agent)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Normalizarlos o mapearlos a categorías"
+      },
+      {
+        "clave": "b",
+        "texto": "Pegarlos como están"
+      },
+      {
+        "clave": "c",
+        "texto": "Duplicarlos como varios tags"
+      },
+      {
+        "clave": "d",
+        "texto": "Eliminar todos los tags"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Normalizar reduce cardinalidad y mejora agregaciones.",
+    "recursos": [
+      {
+        "titulo": "Log Pipelines & Remapping",
+        "url": "https://docs.datadoghq.com/logs/log_configuration/pipelines/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cómo se agregan tags globales en el Agent (YAML)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "tags:\n  env: prod\n  team: core"
+      },
+      {
+        "clave": "b",
+        "texto": "tags:\n  - env:prod\n  - team:core"
+      },
+      {
+        "clave": "c",
+        "texto": "global_tags:\n  env: prod"
+      },
+      {
+        "clave": "d",
+        "texto": "add_tags: true"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Usa un mapa clave:valor bajo 'tags:' en datadog.yaml.",
+    "recursos": [
+      {
+        "titulo": "Agent Configuration (tags)",
+        "url": "https://docs.datadoghq.com/agent/configuration/#global-options"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cómo se pasan tags en DogStatsD?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sufijo |#key:value,other:tag"
+      },
+      {
+        "clave": "b",
+        "texto": "Cabecera HTTP DD-TAGS"
+      },
+      {
+        "clave": "c",
+        "texto": "Archivo .tags"
+      },
+      {
+        "clave": "d",
+        "texto": "No admite tags"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "DogStatsD extiende StatsD con el sufijo |# para tags.",
+    "recursos": [
+      {
+        "titulo": "DogStatsD Tagging",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/datagram_shell/#datagram-format"
+      }
+    ]
+  },
+  {
+    "pregunta": "En logs, ¿cómo puedes remapear un campo JSON a 'service'?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Con un procesador de remapeo en el pipeline"
+      },
+      {
+        "clave": "b",
+        "texto": "Editando el backend"
+      },
+      {
+        "clave": "c",
+        "texto": "Con un CSV"
+      },
+      {
+        "clave": "d",
+        "texto": "No se puede"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Los pipelines permiten remapear campos y extraer atributos.",
+    "recursos": [
+      {
+        "titulo": "Log Pipelines & Remapping",
+        "url": "https://docs.datadoghq.com/logs/log_configuration/pipelines/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué casing recomiendan para nombres/valores de tags?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "minúsculas"
+      },
+      {
+        "clave": "b",
+        "texto": "MAYÚSCULAS SIEMPRE"
+      },
+      {
+        "clave": "c",
+        "texto": "Título Capitalizado"
+      },
+      {
+        "clave": "d",
+        "texto": "Mixto aleatorio"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Minúsculas consistentes facilitan agregación y búsqueda.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué tag especial no debes sobreescribir manualmente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "host"
+      },
+      {
+        "clave": "b",
+        "texto": "service"
+      },
+      {
+        "clave": "c",
+        "texto": "env"
+      },
+      {
+        "clave": "d",
+        "texto": "version"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El 'host' proviene del Agent/infra y se usa para topologías.",
+    "recursos": [
+      {
+        "titulo": "Tags in Datadog",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/#defining-tags"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué tag ayuda a identificar el origen de dispositivos en integraciones de red/storage?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "device"
+      },
+      {
+        "clave": "b",
+        "texto": "owner"
+      },
+      {
+        "clave": "c",
+        "texto": "team"
+      },
+      {
+        "clave": "d",
+        "texto": "rack"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El tag 'device' se usa para métricas por disco, interfaz, etc.",
+    "recursos": [
+      {
+        "titulo": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Si necesitas agrupar métricas por región y entorno, ¿qué combinación es más apropiada?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "region y env"
+      },
+      {
+        "clave": "b",
+        "texto": "user_id y session_id"
+      },
+      {
+        "clave": "c",
+        "texto": "payload_hash y pid"
+      },
+      {
+        "clave": "d",
+        "texto": "random_id y route_id"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Son tags de baja/mediana cardinalidad útiles para segmentación.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué convención evita inconsistencias entre 'prod', 'Prod', 'production'?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Valores controlados y minúsculas"
+      },
+      {
+        "clave": "b",
+        "texto": "Mayúsculas aleatorias"
+      },
+      {
+        "clave": "c",
+        "texto": "Abreviaturas variables"
+      },
+      {
+        "clave": "d",
+        "texto": "Emojis"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Definir vocabulario controlado y minúsculas reduce duplicados.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué impacto tienen los tags de alta cardinalidad en costos y consultas?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aumentan cardinalidad y pueden encarecer/ralentizar consultas"
+      },
+      {
+        "clave": "b",
+        "texto": "Ninguno"
+      },
+      {
+        "clave": "c",
+        "texto": "Reducen todo"
+      },
+      {
+        "clave": "d",
+        "texto": "Deshabilitan métricas"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Más combinaciones implican más series y potencial mayor costo/latencia.",
+    "recursos": [
+      {
+        "titulo": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué debes evitar incluir como tag por riesgo de PII?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Correos y datos personales"
+      },
+      {
+        "clave": "b",
+        "texto": "env"
+      },
+      {
+        "clave": "c",
+        "texto": "region"
+      },
+      {
+        "clave": "d",
+        "texto": "service"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Evita PII en tags/logs salvo que exista base legal y controles.",
+    "recursos": [
+      {
+        "titulo": "PII & Data Handling",
+        "url": "https://docs.datadoghq.com/data_security/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cómo verificas rápidamente qué tags recibe una métrica en un host?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent status / flare"
+      },
+      {
+        "clave": "b",
+        "texto": "dmesg"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/hosts"
+      },
+      {
+        "clave": "d",
+        "texto": "ifconfig"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El status y el flare listan tags aplicados y contexto.",
+    "recursos": [
+      {
+        "titulo": "Agent Configuration (tags)",
+        "url": "https://docs.datadoghq.com/agent/configuration/#global-options"
+      }
+    ]
+  },
+  {
+    "pregunta": "En un dashboard, ¿cómo filtras todas las series por 'env:prod'?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usando el filtro global de tags"
+      },
+      {
+        "clave": "b",
+        "texto": "Renombrando cada widget"
+      },
+      {
+        "clave": "c",
+        "texto": "Editando el backend"
+      },
+      {
+        "clave": "d",
+        "texto": "No es posible"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El filtro global aplica 'env:prod' a todos los widgets compatibles.",
+    "recursos": [
+      {
+        "titulo": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para agrupar una timeseries por 'service', debes…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usar 'group by: service' en la consulta"
+      },
+      {
+        "clave": "b",
+        "texto": "Clonar el dashboard"
+      },
+      {
+        "clave": "c",
+        "texto": "Crear una métrica nueva"
+      },
+      {
+        "clave": "d",
+        "texto": "Poner el tag en el título"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La consulta puede agregar por tags para separar líneas por valor de tag.",
+    "recursos": [
+      {
+        "titulo": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué tipo de visual ayuda a detectar outliers por tag?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Heatmap / Top list"
+      },
+      {
+        "clave": "b",
+        "texto": "Geovista"
+      },
+      {
+        "clave": "c",
+        "texto": "Sunburst"
+      },
+      {
+        "clave": "d",
+        "texto": "Pie 3D"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Heatmap/Top list resaltan distribuciones y top‑N por tag.",
+    "recursos": [
+      {
+        "titulo": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para alertar sólo sobre 'service:api' en 'env:prod', debes…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configurar el scope del monitor con esos tags"
+      },
+      {
+        "clave": "b",
+        "texto": "Filtrar en el título"
+      },
+      {
+        "clave": "c",
+        "texto": "Editar el color"
+      },
+      {
+        "clave": "d",
+        "texto": "No se puede"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El scope delimita qué series evalúa el monitor.",
+    "recursos": [
+      {
+        "titulo": "Monitors: Scopes & Grouping",
+        "url": "https://docs.datadoghq.com/monitors/configuration/?tab=threshold"
+      }
+    ]
+  },
+  {
+    "pregunta": "Si tu consulta agrega por 'service' y quieres un umbral distinto por servicio, ¿qué usarías?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Alertas multi-alert por tag"
+      },
+      {
+        "clave": "b",
+        "texto": "Un único umbral global"
+      },
+      {
+        "clave": "c",
+        "texto": "Sin alertas"
+      },
+      {
+        "clave": "d",
+        "texto": "Alerta por título"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Las multi-alert instancian una alerta por valor de tag.",
+    "recursos": [
+      {
+        "titulo": "Monitors: Scopes & Grouping",
+        "url": "https://docs.datadoghq.com/monitors/configuration/?tab=threshold"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cómo excluirías 'env:dev' en una consulta de métricas?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Filtrando -env:dev"
+      },
+      {
+        "clave": "b",
+        "texto": "Borrando los datos"
+      },
+      {
+        "clave": "c",
+        "texto": "Renombrando el tag"
+      },
+      {
+        "clave": "d",
+        "texto": "No se puede"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Los filtros permiten exclusiones con el operador negativo.",
+    "recursos": [
+      {
+        "titulo": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué ventaja ofrece taggear 'service' en logs respecto a usar sólo 'source'?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Correlación directa con APM y métricas del mismo servicio"
+      },
+      {
+        "clave": "b",
+        "texto": "Menos datos"
+      },
+      {
+        "clave": "c",
+        "texto": "Más color"
+      },
+      {
+        "clave": "d",
+        "texto": "Nada"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "service/env/version permiten saltar entre productos para el mismo servicio.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué tag ayuda a separar métricas por disponibilidad zonal?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "availability_zone (az)"
+      },
+      {
+        "clave": "b",
+        "texto": "pid"
+      },
+      {
+        "clave": "c",
+        "texto": "request_id"
+      },
+      {
+        "clave": "d",
+        "texto": "stacktrace"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La zona de disponibilidad es una segmentación habitual en cloud.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para sumarizar por tag en un 'top list', ¿qué operación de agregación es típica?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "sum o avg por grupo"
+      },
+      {
+        "clave": "b",
+        "texto": "xor"
+      },
+      {
+        "clave": "c",
+        "texto": "nand"
+      },
+      {
+        "clave": "d",
+        "texto": "median absolute only"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "sum/avg por grupo produce un ranking por tag.",
+    "recursos": [
+      {
+        "titulo": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Si tienes tags inconsistentes ('region:eu-west-1' y 'region:eu_west_1'), ¿qué conviene hacer?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Normalizarlos a un único formato"
+      },
+      {
+        "clave": "b",
+        "texto": "Dejar ambos"
+      },
+      {
+        "clave": "c",
+        "texto": "Cambiar cada hora"
+      },
+      {
+        "clave": "d",
+        "texto": "Usar emojis"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La normalización evita dividir series y dashboards.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para compartir dashboards entre equipos, ¿qué convención favorece su reutilización?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usar filtros de env/region/service en la parte superior"
+      },
+      {
+        "clave": "b",
+        "texto": "Hardcodear IDs"
+      },
+      {
+        "clave": "c",
+        "texto": "Usar constates de hostnames"
+      },
+      {
+        "clave": "d",
+        "texto": "No usar filtros"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Los filtros globales permiten reutilizar el dashboard en múltiples contextos.",
+    "recursos": [
+      {
+        "titulo": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué tag te permite correlacionar un despliegue específico con cambios de métricas?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "version"
+      },
+      {
+        "clave": "b",
+        "texto": "user_id"
+      },
+      {
+        "clave": "c",
+        "texto": "trace_id"
+      },
+      {
+        "clave": "d",
+        "texto": "pid"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "version ayuda a evaluar el impacto de releases.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En métricas de host, ¿qué tag es clave para agrupar por máquina?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "host"
+      },
+      {
+        "clave": "b",
+        "texto": "service"
+      },
+      {
+        "clave": "c",
+        "texto": "env"
+      },
+      {
+        "clave": "d",
+        "texto": "team"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "host identifica la entidad física/virtual donde corre el Agent.",
+    "recursos": [
+      {
+        "titulo": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué riesgo tiene usar 'request_id' como tag en métricas?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Alta cardinalidad que explota series"
+      },
+      {
+        "clave": "b",
+        "texto": "Falta de precisión"
+      },
+      {
+        "clave": "c",
+        "texto": "Incompatibilidad de protocolos"
+      },
+      {
+        "clave": "d",
+        "texto": "No hay riesgo"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "IDs únicos generan cardinalidad extrema y costos/latencia.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para medir errores por servicio, ¿qué consulta es más adecuada?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Agrupar por service y filtrar env"
+      },
+      {
+        "clave": "b",
+        "texto": "Agrupar por host solamente"
+      },
+      {
+        "clave": "c",
+        "texto": "Sin tags"
+      },
+      {
+        "clave": "d",
+        "texto": "Filtrar por pid"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La agrupación por service con el filtro de env da visibilidad por servicio en un entorno.",
+    "recursos": [
+      {
+        "titulo": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué documento interno conviene mantener para gobernanza de tags?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Guía de taxonomía y convenciones"
+      },
+      {
+        "clave": "b",
+        "texto": "Post-it en el monitor"
+      },
+      {
+        "clave": "c",
+        "texto": "Email suelto"
+      },
+      {
+        "clave": "d",
+        "texto": "Ninguno"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Una guía define nombres permitidos, formatos y ejemplos.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué práctica facilita la adopción de tagging entre equipos?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Plantillas y ejemplos en repos compartidos"
+      },
+      {
+        "clave": "b",
+        "texto": "Dejarlo implícito"
+      },
+      {
+        "clave": "c",
+        "texto": "Usar términos ambiguos"
+      },
+      {
+        "clave": "d",
+        "texto": "Cambiar cada sprint"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Plantillas reducen fricción y aseguran consistencia.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para evitar drift en tags, ¿qué automatización puede ayudar?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Validación en CI/CD (lint de tags)"
+      },
+      {
+        "clave": "b",
+        "texto": "Revisión manual trimestral"
+      },
+      {
+        "clave": "c",
+        "texto": "Ninguna"
+      },
+      {
+        "clave": "d",
+        "texto": "Impresión de etiquetas físicas"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Validar en pipelines impide introducir tags inválidos.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué debes considerar al renombrar un tag usado en múltiples monitores?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Impacto en dashboards, monitores y consultas"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo estética"
+      },
+      {
+        "clave": "c",
+        "texto": "Nada cambia"
+      },
+      {
+        "clave": "d",
+        "texto": "Se aplica automáticamente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El cambio puede romper filtros y scopes existentes.",
+    "recursos": [
+      {
+        "titulo": "Monitors: Scopes & Grouping",
+        "url": "https://docs.datadoghq.com/monitors/configuration/?tab=threshold"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué estrategia ayuda a alinear tagging entre logs, APM y métricas?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Adoptar Unified Service Tagging"
+      },
+      {
+        "clave": "b",
+        "texto": "Definir tags distintos por producto"
+      },
+      {
+        "clave": "c",
+        "texto": "No usar service"
+      },
+      {
+        "clave": "d",
+        "texto": "Usar IDs efímeros"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "UST define un conjunto común y cómo propagarlo.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué conviene hacer antes de introducir un nuevo tag global?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar impacto de cardinalidad y costo"
+      },
+      {
+        "clave": "b",
+        "texto": "Activarlo sin revisión"
+      },
+      {
+        "clave": "c",
+        "texto": "Usar valores libres"
+      },
+      {
+        "clave": "d",
+        "texto": "Eliminar tags existentes"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Analiza cardinalidad esperada y consultas afectadas.",
+    "recursos": [
+      {
+        "titulo": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para servicios multi‑región, ¿cómo distinguir despliegues?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Agregar tag region con vocabulario controlado"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar hostnames"
+      },
+      {
+        "clave": "c",
+        "texto": "Añadir timestamp"
+      },
+      {
+        "clave": "d",
+        "texto": "PID"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Un tag region controlado permite segmentación y scopes claros.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué mecanismo ayuda a propagar 'service/env/version' sin tocar código en contenedores?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Variables de entorno DD_SERVICE/DD_ENV/DD_VERSION"
+      },
+      {
+        "clave": "b",
+        "texto": "Montar /etc/tags"
+      },
+      {
+        "clave": "c",
+        "texto": "Etiquetas del kernel"
+      },
+      {
+        "clave": "d",
+        "texto": "Crontab"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Las variables estándar propagan UST en múltiples runtimes.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Si dos equipos usan 'team:core' y 'squad:core', ¿qué conviene?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Unificar en una sola clave aprobada"
+      },
+      {
+        "clave": "b",
+        "texto": "Mantener ambas"
+      },
+      {
+        "clave": "c",
+        "texto": "Aleatorizar"
+      },
+      {
+        "clave": "d",
+        "texto": "Eliminar los teams"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Una sola clave evita duplicidad y facilita filtros.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué acción ayuda a descubrir tags inútiles o poco usados?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Auditar consultas/dashboards periódicamente"
+      },
+      {
+        "clave": "b",
+        "texto": "Esperar a incidentes"
+      },
+      {
+        "clave": "c",
+        "texto": "Borrar todo"
+      },
+      {
+        "clave": "d",
+        "texto": "Desactivar métricas"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Las auditorías detectan claves que no aportan valor.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué debes evitar al definir 'service' para un monolito con varios módulos internos?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Múltiples valores distintos por módulo si no se exponen separados"
+      },
+      {
+        "clave": "b",
+        "texto": "Un solo valor consistente"
+      },
+      {
+        "clave": "c",
+        "texto": "Mantener 'env' correcto"
+      },
+      {
+        "clave": "d",
+        "texto": "Versionar despliegues"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Usa un 'service' único si se despliega como una sola unidad.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué clave conviene usar para responsabilidad organizacional (equipo)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "team"
+      },
+      {
+        "clave": "b",
+        "texto": "user_id"
+      },
+      {
+        "clave": "c",
+        "texto": "pid"
+      },
+      {
+        "clave": "d",
+        "texto": "trace_id"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Un tag 'team' facilita ownership de alertas y tableros.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para distinguir 'batch' vs 'realtime' en un mismo servicio, puedes…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Agregar tag 'mode:batch|realtime'"
+      },
+      {
+        "clave": "b",
+        "texto": "Cambiar 'service'"
+      },
+      {
+        "clave": "c",
+        "texto": "Cambiar 'env'"
+      },
+      {
+        "clave": "d",
+        "texto": "No se puede"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Añadir un tag claro evita confusión sin romper UST.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué patrón de nombres evita colisiones entre productos (logs vs metrics)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reusar las mismas claves con el mismo significado"
+      },
+      {
+        "clave": "b",
+        "texto": "Cambiar las claves por producto"
+      },
+      {
+        "clave": "c",
+        "texto": "Usar sufijos arbitrarios"
+      },
+      {
+        "clave": "d",
+        "texto": "Ninguno"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Mismas claves y semántica evita mapeos ad‑hoc.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué revisión agregarías a un PR que introduce 'user_id' como tag en métricas?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cuestionar cardinalidad/PII y proponer agregación alternativa"
+      },
+      {
+        "clave": "b",
+        "texto": "Aprobar sin revisar"
+      },
+      {
+        "clave": "c",
+        "texto": "Cambiar a emojis"
+      },
+      {
+        "clave": "d",
+        "texto": "Duplicar el tag"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Propón medir por cohortes/segmentos en lugar de IDs únicos.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para aplicar 'env:prod' en Kubernetes sin modificar código, ¿qué es más directo?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configurar DD_ENV en el Deployment/DaemonSet"
+      },
+      {
+        "clave": "b",
+        "texto": "Editar el kernel"
+      },
+      {
+        "clave": "c",
+        "texto": "Cambiar el nombre del Pod"
+      },
+      {
+        "clave": "d",
+        "texto": "Usar un CRD custom"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "DD_ENV en el manifiesto propaga el entorno al Agent/APM/logs.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué conviene documentar junto con cada nueva clave de tag aprobada?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Propósito, formato permitido y ejemplos"
+      },
+      {
+        "clave": "b",
+        "texto": "Un meme"
+      },
+      {
+        "clave": "c",
+        "texto": "Nada"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo el color del dashboard"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Esto facilita adopción y reduce mal uso del tag.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué tag te permite identificar el componente dentro de un servicio (p.ej., api, worker)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "component"
+      },
+      {
+        "clave": "b",
+        "texto": "pid"
+      },
+      {
+        "clave": "c",
+        "texto": "trace_id"
+      },
+      {
+        "clave": "d",
+        "texto": "user_agent"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "component añade granularidad sin romper UST.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para cortar por versión en dashboards históricos, ¿qué tag es esencial?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "version"
+      },
+      {
+        "clave": "b",
+        "texto": "pid"
+      },
+      {
+        "clave": "c",
+        "texto": "host"
+      },
+      {
+        "clave": "d",
+        "texto": "device"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Permite comparar desempeño entre releases.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Si un equipo necesita tags específicos, ¿qué proceso asegura consistencia?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisión y aprobación en un comité de tagging"
+      },
+      {
+        "clave": "b",
+        "texto": "Cada quien define libremente"
+      },
+      {
+        "clave": "c",
+        "texto": "Se decide en producción"
+      },
+      {
+        "clave": "d",
+        "texto": "Se obvia"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Una revisión formal mantiene la taxonomía bajo control.",
+    "recursos": [
+      {
+        "titulo": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  }
+]

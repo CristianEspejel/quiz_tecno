@@ -1,0 +1,1742 @@
+[
+  {
+    "pregunta": "¿Qué puerto usa DogStatsD por defecto para recibir métricas?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "8125/UDP"
+      },
+      {
+        "clave": "b",
+        "texto": "8126/TCP"
+      },
+      {
+        "clave": "c",
+        "texto": "4317/TCP"
+      },
+      {
+        "clave": "d",
+        "texto": "9000/UDP"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "DogStatsD escucha por defecto en 8125/UDP y puede habilitarse también por UDS.",
+    "recursos": [
+      {
+        "titulo": "DogStatsD",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es el intervalo típico de 'flush' de DogStatsD antes de enviar métricas agregadas al backend?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "10 segundos"
+      },
+      {
+        "clave": "b",
+        "texto": "1 segundo"
+      },
+      {
+        "clave": "c",
+        "texto": "60 segundos"
+      },
+      {
+        "clave": "d",
+        "texto": "5 minutos"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "DogStatsD agrega y envía métricas en lotes; el flush por defecto es alrededor de 10 segundos.",
+    "recursos": [
+      {
+        "titulo": "DogStatsD data aggregation",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/data_aggregation/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué tipo de métrica deberías usar con DogStatsD para valores puntuales que pueden subir y bajar (por ejemplo temperatura)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "gauge"
+      },
+      {
+        "clave": "b",
+        "texto": "count"
+      },
+      {
+        "clave": "c",
+        "texto": "set"
+      },
+      {
+        "clave": "d",
+        "texto": "distribution"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Una gauge representa un valor instantáneo (point‑in‑time).",
+    "recursos": [
+      {
+        "titulo": "Custom metrics via DogStatsD",
+        "url": "https://docs.datadoghq.com/metrics/custom_metrics/dogstatsd_metrics_submission/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para contabilizar el número de solicitudes que llegan a una API, ¿qué tipo de métrica DogStatsD es la más adecuada?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "count"
+      },
+      {
+        "clave": "b",
+        "texto": "gauge"
+      },
+      {
+        "clave": "c",
+        "texto": "set"
+      },
+      {
+        "clave": "d",
+        "texto": "distribution"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Las counts aumentan con cada evento y el backend calcula tasas (por segundo) a partir de ellas.",
+    "recursos": [
+      {
+        "titulo": "Custom metrics types",
+        "url": "https://docs.datadoghq.com/metrics/types/?tab=count"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué tipo de métrica DogStatsD usarías para capturar latencias y percentiles?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "distribution"
+      },
+      {
+        "clave": "b",
+        "texto": "gauge"
+      },
+      {
+        "clave": "c",
+        "texto": "set"
+      },
+      {
+        "clave": "d",
+        "texto": "count"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Las 'distribution' permiten agregaciones globales y percentiles en Datadog.",
+    "recursos": [
+      {
+        "titulo": "Distribution metrics",
+        "url": "https://docs.datadoghq.com/metrics/distributions/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cómo se envían etiquetas (tags) junto con las métricas a DogStatsD?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Como sufijo |#tag:valor,otra:etiqueta"
+      },
+      {
+        "clave": "b",
+        "texto": "En el cuerpo JSON"
+      },
+      {
+        "clave": "c",
+        "texto": "En la cabecera DD-TAGS"
+      },
+      {
+        "clave": "d",
+        "texto": "No admite tags"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "DogStatsD (protocolo StatsD extendido) usa el sufijo |# para adjuntar tags.",
+    "recursos": [
+      {
+        "titulo": "DogStatsD protocol",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/datagram_shell/?tab=metrics#datagram-format"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué variable debes habilitar para atribuir automáticamente contenedores/host a métricas DogStatsD?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Origin detection"
+      },
+      {
+        "clave": "b",
+        "texto": "Auto‑host"
+      },
+      {
+        "clave": "c",
+        "texto": "APM merge"
+      },
+      {
+        "clave": "d",
+        "texto": "Trace origin"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Origin detection añade metadatos de origen (container_id/host) a métricas DogStatsD.",
+    "recursos": [
+      {
+        "titulo": "DogStatsD over UDS & origin detection",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/unix_socket/#origin-detection"
+      }
+    ]
+  },
+  {
+    "pregunta": "Además de UDP, ¿qué otra opción de transporte soporta DogStatsD para alto rendimiento local?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Unix Domain Socket (UDS)"
+      },
+      {
+        "clave": "b",
+        "texto": "SMTP"
+      },
+      {
+        "clave": "c",
+        "texto": "WebSocket"
+      },
+      {
+        "clave": "d",
+        "texto": "SCTP"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "UDS reduce overhead y evita pérdida por congestión de UDP en el mismo host.",
+    "recursos": [
+      {
+        "titulo": "DogStatsD over UDS",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/unix_socket/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué hace el muestreo (sample rate) en envíos DogStatsD como '|@0.1'?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Indica que solo se envió el 10% de eventos y el backend extrapola"
+      },
+      {
+        "clave": "b",
+        "texto": "Reduce el tamaño del tag"
+      },
+      {
+        "clave": "c",
+        "texto": "Cambia el tipo de métrica"
+      },
+      {
+        "clave": "d",
+        "texto": "Deshabilita el envío"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El sample rate permite disminuir tráfico; el backend ajusta la contabilización.",
+    "recursos": [
+      {
+        "titulo": "DogStatsD sampling",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/data_aggregation/#sampling"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cómo se denomina el espacio de nombres opcional para métricas DogStatsD configurado en el Agent?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "statsd_metric_namespace"
+      },
+      {
+        "clave": "b",
+        "texto": "dogstatsd_prefix"
+      },
+      {
+        "clave": "c",
+        "texto": "dd_namespace"
+      },
+      {
+        "clave": "d",
+        "texto": "metrics.namespace"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Permite prefijar métricas enviadas vía DogStatsD desde el Agent.",
+    "recursos": [
+      {
+        "titulo": "DogStatsD configuration",
+        "url": "https://docs.datadoghq.com/agent/configuration/?tab=agentv6v7#dogstatsd"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué función cumple 'sets' en DogStatsD?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Contar elementos únicos"
+      },
+      {
+        "clave": "b",
+        "texto": "Medir percentiles"
+      },
+      {
+        "clave": "c",
+        "texto": "Representar valores puntuales"
+      },
+      {
+        "clave": "d",
+        "texto": "Sumar bytes"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El tipo 'set' cuenta cardinalidad de valores únicos en el intervalo de flush.",
+    "recursos": [
+      {
+        "titulo": "DogStatsD metric types",
+        "url": "https://docs.datadoghq.com/metrics/custom_metrics/dogstatsd_metrics_submission/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para evitar pérdida por UDP en hosts muy cargados, ¿qué transporte recomiendan para DogStatsD?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "UDS en el mismo host"
+      },
+      {
+        "clave": "b",
+        "texto": "HTTP"
+      },
+      {
+        "clave": "c",
+        "texto": "gRPC"
+      },
+      {
+        "clave": "d",
+        "texto": "AMQP"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "UDS evita drops por buffer UDP y mejora throughput local.",
+    "recursos": [
+      {
+        "titulo": "DogStatsD UDS guidance",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/unix_socket/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es el encabezado HTTP que se usa para autenticar envíos de métricas vía API (no DogStatsD)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DD-API-KEY"
+      },
+      {
+        "clave": "b",
+        "texto": "Authorization: Bearer"
+      },
+      {
+        "clave": "c",
+        "texto": "X-App-Key"
+      },
+      {
+        "clave": "d",
+        "texto": "DD-CLIENT-TOKEN"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Para ingestion HTTP se usa el encabezado DD-API-KEY; DogStatsD no lo usa porque es local.",
+    "recursos": [
+      {
+        "titulo": "API Authentication",
+        "url": "https://docs.datadoghq.com/api/latest/authentication/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué etiqueta estandarizada favorece la correlación entre APM, logs y métricas?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "service, env, version"
+      },
+      {
+        "clave": "b",
+        "texto": "team, owner, cost"
+      },
+      {
+        "clave": "c",
+        "texto": "region, az, rack"
+      },
+      {
+        "clave": "d",
+        "texto": "app, app, app"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El etiquetado unificado 'service/env/version' permite vistas cruzadas.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la vía recomendada para enviar métricas personalizadas desde apps a Datadog?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DogStatsD o librerías de cliente Datadog"
+      },
+      {
+        "clave": "b",
+        "texto": "Editar la base de datos de Datadog"
+      },
+      {
+        "clave": "c",
+        "texto": "Enviar CSV por correo"
+      },
+      {
+        "clave": "d",
+        "texto": "Subir un ZIP a la UI"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Las librerías cliente utilizan DogStatsD o llamadas a la API para custom metrics.",
+    "recursos": [
+      {
+        "titulo": "Custom metrics overview",
+        "url": "https://docs.datadoghq.com/metrics/custom_metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En integraciones cloud basadas en API, ¿cómo obtiene Datadog las métricas?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mediante 'polling' periódico a la API del proveedor"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo por Webhooks"
+      },
+      {
+        "clave": "c",
+        "texto": "Por SNMP"
+      },
+      {
+        "clave": "d",
+        "texto": "Por syslog"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Los 'crawlers' consultan las APIs de los proveedores a intervalos definidos.",
+    "recursos": [
+      {
+        "titulo": "Data collection resolution",
+        "url": "https://docs.datadoghq.com/developers/guide/data-collection-resolution/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para reducir la latencia de métricas de AWS por debajo del polling, ¿qué recomienda Datadog?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CloudWatch Metric Streams con Kinesis Data Firehose"
+      },
+      {
+        "clave": "b",
+        "texto": "Aumentar el tamaño de instancia"
+      },
+      {
+        "clave": "c",
+        "texto": "Usar SMTP"
+      },
+      {
+        "clave": "d",
+        "texto": "Desactivar la integración"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Metric Streams reduce la latencia de entrega a pocos minutos con flujo continuo.",
+    "recursos": [
+      {
+        "titulo": "AWS CloudWatch Metric Streams",
+        "url": "https://docs.datadoghq.com/integrations/guide/aws-cloudwatch-metric-streams-with-kinesis-data-firehose/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué riesgo operativo debes considerar con 'polling' de APIs cloud?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cuotas/límites de API del proveedor"
+      },
+      {
+        "clave": "b",
+        "texto": "Pérdida de datos persistente garantizada"
+      },
+      {
+        "clave": "c",
+        "texto": "Incompatibilidad TLS"
+      },
+      {
+        "clave": "d",
+        "texto": "Inhabilita etiquetas"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El polling está sujeto a 'rate limits' y ventanas de disponibilidad de la API.",
+    "recursos": [
+      {
+        "titulo": "API rate limiting",
+        "url": "https://docs.datadoghq.com/integrations/guide/enable-aws-integration/#requirements"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué método acelera la detección de nuevas entidades frente a solo polling?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Streams/eventos nativos del proveedor"
+      },
+      {
+        "clave": "b",
+        "texto": "CRON cada 24h"
+      },
+      {
+        "clave": "c",
+        "texto": "DNS push"
+      },
+      {
+        "clave": "d",
+        "texto": "FTP push"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Streams/eventos complementan o sustituyen polling para menor latencia.",
+    "recursos": [
+      {
+        "titulo": "Cloud integrations",
+        "url": "https://docs.datadoghq.com/integrations/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En GCP, ¿qué componente habilita Datadog para recopilar métricas a escala?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cloud Monitoring API + permisos mínimos"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo Pub/Sub"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo Cloud DNS"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo BigQuery"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La integración usa la Monitoring API con una cuenta de servicio de mínimos privilegios.",
+    "recursos": [
+      {
+        "titulo": "GCP integration",
+        "url": "https://docs.datadoghq.com/integrations/google_cloud_platform/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para Azure, Datadog recomienda configurar…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Azure Monitor con permisos requeridos"
+      },
+      {
+        "clave": "b",
+        "texto": "Azure Files exclusivamente"
+      },
+      {
+        "clave": "c",
+        "texto": "ExpressRoute"
+      },
+      {
+        "clave": "d",
+        "texto": "Azure DevOps"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La integración usa Azure Monitor y recursos asociados para métricas y metadatos.",
+    "recursos": [
+      {
+        "titulo": "Azure integration",
+        "url": "https://docs.datadoghq.com/integrations/azure/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En AWS, ¿qué servicio habilita el envío casi en tiempo real de métricas a Datadog sin polling?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CloudWatch Metric Streams"
+      },
+      {
+        "clave": "b",
+        "texto": "SNS Email"
+      },
+      {
+        "clave": "c",
+        "texto": "SQS Pull"
+      },
+      {
+        "clave": "d",
+        "texto": "EC2 UserData"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Metric Streams entrega métricas continuamente a través de Kinesis/Firehose.",
+    "recursos": [
+      {
+        "titulo": "AWS Metric Streams",
+        "url": "https://docs.datadoghq.com/integrations/guide/aws-cloudwatch-metric-streams-with-kinesis-data-firehose/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué métrica puede presentar retraso visible por el modelo de recolección cloud?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Métricas de servicios administrados vía API"
+      },
+      {
+        "clave": "b",
+        "texto": "DogStatsD local"
+      },
+      {
+        "clave": "c",
+        "texto": "APM local"
+      },
+      {
+        "clave": "d",
+        "texto": "Logs en tailing local"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Las métricas Cloud pulleadas pueden llegar con retraso por ventanas del proveedor.",
+    "recursos": [
+      {
+        "titulo": "Cloud metric delay",
+        "url": "https://docs.datadoghq.com/integrations/guide/cloud-metric-delay/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es una buena práctica de costos al habilitar streams o crawlers?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Limitar a las métricas/servicios necesarios"
+      },
+      {
+        "clave": "b",
+        "texto": "Activar todo por defecto"
+      },
+      {
+        "clave": "c",
+        "texto": "Duplicar regiones innecesariamente"
+      },
+      {
+        "clave": "d",
+        "texto": "Enviar datos comprimidos por email"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Seleccionar fuentes y namespaces necesarios reduce costo y ruido.",
+    "recursos": [
+      {
+        "titulo": "Integration setup best practices",
+        "url": "https://docs.datadoghq.com/integrations/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué etiqueta ayuda a segmentar recursos cloud por entorno en dashboards/monitores?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "env"
+      },
+      {
+        "clave": "b",
+        "texto": "theme"
+      },
+      {
+        "clave": "c",
+        "texto": "build"
+      },
+      {
+        "clave": "d",
+        "texto": "lang"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El tag 'env' (junto con 'service' y 'version') es clave para segmentación.",
+    "recursos": [
+      {
+        "titulo": "Unified tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para comprender retrasos de ingesta en métricas cloud, debes revisar…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Retención/ventanas del proveedor y resolución de recolección"
+      },
+      {
+        "clave": "b",
+        "texto": "El color del dashboard"
+      },
+      {
+        "clave": "c",
+        "texto": "Zona horaria del teclado"
+      },
+      {
+        "clave": "d",
+        "texto": "Versión de BIOS"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Cada integración documenta la resolución y latencia esperadas.",
+    "recursos": [
+      {
+        "titulo": "Data collection resolution",
+        "url": "https://docs.datadoghq.com/developers/guide/data-collection-resolution/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En integraciones cloud, ¿qué método complementa la recopilación de métricas con metadatos y relaciones?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Crawlers de inventario y etiquetas"
+      },
+      {
+        "clave": "b",
+        "texto": "Syslog"
+      },
+      {
+        "clave": "c",
+        "texto": "SNMP traps"
+      },
+      {
+        "clave": "d",
+        "texto": "ICMP ping"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Los crawlers también sincronizan inventario (recursos) y tags de los proveedores.",
+    "recursos": [
+      {
+        "titulo": "Cloud inventory",
+        "url": "https://docs.datadoghq.com/integrations/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué ventaja principal aporta Metric Streams frente a 'polling' tradicional?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Menor latencia y menor dependencia de cuotas de API"
+      },
+      {
+        "clave": "b",
+        "texto": "Métricas gratuitas ilimitadas"
+      },
+      {
+        "clave": "c",
+        "texto": "Evita TLS"
+      },
+      {
+        "clave": "d",
+        "texto": "Requiere menos permisos que polling"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Al ser 'push‑like', reduce latencia y llamadas a la API.",
+    "recursos": [
+      {
+        "titulo": "AWS Metric Streams",
+        "url": "https://docs.datadoghq.com/integrations/guide/aws-cloudwatch-metric-streams-with-kinesis-data-firehose/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para evitar sorpresas por límites de API al escalar cuentas cloud, conviene…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Monitorear y distribuir llamadas, usar streams cuando existan"
+      },
+      {
+        "clave": "b",
+        "texto": "Subir el timeout a infinito"
+      },
+      {
+        "clave": "c",
+        "texto": "Pausar el Agent"
+      },
+      {
+        "clave": "d",
+        "texto": "Bajar TLS a 1.0"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Planificar el ritmo de consultas y usar streams donde estén disponibles.",
+    "recursos": [
+      {
+        "titulo": "Cloud limits",
+        "url": "https://docs.datadoghq.com/integrations/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Una integración cloud marcada como 'crawler/API‑based' recolecta datos…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sin Agent, directamente desde el SaaS del proveedor"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo desde el Agent local"
+      },
+      {
+        "clave": "c",
+        "texto": "Exclusivamente por SNMP"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo desde contenedores"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El backend de Datadog consulta o recibe datos desde el proveedor sin depender del Agent.",
+    "recursos": [
+      {
+        "titulo": "Integration types",
+        "url": "https://docs.datadoghq.com/getting_started/integrations/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Dónde se define la configuración de una integración basada en Agent en Linux?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "conf.d/<integracion>.d/conf.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "/var/log/datadog.log"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/hosts"
+      },
+      {
+        "clave": "d",
+        "texto": "ui.yaml"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Cada integración posee su carpeta en conf.d con un conf.yaml por instancia.",
+    "recursos": [
+      {
+        "titulo": "Agent configuration files",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué comando lista el estado de checks e integraciones cargadas por el Agent?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "datadog-agent list"
+      },
+      {
+        "clave": "c",
+        "texto": "agent show"
+      },
+      {
+        "clave": "d",
+        "texto": "dd status"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Muestra checks, colectores, colas, logs y más.",
+    "recursos": [
+      {
+        "titulo": "Agent basic usage",
+        "url": "https://docs.datadoghq.com/agent/basic_agent_usage/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué se usa para activar integraciones basadas en contenedor sin archivos locales?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Autodiscovery (labels/anotaciones)"
+      },
+      {
+        "clave": "b",
+        "texto": "syslog"
+      },
+      {
+        "clave": "c",
+        "texto": "crontab"
+      },
+      {
+        "clave": "d",
+        "texto": "/etc/rc.local"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Autodiscovery detecta contenedores y aplica plantillas definidas en labels/annotations.",
+    "recursos": [
+      {
+        "titulo": "Autodiscovery",
+        "url": "https://docs.datadoghq.com/getting_started/containers/autodiscovery/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué claves componen una plantilla mínima de Autodiscovery en labels/anotaciones?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "check_names, init_configs, instances"
+      },
+      {
+        "clave": "b",
+        "texto": "name, path, command"
+      },
+      {
+        "clave": "c",
+        "texto": "type, source, dest"
+      },
+      {
+        "clave": "d",
+        "texto": "host, port, user"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Estas listas paralelas definen qué check e instancias aplicar.",
+    "recursos": [
+      {
+        "titulo": "Autodiscovery configuration",
+        "url": "https://docs.datadoghq.com/getting_started/containers/autodiscovery/#configuration"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cómo instalas/gestionas integraciones oficiales con el Agent?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent integration install|remove|show|freeze"
+      },
+      {
+        "clave": "b",
+        "texto": "apt-get dog"
+      },
+      {
+        "clave": "c",
+        "texto": "pip install datadog-agent"
+      },
+      {
+        "clave": "d",
+        "texto": "yum agent add"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El subcomando integration administra paquetes de integraciones del Agent.",
+    "recursos": [
+      {
+        "titulo": "Integration management",
+        "url": "https://docs.datadoghq.com/agent/guide/integration-management/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para probar una instancia de integración manualmente, puedes ejecutar…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent check <nombre_integracion>"
+      },
+      {
+        "clave": "b",
+        "texto": "agent run <nombre>"
+      },
+      {
+        "clave": "c",
+        "texto": "dd test check"
+      },
+      {
+        "clave": "d",
+        "texto": "agent verify"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Ejecuta el check y muestra métricas/dev output para troubleshooting.",
+    "recursos": [
+      {
+        "titulo": "Agent check command",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/?tab=agentv6v7#check"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué archivo global del Agent aplica tags a todos los datos enviados?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog.yaml (sección tags:)"
+      },
+      {
+        "clave": "b",
+        "texto": "integrations.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "tags.json"
+      },
+      {
+        "clave": "d",
+        "texto": "global.tags"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La clave 'tags:' en datadog.yaml aplica metadatos globales.",
+    "recursos": [
+      {
+        "titulo": "Global tags",
+        "url": "https://docs.datadoghq.com/agent/configuration/?tab=agentv6v7#global-options"
+      }
+    ]
+  },
+  {
+    "pregunta": "Si tu check necesita credenciales, ¿qué mecanismo recomienda Datadog para almacenarlas?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Secret management backend"
+      },
+      {
+        "clave": "b",
+        "texto": "En texto plano en conf.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Variables de entorno impresas"
+      },
+      {
+        "clave": "d",
+        "texto": "Comentarios YAML"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El Agent puede desencriptar secretos mediante un backend de secretos.",
+    "recursos": [
+      {
+        "titulo": "Secrets management",
+        "url": "https://docs.datadoghq.com/agent/guide/secrets-management/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para enviar logs desde una integración del Agent, primero debes…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Habilitar logs_enabled: true en datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Editar /etc/hosts"
+      },
+      {
+        "clave": "c",
+        "texto": "Habilitar SSH"
+      },
+      {
+        "clave": "d",
+        "texto": "Instalar un driver de kernel"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La recopilación de logs se activa globalmente y luego por integración.",
+    "recursos": [
+      {
+        "titulo": "Log collection",
+        "url": "https://docs.datadoghq.com/agent/logs/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cómo se especifica el servicio (service) de un flujo de logs en conf.yaml?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En cada entrada de logs con la clave service:"
+      },
+      {
+        "clave": "b",
+        "texto": "En datadog.yaml globalmente"
+      },
+      {
+        "clave": "c",
+        "texto": "No es posible"
+      },
+      {
+        "clave": "d",
+        "texto": "Con DD_SERVICE_HOSTNAME"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Cada entry del bloque logs debe incluir 'service' y 'source'.",
+    "recursos": [
+      {
+        "titulo": "Log pipeline attributes",
+        "url": "https://docs.datadoghq.com/agent/logs/#log-collection"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué archivo YAML ajusta opciones del proceso de recolección de procesos y contenedores?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "system-probe.yaml / process_config"
+      },
+      {
+        "clave": "b",
+        "texto": "kube.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "metrics.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "docker.yaml"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "system-probe y process_agent controlan NPM/Processes.",
+    "recursos": [
+      {
+        "titulo": "System probe & process agent",
+        "url": "https://docs.datadoghq.com/network_monitoring/performance/setup/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para descubrir endpoints HTTP expuestos por un contenedor, puedes usar el check…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "http_check con Autodiscovery"
+      },
+      {
+        "clave": "b",
+        "texto": "ssh_check"
+      },
+      {
+        "clave": "c",
+        "texto": "smtp_check"
+      },
+      {
+        "clave": "d",
+        "texto": "dns_check"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "http_check verifica disponibilidad/latencia de HTTP(S).",
+    "recursos": [
+      {
+        "titulo": "HTTP check",
+        "url": "https://docs.datadoghq.com/integrations/http_check/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué hace el comando 'datadog-agent configcheck'?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Muestra las configuraciones efectivas cargadas"
+      },
+      {
+        "clave": "b",
+        "texto": "Parchea YAML automáticamente"
+      },
+      {
+        "clave": "c",
+        "texto": "Reinstala integraciones"
+      },
+      {
+        "clave": "d",
+        "texto": "Cambia ownership de archivos"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Útil para depurar plantillas y conf de integraciones.",
+    "recursos": [
+      {
+        "titulo": "Configcheck",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/?tab=agentv6v7#configuration"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para evitar duplicación de datos al correr múltiples instancias del Agent, debes…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usar etiquetas/hostnames consistentes y evitar múltiples agentes por host"
+      },
+      {
+        "clave": "b",
+        "texto": "Habilitar duplicación"
+      },
+      {
+        "clave": "c",
+        "texto": "Bajar flush a 1ms"
+      },
+      {
+        "clave": "d",
+        "texto": "Cambiar a UDP solo"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Buenas prácticas de despliegue evitan doble recolección.",
+    "recursos": [
+      {
+        "titulo": "Agent deployment",
+        "url": "https://docs.datadoghq.com/agent/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es el directorio estándar donde residen los archivos de integraciones en Linux?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc/datadog-agent/conf.d"
+      },
+      {
+        "clave": "b",
+        "texto": "/opt/datadog/conf"
+      },
+      {
+        "clave": "c",
+        "texto": "/var/datadog/integrations"
+      },
+      {
+        "clave": "d",
+        "texto": "/usr/local/datadog/conf"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Cada integración tiene su subdirectorio en conf.d.",
+    "recursos": [
+      {
+        "titulo": "Agent configuration layout",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué formato de respuesta utiliza la API de Datadog?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "JSON"
+      },
+      {
+        "clave": "b",
+        "texto": "XML"
+      },
+      {
+        "clave": "c",
+        "texto": "HTML"
+      },
+      {
+        "clave": "d",
+        "texto": "Texto plano exclusivamente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La API REST de Datadog responde en JSON con códigos HTTP estándar.",
+    "recursos": [
+      {
+        "titulo": "API Overview",
+        "url": "https://docs.datadoghq.com/api/latest/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cómo se autentican las solicitudes a la API de Datadog?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cabeceras DD-API-KEY y DD-APPLICATION-KEY"
+      },
+      {
+        "clave": "b",
+        "texto": "Cookies de sesión"
+      },
+      {
+        "clave": "c",
+        "texto": "Basic auth usuario:clave"
+      },
+      {
+        "clave": "d",
+        "texto": "Token JWT sin cabeceras"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Se usan dos claves: API (envío) y Application (lectura/administración).",
+    "recursos": [
+      {
+        "titulo": "API Authentication",
+        "url": "https://docs.datadoghq.com/api/latest/authentication/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué endpoint permite enviar métricas por HTTP en la API v2?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/api/v2/series"
+      },
+      {
+        "clave": "b",
+        "texto": "/api/v1/submit"
+      },
+      {
+        "clave": "c",
+        "texto": "/metrics"
+      },
+      {
+        "clave": "d",
+        "texto": "/intake/metrics/v3"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El endpoint de series v2 recibe lotes de métricas con timestamps.",
+    "recursos": [
+      {
+        "titulo": "Metrics API v2",
+        "url": "https://docs.datadoghq.com/api/latest/metrics/#submit-metrics"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es el límite típico de tamaño de payload para envíos de métricas por API (aprox.)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Hasta unos megabytes por petición"
+      },
+      {
+        "clave": "b",
+        "texto": "10 KB exactos"
+      },
+      {
+        "clave": "c",
+        "texto": "No hay límite"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo 100 KB"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La documentación especifica límites y recomienda dividir en lotes razonables.",
+    "recursos": [
+      {
+        "titulo": "API limits (general)",
+        "url": "https://docs.datadoghq.com/api/latest/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para enviar logs directamente por HTTP a Datadog, ¿qué recurso debes usar?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "HTTP Logs Intake"
+      },
+      {
+        "clave": "b",
+        "texto": "/api/v2/series"
+      },
+      {
+        "clave": "c",
+        "texto": "Events API"
+      },
+      {
+        "clave": "d",
+        "texto": "Dashboards API"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El intake de logs acepta JSON con claves de servicio, fuente y mensaje.",
+    "recursos": [
+      {
+        "titulo": "Logs Intake",
+        "url": "https://docs.datadoghq.com/api/latest/logs/#send-logs"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para crear o actualizar monitores mediante API, ¿qué familia de endpoints se usa?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Monitors API"
+      },
+      {
+        "clave": "b",
+        "texto": "Dashboards API"
+      },
+      {
+        "clave": "c",
+        "texto": "SLO API"
+      },
+      {
+        "clave": "d",
+        "texto": "Usage Metering API"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Permite CRUD de monitores y gestionar silences/schedules.",
+    "recursos": [
+      {
+        "titulo": "Monitors API",
+        "url": "https://docs.datadoghq.com/api/latest/monitors/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Para qué sirve la 'Usage Metering API'?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Consultar consumo/uso por producto y periodo"
+      },
+      {
+        "clave": "b",
+        "texto": "Enviar trazas"
+      },
+      {
+        "clave": "c",
+        "texto": "Configurar procesos"
+      },
+      {
+        "clave": "d",
+        "texto": "Instalar agentes"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Devuelve uso y costos estimados por categoría.",
+    "recursos": [
+      {
+        "titulo": "Usage Metering API",
+        "url": "https://docs.datadoghq.com/api/latest/usage-metering/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Si necesitas paginar resultados extensos en la API, debes…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usar parámetros de 'page[limit]/page[cursor]' cuando aplique"
+      },
+      {
+        "clave": "b",
+        "texto": "Enviar 'Range' HTTP"
+      },
+      {
+        "clave": "c",
+        "texto": "Reintentar sin paginar"
+      },
+      {
+        "clave": "d",
+        "texto": "Subir el timeout indefinidamente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Muchos endpoints v2 implementan paginación basada en cursores.",
+    "recursos": [
+      {
+        "titulo": "Pagination",
+        "url": "https://docs.datadoghq.com/api/latest/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para correlacionar logs con servicios APM, ¿qué campo debes incluir en los payloads?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "service"
+      },
+      {
+        "clave": "b",
+        "texto": "theme"
+      },
+      {
+        "clave": "c",
+        "texto": "alias"
+      },
+      {
+        "clave": "d",
+        "texto": "color"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El campo 'service' junto con 'env' y 'version' habilita correlación.",
+    "recursos": [
+      {
+        "titulo": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cómo se envían eventos (Event API) a Datadog?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mediante un JSON con título, texto y tags"
+      },
+      {
+        "clave": "b",
+        "texto": "Archivo CSV"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo UI"
+      },
+      {
+        "clave": "d",
+        "texto": "Syslog obligatorio"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Los eventos se publican por API con atributos como title, text, tags, prioridad.",
+    "recursos": [
+      {
+        "titulo": "Events API",
+        "url": "https://docs.datadoghq.com/api/latest/events/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para enviar trazas a Datadog desde apps, ¿qué camino recomiendan?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cliente APM a Trace Agent (8126/TCP)"
+      },
+      {
+        "clave": "b",
+        "texto": "Directo a API sin Agent"
+      },
+      {
+        "clave": "c",
+        "texto": "DogStatsD UDP"
+      },
+      {
+        "clave": "d",
+        "texto": "HTTP Logs Intake"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Las librerías APM envían al Trace Agent local que reenvía a Datadog.",
+    "recursos": [
+      {
+        "titulo": "APM trace collection",
+        "url": "https://docs.datadoghq.com/tracing/trace_collection/agent/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué estandariza la API v2 frente a v1 en varios recursos?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Esquemas, paginación y consistencia de errores"
+      },
+      {
+        "clave": "b",
+        "texto": "Elimina autenticación"
+      },
+      {
+        "clave": "c",
+        "texto": "Requiere SOAP"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo XML"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La v2 mejora consistencia y soporte de cursores, entre otros cambios.",
+    "recursos": [
+      {
+        "titulo": "API v2 overview",
+        "url": "https://docs.datadoghq.com/api/latest/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Para operar la API desde scripts CI/CD, es buena práctica…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Guardar API/App Keys en un secreto del pipeline/VAULT"
+      },
+      {
+        "clave": "b",
+        "texto": "Commitear claves en el repo"
+      },
+      {
+        "clave": "c",
+        "texto": "Imprimir claves en logs"
+      },
+      {
+        "clave": "d",
+        "texto": "Enviar claves por email"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Las claves deben protegerse usando gestores de secretos.",
+    "recursos": [
+      {
+        "titulo": "API security",
+        "url": "https://docs.datadoghq.com/account_management/api-app-keys/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué cabecera identifica la Application Key en una llamada a la API?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DD-APPLICATION-KEY"
+      },
+      {
+        "clave": "b",
+        "texto": "Authorization"
+      },
+      {
+        "clave": "c",
+        "texto": "X-APP"
+      },
+      {
+        "clave": "d",
+        "texto": "DD-CLIENT-TOKEN"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Se usa junto con DD-API-KEY para autorizar y autenticar.",
+    "recursos": [
+      {
+        "titulo": "Authentication headers",
+        "url": "https://docs.datadoghq.com/api/latest/authentication/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Si un endpoint devuelve 429, significa…",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se excedió el límite de peticiones (rate limit)"
+      },
+      {
+        "clave": "b",
+        "texto": "Clave inválida"
+      },
+      {
+        "clave": "c",
+        "texto": "Recurso no encontrado"
+      },
+      {
+        "clave": "d",
+        "texto": "Error del cliente 4xx desconocido"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Debes aplicar backoff y/o reducir frecuencia de llamadas.",
+    "recursos": [
+      {
+        "titulo": "Rate limits",
+        "url": "https://docs.datadoghq.com/api/latest/"
+      }
+    ]
+  }
+]

@@ -3,15 +3,15 @@ import HomeView from '@/views/HomeView.vue'
 import QuizView from '@/views/QuizView.vue'
 import ResultView from '@/views/ResultView.vue'
 
-const routes = [
-  { path: '/', component: HomeView },
-  { path: '/quiz', component: QuizView },
-  { path: '/result', component: ResultView },
-]
-
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    { path: '/', name: 'home', component: HomeView },
+    // Nueva ruta con parámetros section/lang
+    { path: '/quiz/:section/:lang', name: 'quiz', component: QuizView, props: true },
+    { path: '/result', name: 'result', component: ResultView },
+  ],
 })
 
 export default router
+

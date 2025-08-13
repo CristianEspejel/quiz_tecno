@@ -1,0 +1,1742 @@
+[
+  {
+    "question": "Which tag trio does Datadog recommend to correlate metrics, logs, and traces?",
+    "options": [
+      {
+        "key": "a",
+        "text": "service, env, version"
+      },
+      {
+        "key": "b",
+        "text": "team, owner, cost_center"
+      },
+      {
+        "key": "c",
+        "text": "region, az, rack"
+      },
+      {
+        "key": "d",
+        "text": "host, device, source"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The service/env/version trio unifies cross‑product views (USM/UST).",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which environment variable sets the service name for Unified Service Tagging?",
+    "options": [
+      {
+        "key": "a",
+        "text": "DD_SERVICE"
+      },
+      {
+        "key": "b",
+        "text": "DD_SVC"
+      },
+      {
+        "key": "c",
+        "text": "DD_APP"
+      },
+      {
+        "key": "d",
+        "text": "DD_SVC_NAME"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "DD_SERVICE propagates the service name to APM, logs, and metrics.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which variable defines the environment in UST?",
+    "options": [
+      {
+        "key": "a",
+        "text": "DD_ENV"
+      },
+      {
+        "key": "b",
+        "text": "ENV"
+      },
+      {
+        "key": "c",
+        "text": "DD_STAGE"
+      },
+      {
+        "key": "d",
+        "text": "DD_CONTEXT"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "DD_ENV applies the environment (e.g., prod, staging, dev).",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which variable propagates the deployment version in UST?",
+    "options": [
+      {
+        "key": "a",
+        "text": "DD_VERSION"
+      },
+      {
+        "key": "b",
+        "text": "DD_RELEASE"
+      },
+      {
+        "key": "c",
+        "text": "DD_BUILD"
+      },
+      {
+        "key": "d",
+        "text": "DD_TAG"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "DD_VERSION helps compare releases and correlate changes.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "What is the recommended format for service/env/version values?",
+    "options": [
+      {
+        "key": "a",
+        "text": "minúsculas con guiones o guiones bajos"
+      },
+      {
+        "key": "b",
+        "text": "Mayúsculas y espacios"
+      },
+      {
+        "key": "c",
+        "text": "Caracteres arbitrarios UTF‑8"
+      },
+      {
+        "key": "d",
+        "text": "Solo números"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Use lowercase and simple separators to keep searches and filters consistent.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Where can you define global tags that the Agent attaches to all data?",
+    "options": [
+      {
+        "key": "a",
+        "text": "datadog.yaml → tags:"
+      },
+      {
+        "key": "b",
+        "text": "ui.yaml"
+      },
+      {
+        "key": "c",
+        "text": "runtime.conf"
+      },
+      {
+        "key": "d",
+        "text": "No es posible"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'tags:' key in datadog.yaml applies global metadata.",
+    "resources": [
+      {
+        "title": "Agent Configuration (tags)",
+        "url": "https://docs.datadoghq.com/agent/configuration/#global-options"
+      }
+    ]
+  },
+  {
+    "question": "Which minimal fields are recommended to identify services on the platform?",
+    "options": [
+      {
+        "key": "a",
+        "text": "service, env, version"
+      },
+      {
+        "key": "b",
+        "text": "host, device, source"
+      },
+      {
+        "key": "c",
+        "text": "team, owner, email"
+      },
+      {
+        "key": "d",
+        "text": "region, zone, rack"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "That trio enables correlation across APM, logs, metrics, and dashboards.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "For microservices, which tagging practice favors cross‑service traceability?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Etiquetar todos con el mismo 'env' y 'version' correctos"
+      },
+      {
+        "key": "b",
+        "text": "Evitar el uso de service"
+      },
+      {
+        "key": "c",
+        "text": "Usar valores distintos por instancia aleatoriamente"
+      },
+      {
+        "key": "d",
+        "text": "No usar tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Keeping the correct 'env' and 'version' per deployment eases lateral correlation.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which convention helps group the same service across different runtimes correctly?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Usar el mismo valor de 'service' en todos los componentes"
+      },
+      {
+        "key": "b",
+        "text": "Prefijar cada servicio con el host"
+      },
+      {
+        "key": "c",
+        "text": "Incluir el PID en el nombre"
+      },
+      {
+        "key": "d",
+        "text": "Adicionar timestamp al servicio"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Consistent 'service' values avoid fragmentation across views and monitors.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "What is the main benefit of UST in dashboards and monitors?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Filtrado y agregación coherente por service/env/version"
+      },
+      {
+        "key": "b",
+        "text": "Oculta datos sensibles automáticamente"
+      },
+      {
+        "key": "c",
+        "text": "Crea dashboards solos"
+      },
+      {
+        "key": "d",
+        "text": "Aumenta retención de datos"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "UST normalizes key tags for filtering, grouping, and segmenting.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "What is the recommended tag format in Datadog?",
+    "options": [
+      {
+        "key": "a",
+        "text": "clave:valor"
+      },
+      {
+        "key": "b",
+        "text": "solo clave sin valor siempre"
+      },
+      {
+        "key": "c",
+        "text": "JSON"
+      },
+      {
+        "key": "d",
+        "text": "XML"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Key:value tags are recommended and broadly supported.",
+    "resources": [
+      {
+        "title": "Tags in Datadog",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/#defining-tags"
+      }
+    ]
+  },
+  {
+    "question": "Which separators are suggested in tag names and values?",
+    "options": [
+      {
+        "key": "a",
+        "text": "guiones (-) o guiones bajos (_)"
+      },
+      {
+        "key": "b",
+        "text": "espacios"
+      },
+      {
+        "key": "c",
+        "text": "puntos y comas"
+      },
+      {
+        "key": "d",
+        "text": "tabulaciones"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Avoid spaces and special chars; use '-' or '_' per your convention.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which practice helps avoid cardinality explosion in metrics?",
+    "options": [
+      {
+        "key": "a",
+        "text": "No usar IDs únicos por usuario/sesión como tags"
+      },
+      {
+        "key": "b",
+        "text": "Usar UUID por cada evento"
+      },
+      {
+        "key": "c",
+        "text": "Añadir timestamp en cada tag"
+      },
+      {
+        "key": "d",
+        "text": "Añadir el hash del payload"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Avoid high‑cardinality tags (e.g., user_id, request_id) on metrics.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "What should you do with free‑form values with many variants (e.g., user_agent)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Normalizarlos o mapearlos a categorías"
+      },
+      {
+        "key": "b",
+        "text": "Pegarlos como están"
+      },
+      {
+        "key": "c",
+        "text": "Duplicarlos como varios tags"
+      },
+      {
+        "key": "d",
+        "text": "Eliminar todos los tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Normalization reduces cardinality and improves aggregations.",
+    "resources": [
+      {
+        "title": "Log Pipelines & Remapping",
+        "url": "https://docs.datadoghq.com/logs/log_configuration/pipelines/"
+      }
+    ]
+  },
+  {
+    "question": "How are global tags added in the Agent (YAML)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "tags:\n  env: prod\n  team: core"
+      },
+      {
+        "key": "b",
+        "text": "tags:\n  - env:prod\n  - team:core"
+      },
+      {
+        "key": "c",
+        "text": "global_tags:\n  env: prod"
+      },
+      {
+        "key": "d",
+        "text": "add_tags: true"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Use a key:value map under 'tags:' in datadog.yaml.",
+    "resources": [
+      {
+        "title": "Agent Configuration (tags)",
+        "url": "https://docs.datadoghq.com/agent/configuration/#global-options"
+      }
+    ]
+  },
+  {
+    "question": "How do you pass tags to DogStatsD?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Sufijo |#key:value,other:tag"
+      },
+      {
+        "key": "b",
+        "text": "Cabecera HTTP DD-TAGS"
+      },
+      {
+        "key": "c",
+        "text": "Archivo .tags"
+      },
+      {
+        "key": "d",
+        "text": "No admite tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "DogStatsD extends StatsD with the |# suffix for tags.",
+    "resources": [
+      {
+        "title": "DogStatsD Tagging",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/datagram_shell/#datagram-format"
+      }
+    ]
+  },
+  {
+    "question": "In logs, how can you remap a JSON field to 'service'?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Con un procesador de remapeo en el pipeline"
+      },
+      {
+        "key": "b",
+        "text": "Editando el backend"
+      },
+      {
+        "key": "c",
+        "text": "Con un CSV"
+      },
+      {
+        "key": "d",
+        "text": "No se puede"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Pipelines allow remapping fields and extracting attributes.",
+    "resources": [
+      {
+        "title": "Log Pipelines & Remapping",
+        "url": "https://docs.datadoghq.com/logs/log_configuration/pipelines/"
+      }
+    ]
+  },
+  {
+    "question": "What casing is recommended for tag names/values?",
+    "options": [
+      {
+        "key": "a",
+        "text": "minúsculas"
+      },
+      {
+        "key": "b",
+        "text": "MAYÚSCULAS SIEMPRE"
+      },
+      {
+        "key": "c",
+        "text": "Título Capitalizado"
+      },
+      {
+        "key": "d",
+        "text": "Mixto aleatorio"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Consistent lowercase eases aggregation and search.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which special tag should you avoid overriding manually?",
+    "options": [
+      {
+        "key": "a",
+        "text": "host"
+      },
+      {
+        "key": "b",
+        "text": "service"
+      },
+      {
+        "key": "c",
+        "text": "env"
+      },
+      {
+        "key": "d",
+        "text": "version"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'host' comes from Agent/infra and is used for topologies.",
+    "resources": [
+      {
+        "title": "Tags in Datadog",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/#defining-tags"
+      }
+    ]
+  },
+  {
+    "question": "Which tag helps identify the origin of devices in network/storage integrations?",
+    "options": [
+      {
+        "key": "a",
+        "text": "device"
+      },
+      {
+        "key": "b",
+        "text": "owner"
+      },
+      {
+        "key": "c",
+        "text": "team"
+      },
+      {
+        "key": "d",
+        "text": "rack"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'device' tag is used for metrics by disk, interface, etc.",
+    "resources": [
+      {
+        "title": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "If you need to group metrics by region and environment, which combination is most appropriate?",
+    "options": [
+      {
+        "key": "a",
+        "text": "region y env"
+      },
+      {
+        "key": "b",
+        "text": "user_id y session_id"
+      },
+      {
+        "key": "c",
+        "text": "payload_hash y pid"
+      },
+      {
+        "key": "d",
+        "text": "random_id y route_id"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "They are low/medium cardinality tags useful for segmentation.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which convention avoids inconsistencies across 'prod', 'Prod', 'production'?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Valores controlados y minúsculas"
+      },
+      {
+        "key": "b",
+        "text": "Mayúsculas aleatorias"
+      },
+      {
+        "key": "c",
+        "text": "Abreviaturas variables"
+      },
+      {
+        "key": "d",
+        "text": "Emojis"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Controlled vocabulary in lowercase reduces duplicates.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "What impact do high‑cardinality tags have on cost and queries?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Aumentan cardinalidad y pueden encarecer/ralentizar consultas"
+      },
+      {
+        "key": "b",
+        "text": "Ninguno"
+      },
+      {
+        "key": "c",
+        "text": "Reducen todo"
+      },
+      {
+        "key": "d",
+        "text": "Deshabilitan métricas"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "More combinations mean more series and potentially higher cost/latency.",
+    "resources": [
+      {
+        "title": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "What should you avoid tagging due to PII risk?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Correos y datos personales"
+      },
+      {
+        "key": "b",
+        "text": "env"
+      },
+      {
+        "key": "c",
+        "text": "region"
+      },
+      {
+        "key": "d",
+        "text": "service"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Avoid PII in tags/logs unless legally justified and controlled.",
+    "resources": [
+      {
+        "title": "PII & Data Handling",
+        "url": "https://docs.datadoghq.com/data_security/"
+      }
+    ]
+  },
+  {
+    "question": "How can you quickly verify which tags a metric receives on a host?",
+    "options": [
+      {
+        "key": "a",
+        "text": "datadog-agent status / flare"
+      },
+      {
+        "key": "b",
+        "text": "dmesg"
+      },
+      {
+        "key": "c",
+        "text": "/etc/hosts"
+      },
+      {
+        "key": "d",
+        "text": "ifconfig"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Status and flare list applied tags and context.",
+    "resources": [
+      {
+        "title": "Agent Configuration (tags)",
+        "url": "https://docs.datadoghq.com/agent/configuration/#global-options"
+      }
+    ]
+  },
+  {
+    "question": "In a dashboard, how do you filter all series by 'env:prod'?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Usando el filtro global de tags"
+      },
+      {
+        "key": "b",
+        "text": "Renombrando cada widget"
+      },
+      {
+        "key": "c",
+        "text": "Editando el backend"
+      },
+      {
+        "key": "d",
+        "text": "No es posible"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The global filter applies 'env:prod' to all compatible widgets.",
+    "resources": [
+      {
+        "title": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "To group a timeseries by 'service', you should…",
+    "options": [
+      {
+        "key": "a",
+        "text": "Usar 'group by: service' en la consulta"
+      },
+      {
+        "key": "b",
+        "text": "Clonar el dashboard"
+      },
+      {
+        "key": "c",
+        "text": "Crear una métrica nueva"
+      },
+      {
+        "key": "d",
+        "text": "Poner el tag en el título"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Queries can aggregate by tags to split lines per tag value.",
+    "resources": [
+      {
+        "title": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "Which visualization helps detect outliers by tag?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Heatmap / Top list"
+      },
+      {
+        "key": "b",
+        "text": "Geovista"
+      },
+      {
+        "key": "c",
+        "text": "Sunburst"
+      },
+      {
+        "key": "d",
+        "text": "Pie 3D"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Heatmap/Top list highlight distributions and top‑N by tag.",
+    "resources": [
+      {
+        "title": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "To alert only on 'service:api' in 'env:prod', you should…",
+    "options": [
+      {
+        "key": "a",
+        "text": "Configurar el scope del monitor con esos tags"
+      },
+      {
+        "key": "b",
+        "text": "Filtrar en el título"
+      },
+      {
+        "key": "c",
+        "text": "Editar el color"
+      },
+      {
+        "key": "d",
+        "text": "No se puede"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Monitor scope limits which series are evaluated.",
+    "resources": [
+      {
+        "title": "Monitors: Scopes & Grouping",
+        "url": "https://docs.datadoghq.com/monitors/configuration/?tab=threshold"
+      }
+    ]
+  },
+  {
+    "question": "If your query groups by 'service' and you need a different threshold per service, what would you use?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Alertas multi-alert por tag"
+      },
+      {
+        "key": "b",
+        "text": "Un único umbral global"
+      },
+      {
+        "key": "c",
+        "text": "Sin alertas"
+      },
+      {
+        "key": "d",
+        "text": "Alerta por título"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Multi‑alerts instantiate one alert per tag value.",
+    "resources": [
+      {
+        "title": "Monitors: Scopes & Grouping",
+        "url": "https://docs.datadoghq.com/monitors/configuration/?tab=threshold"
+      }
+    ]
+  },
+  {
+    "question": "How would you exclude 'env:dev' in a metrics query?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Filtrando -env:dev"
+      },
+      {
+        "key": "b",
+        "text": "Borrando los datos"
+      },
+      {
+        "key": "c",
+        "text": "Renombrando el tag"
+      },
+      {
+        "key": "d",
+        "text": "No se puede"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Filters allow exclusions using the negative operator.",
+    "resources": [
+      {
+        "title": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "What advantage does tagging 'service' on logs offer vs using only 'source'?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Correlación directa con APM y métricas del mismo servicio"
+      },
+      {
+        "key": "b",
+        "text": "Menos datos"
+      },
+      {
+        "key": "c",
+        "text": "Más color"
+      },
+      {
+        "key": "d",
+        "text": "Nada"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "service/env/version enable cross‑product pivoting for the same service.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which tag helps split metrics by zonal availability?",
+    "options": [
+      {
+        "key": "a",
+        "text": "availability_zone (az)"
+      },
+      {
+        "key": "b",
+        "text": "pid"
+      },
+      {
+        "key": "c",
+        "text": "request_id"
+      },
+      {
+        "key": "d",
+        "text": "stacktrace"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Availability zone is a common segmentation in cloud.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "To summarize by tag in a 'top list', which aggregation is typical?",
+    "options": [
+      {
+        "key": "a",
+        "text": "sum o avg por grupo"
+      },
+      {
+        "key": "b",
+        "text": "xor"
+      },
+      {
+        "key": "c",
+        "text": "nand"
+      },
+      {
+        "key": "d",
+        "text": "median absolute only"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "sum/avg per group yields a ranking per tag.",
+    "resources": [
+      {
+        "title": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "If you have inconsistent tags ('region:eu-west-1' and 'region:eu_west_1'), what should you do?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Normalizarlos a un único formato"
+      },
+      {
+        "key": "b",
+        "text": "Dejar ambos"
+      },
+      {
+        "key": "c",
+        "text": "Cambiar cada hora"
+      },
+      {
+        "key": "d",
+        "text": "Usar emojis"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Normalization prevents splitting series and dashboards.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "To share dashboards across teams, which convention favors reusability?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Usar filtros de env/region/service en la parte superior"
+      },
+      {
+        "key": "b",
+        "text": "Hardcodear IDs"
+      },
+      {
+        "key": "c",
+        "text": "Usar constates de hostnames"
+      },
+      {
+        "key": "d",
+        "text": "No usar filtros"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Global filters let dashboards be reused across contexts.",
+    "resources": [
+      {
+        "title": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "Which tag lets you correlate a specific deployment with metric changes?",
+    "options": [
+      {
+        "key": "a",
+        "text": "version"
+      },
+      {
+        "key": "b",
+        "text": "user_id"
+      },
+      {
+        "key": "c",
+        "text": "trace_id"
+      },
+      {
+        "key": "d",
+        "text": "pid"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "version helps evaluate release impact.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "For host metrics, which tag is key to group by machine?",
+    "options": [
+      {
+        "key": "a",
+        "text": "host"
+      },
+      {
+        "key": "b",
+        "text": "service"
+      },
+      {
+        "key": "c",
+        "text": "env"
+      },
+      {
+        "key": "d",
+        "text": "team"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "host identifies the physical/virtual entity where the Agent runs.",
+    "resources": [
+      {
+        "title": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "What risk comes with using 'request_id' as a metrics tag?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Alta cardinalidad que explota series"
+      },
+      {
+        "key": "b",
+        "text": "Falta de precisión"
+      },
+      {
+        "key": "c",
+        "text": "Incompatibilidad de protocolos"
+      },
+      {
+        "key": "d",
+        "text": "No hay riesgo"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Unique IDs cause extreme cardinality and cost/latency.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "To measure errors per service, which query is more suitable?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Agrupar por service y filtrar env"
+      },
+      {
+        "key": "b",
+        "text": "Agrupar por host solamente"
+      },
+      {
+        "key": "c",
+        "text": "Sin tags"
+      },
+      {
+        "key": "d",
+        "text": "Filtrar por pid"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Grouping by service with env filter gives per‑service visibility within an environment.",
+    "resources": [
+      {
+        "title": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "Which internal document should you maintain for tag governance?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Guía de taxonomía y convenciones"
+      },
+      {
+        "key": "b",
+        "text": "Post-it en el monitor"
+      },
+      {
+        "key": "c",
+        "text": "Email suelto"
+      },
+      {
+        "key": "d",
+        "text": "Ninguno"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "A guide defines allowed names, formats, and examples.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which practice makes tagging adoption easier across teams?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Plantillas y ejemplos en repos compartidos"
+      },
+      {
+        "key": "b",
+        "text": "Dejarlo implícito"
+      },
+      {
+        "key": "c",
+        "text": "Usar términos ambiguos"
+      },
+      {
+        "key": "d",
+        "text": "Cambiar cada sprint"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Templates reduce friction and ensure consistency.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "To avoid tag drift, which automation can help?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Validación en CI/CD (lint de tags)"
+      },
+      {
+        "key": "b",
+        "text": "Revisión manual trimestral"
+      },
+      {
+        "key": "c",
+        "text": "Ninguna"
+      },
+      {
+        "key": "d",
+        "text": "Impresión de etiquetas físicas"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Validating in pipelines prevents introducing invalid tags.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "What should you consider when renaming a tag used in multiple monitors?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Impacto en dashboards, monitores y consultas"
+      },
+      {
+        "key": "b",
+        "text": "Solo estética"
+      },
+      {
+        "key": "c",
+        "text": "Nada cambia"
+      },
+      {
+        "key": "d",
+        "text": "Se aplica automáticamente"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The change can break existing filters and scopes.",
+    "resources": [
+      {
+        "title": "Monitors: Scopes & Grouping",
+        "url": "https://docs.datadoghq.com/monitors/configuration/?tab=threshold"
+      }
+    ]
+  },
+  {
+    "question": "Which strategy aligns tagging across logs, APM, and metrics?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Adoptar Unified Service Tagging"
+      },
+      {
+        "key": "b",
+        "text": "Definir tags distintos por producto"
+      },
+      {
+        "key": "c",
+        "text": "No usar service"
+      },
+      {
+        "key": "d",
+        "text": "Usar IDs efímeros"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "UST defines a common set and how to propagate it.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "What should you do before introducing a new global tag?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Revisar impacto de cardinalidad y costo"
+      },
+      {
+        "key": "b",
+        "text": "Activarlo sin revisión"
+      },
+      {
+        "key": "c",
+        "text": "Usar valores libres"
+      },
+      {
+        "key": "d",
+        "text": "Eliminar tags existentes"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Analyze expected cardinality and affected queries.",
+    "resources": [
+      {
+        "title": "Metrics & Tags (Aggregation)",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "For multi‑region services, how do you distinguish deployments?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Agregar tag region con vocabulario controlado"
+      },
+      {
+        "key": "b",
+        "text": "Usar hostnames"
+      },
+      {
+        "key": "c",
+        "text": "Añadir timestamp"
+      },
+      {
+        "key": "d",
+        "text": "PID"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "A controlled region tag enables clear segmentation and scopes.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which mechanism helps propagate 'service/env/version' without changing code in containers?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Variables de entorno DD_SERVICE/DD_ENV/DD_VERSION"
+      },
+      {
+        "key": "b",
+        "text": "Montar /etc/tags"
+      },
+      {
+        "key": "c",
+        "text": "Etiquetas del kernel"
+      },
+      {
+        "key": "d",
+        "text": "Crontab"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Standard env vars propagate UST across runtimes.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "If two teams use 'team:core' and 'squad:core', what should you do?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Unificar en una sola clave aprobada"
+      },
+      {
+        "key": "b",
+        "text": "Mantener ambas"
+      },
+      {
+        "key": "c",
+        "text": "Aleatorizar"
+      },
+      {
+        "key": "d",
+        "text": "Eliminar los teams"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "A single key avoids duplication and eases filtering.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which action helps uncover useless or rarely used tags?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Auditar consultas/dashboards periódicamente"
+      },
+      {
+        "key": "b",
+        "text": "Esperar a incidentes"
+      },
+      {
+        "key": "c",
+        "text": "Borrar todo"
+      },
+      {
+        "key": "d",
+        "text": "Desactivar métricas"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Audits detect keys that add little value.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "What should you avoid when defining 'service' for a monolith with many internal modules?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Múltiples valores distintos por módulo si no se exponen separados"
+      },
+      {
+        "key": "b",
+        "text": "Un solo valor consistente"
+      },
+      {
+        "key": "c",
+        "text": "Mantener 'env' correcto"
+      },
+      {
+        "key": "d",
+        "text": "Versionar despliegues"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Use a single 'service' if it's deployed as one unit.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which key should you use for organizational ownership (team)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "team"
+      },
+      {
+        "key": "b",
+        "text": "user_id"
+      },
+      {
+        "key": "c",
+        "text": "pid"
+      },
+      {
+        "key": "d",
+        "text": "trace_id"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "A 'team' tag helps with ownership of alerts and boards.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "To distinguish 'batch' vs 'realtime' within the same service, you can…",
+    "options": [
+      {
+        "key": "a",
+        "text": "Agregar tag 'mode:batch|realtime'"
+      },
+      {
+        "key": "b",
+        "text": "Cambiar 'service'"
+      },
+      {
+        "key": "c",
+        "text": "Cambiar 'env'"
+      },
+      {
+        "key": "d",
+        "text": "No se puede"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Adding a clear tag avoids confusion without breaking UST.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which naming pattern avoids collisions across products (logs vs metrics)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Reusar las mismas claves con el mismo significado"
+      },
+      {
+        "key": "b",
+        "text": "Cambiar las claves por producto"
+      },
+      {
+        "key": "c",
+        "text": "Usar sufijos arbitrarios"
+      },
+      {
+        "key": "d",
+        "text": "Ninguno"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Same keys and semantics avoid ad‑hoc mappings.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "What review would you add to a PR introducing 'user_id' as a metrics tag?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Cuestionar cardinalidad/PII y proponer agregación alternativa"
+      },
+      {
+        "key": "b",
+        "text": "Aprobar sin revisar"
+      },
+      {
+        "key": "c",
+        "text": "Cambiar a emojis"
+      },
+      {
+        "key": "d",
+        "text": "Duplicar el tag"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Propose cohorts/segments instead of unique IDs.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "To apply 'env:prod' in Kubernetes without changing code, what is most direct?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Configurar DD_ENV en el Deployment/DaemonSet"
+      },
+      {
+        "key": "b",
+        "text": "Editar el kernel"
+      },
+      {
+        "key": "c",
+        "text": "Cambiar el nombre del Pod"
+      },
+      {
+        "key": "d",
+        "text": "Usar un CRD custom"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "DD_ENV in the manifest propagates environment to Agent/APM/logs.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "What should you document alongside each newly approved tag key?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Propósito, formato permitido y ejemplos"
+      },
+      {
+        "key": "b",
+        "text": "Un meme"
+      },
+      {
+        "key": "c",
+        "text": "Nada"
+      },
+      {
+        "key": "d",
+        "text": "Solo el color del dashboard"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "This eases adoption and reduces tag misuse.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "Which tag lets you identify the component within a service (e.g., api, worker)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "component"
+      },
+      {
+        "key": "b",
+        "text": "pid"
+      },
+      {
+        "key": "c",
+        "text": "trace_id"
+      },
+      {
+        "key": "d",
+        "text": "user_agent"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "component adds granularity without breaking UST.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "To slice by version in historical dashboards, which tag is essential?",
+    "options": [
+      {
+        "key": "a",
+        "text": "version"
+      },
+      {
+        "key": "b",
+        "text": "pid"
+      },
+      {
+        "key": "c",
+        "text": "host"
+      },
+      {
+        "key": "d",
+        "text": "device"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "It allows comparing performance across releases.",
+    "resources": [
+      {
+        "title": "Unified Service Tagging",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "question": "If a team needs specific tags, which process ensures consistency?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Revisión y aprobación en un comité de tagging"
+      },
+      {
+        "key": "b",
+        "text": "Cada quien define libremente"
+      },
+      {
+        "key": "c",
+        "text": "Se decide en producción"
+      },
+      {
+        "key": "d",
+        "text": "Se obvia"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "A formal review keeps the taxonomy under control.",
+    "resources": [
+      {
+        "title": "Tagging Best Practices",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  }
+]

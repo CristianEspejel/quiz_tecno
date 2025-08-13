@@ -1,0 +1,1608 @@
+[
+  {
+    "pregunta": "En YAML, ¿cuál es el problema en el siguiente fragmento?\n```yaml\nlogs:\n\t- type: file\n  path: /var/log/app.log\n```\n",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El uso de tabs para la indentación"
+      },
+      {
+        "clave": "b",
+        "texto": "Falta comillas en path"
+      },
+      {
+        "clave": "c",
+        "texto": "La clave logs debe ir en mayúsculas"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Tema: Config File Modification — Tema: Config File Modification — YAML no permite tabs; usa espacios.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En `datadog.yaml`, ¿cómo defines el sitio para enviar datos a EU?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "site: datadoghq.com"
+      },
+      {
+        "clave": "b",
+        "texto": "site: datadoghq.eu"
+      },
+      {
+        "clave": "c",
+        "texto": "dd_site: eu"
+      }
+    ],
+    "respuesta_correcta": "b",
+    "explicacion": "Usa `site: datadoghq.eu` en el YAML.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la forma correcta de comentar una línea en YAML?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "// comentario"
+      },
+      {
+        "clave": "b",
+        "texto": "# comentario"
+      },
+      {
+        "clave": "c",
+        "texto": "-- comentario"
+      },
+      {
+        "clave": "d",
+        "texto": "/* comentario */"
+      }
+    ],
+    "respuesta_correcta": "b",
+    "explicacion": "Los comentarios en YAML usan `#`.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En un `conf.yaml` de integración, ¿cómo defines una lista de instancias?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "instances:\n  - host: db1\n    port: 3306"
+      },
+      {
+        "clave": "b",
+        "texto": "instances:\n  host: db1\n  port: 3306"
+      },
+      {
+        "clave": "c",
+        "texto": "instances: [host: db1, port: 3306]"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Cada instancia es un ítem de lista con guion.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/integrations/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué ocurre si indentas mal un bloque en YAML?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se ignora silenciosamente"
+      },
+      {
+        "clave": "b",
+        "texto": "Falla el parseo"
+      },
+      {
+        "clave": "c",
+        "texto": "Se corrige automáticamente"
+      }
+    ],
+    "respuesta_correcta": "b",
+    "explicacion": "La estructura depende de la indentación; errores rompen el parseo.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Selecciona el YAML válido para habilitar logs:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "logs_enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "logs-enabled: yes"
+      },
+      {
+        "clave": "c",
+        "texto": "enable_logs: true"
+      },
+      {
+        "clave": "d",
+        "texto": "logs: enabled: true"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`logs_enabled: true` es la clave soportada.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cómo defines tags globales en `datadog.yaml`?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "tags:\n  - env:prod\n  - team:core"
+      },
+      {
+        "clave": "b",
+        "texto": "tags:\n  env: prod\n  team: core"
+      },
+      {
+        "clave": "c",
+        "texto": "global_tags:\n  env: prod"
+      }
+    ],
+    "respuesta_correcta": "b",
+    "explicacion": "Las tags globales son mapa clave:valor bajo `tags:`.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Cuál es la sintaxis correcta de booleanos en YAML del Agent?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "True/False"
+      },
+      {
+        "clave": "b",
+        "texto": "true/false"
+      },
+      {
+        "clave": "c",
+        "texto": "1/0"
+      },
+      {
+        "clave": "d",
+        "texto": "yes/no"
+      }
+    ],
+    "respuesta_correcta": "b",
+    "explicacion": "Usa `true/false` en minúsculas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En un archivo de integración, ¿cómo referir una variable de entorno?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "${VAR_NAME}"
+      },
+      {
+        "clave": "b",
+        "texto": "$VAR_NAME"
+      },
+      {
+        "clave": "c",
+        "texto": "%VAR_NAME%"
+      },
+      {
+        "clave": "d",
+        "texto": "env(VAR_NAME)"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Se soporta `${VAR_NAME}` en plantillas de Autodiscovery.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/integrations/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En YAML, una lista vacía correcta es:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "[]"
+      },
+      {
+        "clave": "b",
+        "texto": "{}"
+      },
+      {
+        "clave": "c",
+        "texto": "-"
+      },
+      {
+        "clave": "d",
+        "texto": "null"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Una lista vacía se representa como `[]`.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué directorio suele contener configuraciones del sistema en Linux?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc"
+      },
+      {
+        "clave": "b",
+        "texto": "/usr"
+      },
+      {
+        "clave": "c",
+        "texto": "/var/tmp"
+      },
+      {
+        "clave": "d",
+        "texto": "/opt"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Tema: Operating Systems — Las configuraciones residen en `/etc`.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué comando muestra uso de filesystem legible (espacio usado/disponible)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "df -h"
+      },
+      {
+        "clave": "b",
+        "texto": "du -sh *"
+      },
+      {
+        "clave": "c",
+        "texto": "lsblk -f"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`df -h` resume por filesystem.",
+    "recursos": []
+  },
+  {
+    "pregunta": "Permisos de `chmod 750` equivalen a:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "rwxr-x---"
+      },
+      {
+        "clave": "b",
+        "texto": "rw-r-x---"
+      },
+      {
+        "clave": "c",
+        "texto": "rwxrwx---"
+      },
+      {
+        "clave": "d",
+        "texto": "rwxr-----"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Dueño rwx, grupo r-x, otros ---.",
+    "recursos": []
+  },
+  {
+    "pregunta": "Para ver procesos en tiempo real usas:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ps aux"
+      },
+      {
+        "clave": "b",
+        "texto": "top"
+      },
+      {
+        "clave": "c",
+        "texto": "who"
+      },
+      {
+        "clave": "d",
+        "texto": "id"
+      }
+    ],
+    "respuesta_correcta": "b",
+    "explicacion": "`top` refresca procesos/uso.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué comando sigue un log en tiempo real?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "cat file.log"
+      },
+      {
+        "clave": "b",
+        "texto": "tail -f file.log"
+      },
+      {
+        "clave": "c",
+        "texto": "head -n 100 file.log"
+      }
+    ],
+    "respuesta_correcta": "b",
+    "explicacion": "`tail -f` sigue nuevas líneas.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué archivo suele definir variables persistentes de entorno en Linux?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "~/.bashrc"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/environment"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/hosts"
+      },
+      {
+        "clave": "d",
+        "texto": "/var/log/messages"
+      }
+    ],
+    "respuesta_correcta": "b",
+    "explicacion": "Sistema define env globales en `/etc/environment`.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué comando muestra uso de memoria (legible) en Linux?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "free -h"
+      },
+      {
+        "clave": "b",
+        "texto": "df -h"
+      },
+      {
+        "clave": "c",
+        "texto": "vmstat 1"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`free -h` muestra RAM/swap.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Para buscar 'error' en /var/log/syslog, usas:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "grep error /var/log/syslog"
+      },
+      {
+        "clave": "b",
+        "texto": "awk error /var/log/syslog"
+      },
+      {
+        "clave": "c",
+        "texto": "sed error /var/log/syslog"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`grep` filtra por patrón.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué comando muestra sockets/puertos escuchando (Linux moderno)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ss -tulpen"
+      },
+      {
+        "clave": "b",
+        "texto": "netstat -tulpen"
+      },
+      {
+        "clave": "c",
+        "texto": "ip a"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`ss` es el reemplazo moderno de netstat.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué archivo mapea nombres a IP localmente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc/hosts"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/resolv.conf"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/fstab"
+      },
+      {
+        "clave": "d",
+        "texto": "/etc/passwd"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El hosts file resuelve nombres antes del DNS.",
+    "recursos": []
+  },
+  {
+    "pregunta": "En Python, ¿qué devuelve `len({'a':1,'b':2})`?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "1"
+      },
+      {
+        "clave": "b",
+        "texto": "2"
+      },
+      {
+        "clave": "c",
+        "texto": "3"
+      },
+      {
+        "clave": "d",
+        "texto": "Error"
+      }
+    ],
+    "respuesta_correcta": "b",
+    "explicacion": "Tema: Programming Languages — Longitud de dict = número de claves.",
+    "recursos": []
+  },
+  {
+    "pregunta": "En JSON válido, las claves deben ir:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Entre comillas dobles"
+      },
+      {
+        "clave": "b",
+        "texto": "Entre comillas simples"
+      },
+      {
+        "clave": "c",
+        "texto": "Sin comillas"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "JSON exige comillas dobles en claves.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Cuál es un booleano válido en JSON?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "True"
+      },
+      {
+        "clave": "b",
+        "texto": "False"
+      },
+      {
+        "clave": "c",
+        "texto": "true"
+      },
+      {
+        "clave": "d",
+        "texto": "yes"
+      }
+    ],
+    "respuesta_correcta": "c",
+    "explicacion": "JSON usa `true/false` en minúsculas.",
+    "recursos": []
+  },
+  {
+    "pregunta": "En shell, `#!/bin/bash` se conoce como:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Shebang"
+      },
+      {
+        "clave": "b",
+        "texto": "Alias"
+      },
+      {
+        "clave": "c",
+        "texto": "Prompt"
+      },
+      {
+        "clave": "d",
+        "texto": "Cron"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Declara el intérprete.",
+    "recursos": []
+  },
+  {
+    "pregunta": "Para instalar paquetes en Python usas:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "pip"
+      },
+      {
+        "clave": "b",
+        "texto": "npm"
+      },
+      {
+        "clave": "c",
+        "texto": "gem"
+      },
+      {
+        "clave": "d",
+        "texto": "apt"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "pip es el gestor de paquetes de Python.",
+    "recursos": []
+  },
+  {
+    "pregunta": "Selecciona JSON válido:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "{ \"a\": 1, }"
+      },
+      {
+        "clave": "b",
+        "texto": "{ 'a': 1 }"
+      },
+      {
+        "clave": "c",
+        "texto": "{ \"a\": 1 }"
+      }
+    ],
+    "respuesta_correcta": "c",
+    "explicacion": "Sin coma final y con comillas dobles.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué imprime Python: `print(type([]).__name__)`?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "list"
+      },
+      {
+        "clave": "b",
+        "texto": "tuple"
+      },
+      {
+        "clave": "c",
+        "texto": "dict"
+      },
+      {
+        "clave": "d",
+        "texto": "array"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El literal [] es una list.",
+    "recursos": []
+  },
+  {
+    "pregunta": "En YAML, una lista con dos elementos válidos es:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "- a\n- b"
+      },
+      {
+        "clave": "b",
+        "texto": "a, b"
+      },
+      {
+        "clave": "c",
+        "texto": "[a b]"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Las listas se definen por guiones o `[]`.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "En shell, para leer una variable env USER usas:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "$USER"
+      },
+      {
+        "clave": "b",
+        "texto": "%USER%"
+      },
+      {
+        "clave": "c",
+        "texto": "${USER_NAME}"
+      },
+      {
+        "clave": "d",
+        "texto": "getenv USER"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Bash, variables con `$VAR`.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué representa un 'gauge' frente a un 'counter'?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Valor instantáneo vs acumulativo"
+      },
+      {
+        "clave": "b",
+        "texto": "Valor acumulativo vs instantáneo"
+      },
+      {
+        "clave": "c",
+        "texto": "Ambos son acumulativos"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Gauge es un valor puntual; counter se acumula.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué componente almacena datos de forma no volátil?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "RAM"
+      },
+      {
+        "clave": "b",
+        "texto": "SSD"
+      },
+      {
+        "clave": "c",
+        "texto": "Cache L1"
+      },
+      {
+        "clave": "d",
+        "texto": "Registro CPU"
+      }
+    ],
+    "respuesta_correcta": "b",
+    "explicacion": "Tema: Hardware Concepts — SSD/HDD mantienen datos sin energía.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué métrica describe mejor operaciones por segundo en disco?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "IOPS"
+      },
+      {
+        "clave": "b",
+        "texto": "Latencia"
+      },
+      {
+        "clave": "c",
+        "texto": "Throughput"
+      },
+      {
+        "clave": "d",
+        "texto": "TDP"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "IOPS = I/O por segundo.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué describe mejor a la CPU?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ejecuta instrucciones y lógica"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo gráficos"
+      },
+      {
+        "clave": "c",
+        "texto": "Almacena datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Conecta red"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La CPU ejecuta instrucciones.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué es swap?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Espacio en disco cuando RAM está llena"
+      },
+      {
+        "clave": "b",
+        "texto": "Un planificador"
+      },
+      {
+        "clave": "c",
+        "texto": "Copia del kernel"
+      },
+      {
+        "clave": "d",
+        "texto": "Tipo de RAID"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Extiende memoria usando disco.",
+    "recursos": []
+  },
+  {
+    "pregunta": "Una métrica térmica relevante de CPU es:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Temperatura"
+      },
+      {
+        "clave": "b",
+        "texto": "Load average"
+      },
+      {
+        "clave": "c",
+        "texto": "Syscalls/s"
+      },
+      {
+        "clave": "d",
+        "texto": "Context switches"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Temperatura monitorea límites térmicos.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué hardware acelera tareas paralelas masivas?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "GPU"
+      },
+      {
+        "clave": "b",
+        "texto": "NIC"
+      },
+      {
+        "clave": "c",
+        "texto": "SSD"
+      },
+      {
+        "clave": "d",
+        "texto": "PSU"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "GPU ofrece miles de núcleos simples.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué sensor del host medirías para sobrecalentamiento?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CPU temp"
+      },
+      {
+        "clave": "b",
+        "texto": "NIC speed"
+      },
+      {
+        "clave": "c",
+        "texto": "Disk label"
+      },
+      {
+        "clave": "d",
+        "texto": "BIOS date"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "La temperatura del CPU es crítica.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué describe 'throughput' en disco/red?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cantidad de datos por unidad de tiempo"
+      },
+      {
+        "clave": "b",
+        "texto": "Operaciones por segundo"
+      },
+      {
+        "clave": "c",
+        "texto": "Tiempo de respuesta"
+      },
+      {
+        "clave": "d",
+        "texto": "% de uso de CPU"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Throughput mide MB/s o Gb/s.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué hace un controlador RAID?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Agrupa discos con tolerancia y/o performance"
+      },
+      {
+        "clave": "b",
+        "texto": "Acelera GPU"
+      },
+      {
+        "clave": "c",
+        "texto": "Gestiona usuarios"
+      },
+      {
+        "clave": "d",
+        "texto": "Resuelve DNS"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "RAID combina discos (mirroring/striping/paridad).",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué significa ECC en memoria?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Error‑Correcting Code"
+      },
+      {
+        "clave": "b",
+        "texto": "Extreme Clock Cycle"
+      },
+      {
+        "clave": "c",
+        "texto": "Enhanced Cache Coherency"
+      },
+      {
+        "clave": "d",
+        "texto": "Encrypted Control Channel"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "ECC detecta/corrige errores de bit.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué comando busca texto por patrón?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "grep"
+      },
+      {
+        "clave": "b",
+        "texto": "awk"
+      },
+      {
+        "clave": "c",
+        "texto": "sed"
+      },
+      {
+        "clave": "d",
+        "texto": "cut"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Tema: Shell — `grep` filtra por regex.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Cómo cuentas líneas que contienen 'error' en app.log?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "grep -c error app.log"
+      },
+      {
+        "clave": "b",
+        "texto": "wc -l error app.log"
+      },
+      {
+        "clave": "c",
+        "texto": "find error app.log"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`-c` cuenta coincidencias.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué hace `export VAR=valor`?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Define variable de entorno para procesos hijo"
+      },
+      {
+        "clave": "b",
+        "texto": "Crea alias"
+      },
+      {
+        "clave": "c",
+        "texto": "Cierra sesión"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Expone la variable a hijos.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué hace `tail -f file.log`?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sigue nuevas líneas en tiempo real"
+      },
+      {
+        "clave": "b",
+        "texto": "Muestra primeras líneas"
+      },
+      {
+        "clave": "c",
+        "texto": "Edita el archivo"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sigue anexos.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Cómo extraer la 1ª columna separada por `:` en /etc/passwd?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "cut -d: -f1 /etc/passwd"
+      },
+      {
+        "clave": "b",
+        "texto": "awk '{print $1}' /etc/passwd"
+      },
+      {
+        "clave": "c",
+        "texto": "sed 's/:/ /' /etc/passwd"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`cut` con delimitador y campo.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué hace `ps aux | grep nginx | grep -v grep`?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Lista procesos nginx filtrando la línea de grep"
+      },
+      {
+        "clave": "b",
+        "texto": "Mata nginx"
+      },
+      {
+        "clave": "c",
+        "texto": "Edita procesos"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`grep -v grep` evita falso positivo.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué comando muestra rutas en $PATH separadas por línea?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "echo $PATH | tr ':' '\\n'"
+      },
+      {
+        "clave": "b",
+        "texto": "printf $PATH"
+      },
+      {
+        "clave": "c",
+        "texto": "env PATH"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`tr` traduce `:` a saltos de línea.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Cómo buscar recursivo 'timeout' en *.conf?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "grep -R --include='*.conf' timeout ."
+      },
+      {
+        "clave": "b",
+        "texto": "grep timeout *.conf"
+      },
+      {
+        "clave": "c",
+        "texto": "find . -name '*.conf'"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`-R` recursivo con filtro include.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué hace `sed -n '1,10p' file`?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Imprime líneas 1 a 10"
+      },
+      {
+        "clave": "b",
+        "texto": "Elimina líneas 1 a 10"
+      },
+      {
+        "clave": "c",
+        "texto": "Cuenta líneas"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Modo silencioso imprime rango.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué hace `chmod u+x script.sh`?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Agrega permiso de ejecución al dueño"
+      },
+      {
+        "clave": "b",
+        "texto": "Quita escritura al grupo"
+      },
+      {
+        "clave": "c",
+        "texto": "Hace archivo oculto"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`u+x` ejecutable para dueño.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué es metadata de archivo?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Propiedades como dueño/permisos/fechas"
+      },
+      {
+        "clave": "b",
+        "texto": "Contenido completo"
+      },
+      {
+        "clave": "c",
+        "texto": "Copia comprimida"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Tema: Metadata — Metadata describe atributos del archivo.",
+    "recursos": []
+  },
+  {
+    "pregunta": "Comando que imprime metadata detallada:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "stat"
+      },
+      {
+        "clave": "b",
+        "texto": "ls -l"
+      },
+      {
+        "clave": "c",
+        "texto": "du -h"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`stat` muestra inode, tiempos, tamaño.",
+    "recursos": []
+  },
+  {
+    "pregunta": "En logs, un metadato útil típico es:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "timestamp, host, level"
+      },
+      {
+        "clave": "b",
+        "texto": "tamaño en bytes"
+      },
+      {
+        "clave": "c",
+        "texto": "offset de inode"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Facilita filtrado y correlación.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/list/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué atributo NO es metadata de archivo?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Lista de usuarios logueados"
+      },
+      {
+        "clave": "b",
+        "texto": "Permisos"
+      },
+      {
+        "clave": "c",
+        "texto": "Dueño"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Usuarios logueados es estado del sistema.",
+    "recursos": []
+  },
+  {
+    "pregunta": "En Datadog, 'service' aplicado como tag es:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Metadata clave para correlación APM/logs"
+      },
+      {
+        "clave": "b",
+        "texto": "Campo ignorado"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo para dashboards"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Service/env/version habilitan vistas cruzadas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/list/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué comando muestra el tipo MIME de un archivo?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "file --mime-type nombre"
+      },
+      {
+        "clave": "b",
+        "texto": "mimetype nombre"
+      },
+      {
+        "clave": "c",
+        "texto": "stat --type nombre"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`file` detecta tipo de contenido.",
+    "recursos": []
+  },
+  {
+    "pregunta": "Metadato de proceso útil para troubleshooting:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "PID y PPID"
+      },
+      {
+        "clave": "b",
+        "texto": "Color del tema"
+      },
+      {
+        "clave": "c",
+        "texto": "Zona horaria del teclado"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "PID/PPID ayudan a trazar jerarquías.",
+    "recursos": []
+  },
+  {
+    "pregunta": "En JSON de logs, ¿qué campo suele representar severidad?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "level"
+      },
+      {
+        "clave": "b",
+        "texto": "bytes"
+      },
+      {
+        "clave": "c",
+        "texto": "userAgent"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`level` o `status` comúnmente.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué metadato permite ordenar logs cronológicamente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "timestamp"
+      },
+      {
+        "clave": "b",
+        "texto": "hostname"
+      },
+      {
+        "clave": "c",
+        "texto": "service"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El tiempo permite ordenación temporal.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué clave global en Agent agrega metadata a todos los datos?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "tags"
+      },
+      {
+        "clave": "b",
+        "texto": "api_key"
+      },
+      {
+        "clave": "c",
+        "texto": "hostname"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`tags` agrega metadata global.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "¿Qué protocolo usa típicamente el puerto 443?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "HTTPS"
+      },
+      {
+        "clave": "b",
+        "texto": "HTTP"
+      },
+      {
+        "clave": "c",
+        "texto": "SSH"
+      },
+      {
+        "clave": "d",
+        "texto": "SMTP"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Tema: Networking — HTTPS usa TCP/443.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Cuál NO es un rango privado IPv4?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "10.0.0.0/8"
+      },
+      {
+        "clave": "b",
+        "texto": "172.16.0.0/12"
+      },
+      {
+        "clave": "c",
+        "texto": "192.168.0.0/16"
+      },
+      {
+        "clave": "d",
+        "texto": "8.8.8.0/24"
+      }
+    ],
+    "respuesta_correcta": "d",
+    "explicacion": "8.8.8.0/24 es público (Google).",
+    "recursos": []
+  },
+  {
+    "pregunta": "DNS opera principalmente sobre:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "UDP 53 (y TCP 53)"
+      },
+      {
+        "clave": "b",
+        "texto": "TCP 25"
+      },
+      {
+        "clave": "c",
+        "texto": "UDP 161"
+      },
+      {
+        "clave": "d",
+        "texto": "TCP 22"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "UDP 53 y TCP 53 para transferencias grandes.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué comando verifica conectividad IP y latencia básica?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ping"
+      },
+      {
+        "clave": "b",
+        "texto": "curl"
+      },
+      {
+        "clave": "c",
+        "texto": "nslookup"
+      },
+      {
+        "clave": "d",
+        "texto": "traceroute"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "ICMP echo mide RTT/alcance.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué comando resuelve un nombre a IP usando DNS?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "nslookup ejemplo.com"
+      },
+      {
+        "clave": "b",
+        "texto": "ping -n ejemplo.com"
+      },
+      {
+        "clave": "c",
+        "texto": "ifconfig ejemplo.com"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`nslookup`/`dig` consultan DNS.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Diferencia clave entre TCP y UDP?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "TCP garantiza orden/entrega; UDP no"
+      },
+      {
+        "clave": "b",
+        "texto": "UDP garantiza orden; TCP no"
+      },
+      {
+        "clave": "c",
+        "texto": "Ambos garantizan orden"
+      },
+      {
+        "clave": "d",
+        "texto": "UDP cifra por defecto"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "TCP es confiable; UDP liviano sin garantías.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué hace `traceroute`/`tracert`?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mide saltos hasta un destino"
+      },
+      {
+        "clave": "b",
+        "texto": "Escanea puertos"
+      },
+      {
+        "clave": "c",
+        "texto": "Captura paquetes"
+      },
+      {
+        "clave": "d",
+        "texto": "Crea túneles"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Muestra ruta (hops) y latencias.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué puerto predeterminado usa SSH?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "22"
+      },
+      {
+        "clave": "b",
+        "texto": "80"
+      },
+      {
+        "clave": "c",
+        "texto": "443"
+      },
+      {
+        "clave": "d",
+        "texto": "3389"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "SSH usa TCP/22.",
+    "recursos": []
+  },
+  {
+    "pregunta": "En IPv4, ¿cuántos bits tiene una dirección?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "32"
+      },
+      {
+        "clave": "b",
+        "texto": "64"
+      },
+      {
+        "clave": "c",
+        "texto": "128"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "IPv4 tiene 32 bits.",
+    "recursos": []
+  },
+  {
+    "pregunta": "¿Qué comando lista interfaces y direcciones IP en Linux?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ip addr"
+      },
+      {
+        "clave": "b",
+        "texto": "ifconfig -a"
+      },
+      {
+        "clave": "c",
+        "texto": "route -n"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "`ip addr` muestra direcciones asoc. a interfaces.",
+    "recursos": []
+  }
+]
