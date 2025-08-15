@@ -1,0 +1,4352 @@
+[
+  {
+    "pregunta": "In YAML, what is the issue en el siguiente fragmento?\n```yaml\nlogs:\n\t- type: file\n  path: /var/log/app.log\n```",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Using tabs for indentation"
+      },
+      {
+        "clave": "b",
+        "texto": "Missing quotes in path"
+      },
+      {
+        "clave": "c",
+        "texto": "The 'logs' key must be uppercase"
+      },
+      {
+        "clave": "d",
+        "texto": "JSON is required instead of YAML"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — YAML no permite tabs; usa espacios para indentar.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "What type of IP address is 10.0.0.5?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Private (RFC1918)"
+      },
+      {
+        "clave": "b",
+        "texto": "Public"
+      },
+      {
+        "clave": "c",
+        "texto": "Loopback"
+      },
+      {
+        "clave": "d",
+        "texto": "Multicast"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — 10.0.0.0/8 es un bloque privado RFC1918.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which shell command shows procesos y uso de CPU/memoria en tiempo real?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "top"
+      },
+      {
+        "clave": "b",
+        "texto": "ls"
+      },
+      {
+        "clave": "c",
+        "texto": "cat /proc/cpuinfo"
+      },
+      {
+        "clave": "d",
+        "texto": "whoami"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — 'top' es un monitor interactivo de procesos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/"
+      }
+    ]
+  },
+  {
+    "pregunta": "In Linux, where are variables del servicio del agente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc/default/datadog-agent or /etc/sysconfig/datadog-agent"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/hosts"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/resolv.conf"
+      },
+      {
+        "clave": "d",
+        "texto": "/etc/fstab"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — Archivos de entorno de servicio para Debian/RHEL.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "In JSON, what is the error?\n```json\n{\"service\": 'web', \"env\": \"prod\"}\n```",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Invalid single quotes in 'web'"
+      },
+      {
+        "clave": "b",
+        "texto": "Falta una coma"
+      },
+      {
+        "clave": "c",
+        "texto": "JSON requiere tabs"
+      },
+      {
+        "clave": "d",
+        "texto": "Las claves deben ser números"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — JSON exige comillas dobles para strings.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which best describes 'metadata' in Datadog?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Attributes like host, service, env, version"
+      },
+      {
+        "clave": "b",
+        "texto": "Log content only"
+      },
+      {
+        "clave": "c",
+        "texto": "Encrypted passwords"
+      },
+      {
+        "clave": "d",
+        "texto": "Only Kubernetes labels"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — La metadata contextualiza métricas, trazas y logs.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "DogStatsD uses by default...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "UDP 8125"
+      },
+      {
+        "clave": "b",
+        "texto": "TCP 8126"
+      },
+      {
+        "clave": "c",
+        "texto": "HTTP 443"
+      },
+      {
+        "clave": "d",
+        "texto": "gRPC 50051"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — Protocolo UDP/8125 para baja latencia.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "What does 'chmod 640 file' do in Linux?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Owner read/write, group read"
+      },
+      {
+        "clave": "b",
+        "texto": "Read-only for everyone"
+      },
+      {
+        "clave": "c",
+        "texto": "Executable for everyone"
+      },
+      {
+        "clave": "d",
+        "texto": "Removes all permissions"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — Ajusta permisos seguros para archivos de config.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which Python structure would you use for key‑value pairs?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "dict"
+      },
+      {
+        "clave": "b",
+        "texto": "list"
+      },
+      {
+        "clave": "c",
+        "texto": "tuple"
+      },
+      {
+        "clave": "d",
+        "texto": "set"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — Los diccionarios representan mappings clave‑valor.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/"
+      }
+    ]
+  },
+  {
+    "pregunta": "A 'gauge' metric represents...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "An instantaneous value"
+      },
+      {
+        "clave": "b",
+        "texto": "An accumulated count"
+      },
+      {
+        "clave": "c",
+        "texto": "A fixed rate"
+      },
+      {
+        "clave": "d",
+        "texto": "Uniques per window"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — Gauge = valor en el instante (CPU, temperatura).",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Default port for HTTPS:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "443"
+      },
+      {
+        "clave": "b",
+        "texto": "80"
+      },
+      {
+        "clave": "c",
+        "texto": "22"
+      },
+      {
+        "clave": "d",
+        "texto": "53"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — HTTPS usa 443 (egress a Datadog).",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Command to print the system hostname:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "hostname"
+      },
+      {
+        "clave": "b",
+        "texto": "uname -r"
+      },
+      {
+        "clave": "c",
+        "texto": "env"
+      },
+      {
+        "clave": "d",
+        "texto": "id"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — 'hostname' retorna el nombre del host.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "TTL in DNS means...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Time To Live"
+      },
+      {
+        "clave": "b",
+        "texto": "Total Transmission Load"
+      },
+      {
+        "clave": "c",
+        "texto": "Transport Time Level"
+      },
+      {
+        "clave": "d",
+        "texto": "Transmit To Local"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — Tiempo de vida de caché de un registro.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "In YAML, how do you define a list?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Guiones '-' con indentación"
+      },
+      {
+        "clave": "b",
+        "texto": "Valores separados por comas"
+      },
+      {
+        "clave": "c",
+        "texto": "Con llaves {}"
+      },
+      {
+        "clave": "d",
+        "texto": "Con paréntesis ()"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — Listas con '-' e indentación consistente.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/"
+      }
+    ]
+  },
+  {
+    "pregunta": "What does 'grep error file.log' do?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Filtra líneas con 'error'"
+      },
+      {
+        "clave": "b",
+        "texto": "Ordena el archivo"
+      },
+      {
+        "clave": "c",
+        "texto": "Cuenta líneas"
+      },
+      {
+        "clave": "d",
+        "texto": "Edita el archivo"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — grep busca patrones en texto (útil en logs).",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/logs/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which metric reflects recent CPU load?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "load 1m"
+      },
+      {
+        "clave": "b",
+        "texto": "load 5m"
+      },
+      {
+        "clave": "c",
+        "texto": "iowait"
+      },
+      {
+        "clave": "d",
+        "texto": "context switches"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — 'load 1m' muestra saturación a corto plazo.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "OSI layer of TCP/UDP:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Transporte (L4)"
+      },
+      {
+        "clave": "b",
+        "texto": "Red (L3)"
+      },
+      {
+        "clave": "c",
+        "texto": "Enlace (L2)"
+      },
+      {
+        "clave": "d",
+        "texto": "Aplicación (L7)"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — TCP/UDP operan en L4.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "File containing DNS resolvers:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc/resolv.conf"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/hosts"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/network/interfaces"
+      },
+      {
+        "clave": "d",
+        "texto": "/etc/rc.local"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — Nameservers en /etc/resolv.conf.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Tool that shows latency between hops:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "traceroute"
+      },
+      {
+        "clave": "b",
+        "texto": "ping"
+      },
+      {
+        "clave": "c",
+        "texto": "netstat"
+      },
+      {
+        "clave": "d",
+        "texto": "iptables"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — traceroute/tracepath muestran ruta/latencias.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "What is the 'shebang' in scripts?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Línea inicial que indica intérprete"
+      },
+      {
+        "clave": "b",
+        "texto": "Permiso de ejecución"
+      },
+      {
+        "clave": "c",
+        "texto": "Ruta de log"
+      },
+      {
+        "clave": "d",
+        "texto": "Variable de entorno"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — Ej. '#!/bin/bash' define el intérprete.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Default port for DNS:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "53"
+      },
+      {
+        "clave": "b",
+        "texto": "22"
+      },
+      {
+        "clave": "c",
+        "texto": "25"
+      },
+      {
+        "clave": "d",
+        "texto": "3389"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — DNS opera en 53/UDP(TCP).",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Standard IPv4 loopback:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "127.0.0.1"
+      },
+      {
+        "clave": "b",
+        "texto": "0.0.0.0"
+      },
+      {
+        "clave": "c",
+        "texto": "255.255.255.255"
+      },
+      {
+        "clave": "d",
+        "texto": "169.254.1.1"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — 127.0.0.1 es loopback.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which command prints the kernel version?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "uname -r"
+      },
+      {
+        "clave": "b",
+        "texto": "hostname"
+      },
+      {
+        "clave": "c",
+        "texto": "cat /etc/issue"
+      },
+      {
+        "clave": "d",
+        "texto": "uptime"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — 'uname -r' muestra versión del kernel.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/"
+      }
+    ]
+  },
+  {
+    "pregunta": "What does 'tail -f /var/log/syslog' do?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sigue el log en tiempo real"
+      },
+      {
+        "clave": "b",
+        "texto": "Cuenta líneas"
+      },
+      {
+        "clave": "c",
+        "texto": "Ordena por fecha"
+      },
+      {
+        "clave": "d",
+        "texto": "Elimina el archivo"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — Monitorea logs al vivo.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/logs/"
+      }
+    ]
+  },
+  {
+    "pregunta": "A 'count' metric represents...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Eventos acumulados por ventana"
+      },
+      {
+        "clave": "b",
+        "texto": "Valor instantáneo"
+      },
+      {
+        "clave": "c",
+        "texto": "Uniques per window"
+      },
+      {
+        "clave": "d",
+        "texto": "Porcentaje fijo"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 1: Computer Fundamentals — 'count' suma ocurrencias en el intervalo.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "What does the agent need to send data to your organization?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "API key"
+      },
+      {
+        "clave": "b",
+        "texto": "Application key"
+      },
+      {
+        "clave": "c",
+        "texto": "Both"
+      },
+      {
+        "clave": "d",
+        "texto": "None"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — La API key autentica el agente al intake.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/account_management/api-app-keys/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Primary command to view the agent status on Linux:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "systemctl status dd-agent"
+      },
+      {
+        "clave": "c",
+        "texto": "datadog status"
+      },
+      {
+        "clave": "d",
+        "texto": "dd status"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Muestra checks, colas y conectividad.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "How do you set the hostname and avoid duplicates?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DD_HOSTNAME o 'hostname:' en datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo editando /etc/hosts"
+      },
+      {
+        "clave": "c",
+        "texto": "Usando application key"
+      },
+      {
+        "clave": "d",
+        "texto": "No es posible"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Definir hostname explícito evita entidades duplicadas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/how-datadog-agent-determines-the-hostname/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Typical egress HTTPS port to Datadog:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "443"
+      },
+      {
+        "clave": "b",
+        "texto": "80"
+      },
+      {
+        "clave": "c",
+        "texto": "25"
+      },
+      {
+        "clave": "d",
+        "texto": "1433"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — El intake se consume por HTTPS 443.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Container integration autodiscovery is based on...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Labels/annotations + templates"
+      },
+      {
+        "clave": "b",
+        "texto": "Node hostname"
+      },
+      {
+        "clave": "c",
+        "texto": "API key per container"
+      },
+      {
+        "clave": "d",
+        "texto": "Active TTY"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Labels/annotations activan templates de configuración.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/containers/autodiscovery/"
+      }
+    ]
+  },
+  {
+    "pregunta": "What is the Application key used for?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Authenticate API calls on behalf of a user"
+      },
+      {
+        "clave": "b",
+        "texto": "Replace the agent API key"
+      },
+      {
+        "clave": "c",
+        "texto": "Connect integrations"
+      },
+      {
+        "clave": "d",
+        "texto": "Enable APM"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — La app key autoriza operaciones API por usuario.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/account_management/api-app-keys/"
+      }
+    ]
+  },
+  {
+    "pregunta": "On networks with egress blocked, what do you configure?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "HTTP/HTTPS proxy in datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "site=us3"
+      },
+      {
+        "clave": "c",
+        "texto": "always skip_ssl_validation"
+      },
+      {
+        "clave": "d",
+        "texto": "disable_tls"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Configura proxy según políticas; no deshabilites TLS.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/proxy/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which command packages logs/config for support?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent flare"
+      },
+      {
+        "clave": "b",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "c",
+        "texto": "datadog-agent check"
+      },
+      {
+        "clave": "d",
+        "texto": "ddtrace diag"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — 'flare' genera un paquete de diagnóstico.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "DogStatsD by default listens on...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "UDP 8125"
+      },
+      {
+        "clave": "b",
+        "texto": "TCP 8126"
+      },
+      {
+        "clave": "c",
+        "texto": "UDP 53"
+      },
+      {
+        "clave": "d",
+        "texto": "TCP 25"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Para métricas personalizadas vía StatsD.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/"
+      }
+    ]
+  },
+  {
+    "pregunta": "The Trace Agent by default listens on...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "TCP 8126"
+      },
+      {
+        "clave": "b",
+        "texto": "UDP 8125"
+      },
+      {
+        "clave": "c",
+        "texto": "TCP 443"
+      },
+      {
+        "clave": "d",
+        "texto": "TCP 25"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — APM usa 8126 para recibir trazas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/tracing/trace_collection/agent_trace/"
+      }
+    ]
+  },
+  {
+    "pregunta": "To collect logs from files you also must...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Define paths and the 'service' attribute"
+      },
+      {
+        "clave": "b",
+        "texto": "Switch to the EU site"
+      },
+      {
+        "clave": "c",
+        "texto": "Disable metrics"
+      },
+      {
+        "clave": "d",
+        "texto": "Enable Live Process"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — 'service' enruta y clasifica logs correctamente.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/logs/log_collection/?tab=tailfiles"
+      }
+    ]
+  },
+  {
+    "pregunta": "How do you enable agent integrations?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "conf.d/<integ>.d/conf.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "From Monitors"
+      },
+      {
+        "clave": "c",
+        "texto": "From Host Map"
+      },
+      {
+        "clave": "d",
+        "texto": "With an application key"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Cada integración define su conf.yaml en conf.d.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/integrations/"
+      }
+    ]
+  },
+  {
+    "pregunta": "What destinations should be allowed in firewall/egress?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Intake hostnames/IPs for the site"
+      },
+      {
+        "clave": "b",
+        "texto": "Only 127.0.0.1"
+      },
+      {
+        "clave": "c",
+        "texto": "Any public IP"
+      },
+      {
+        "clave": "d",
+        "texto": "Random private IPs"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Permite egress a dominios del intake.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "How do you run the agent's network/DNS/SSL diagnostics?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "b",
+        "texto": "dd-agent verify"
+      },
+      {
+        "clave": "c",
+        "texto": "agent doctor"
+      },
+      {
+        "clave": "d",
+        "texto": "datadog help"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — 'diag' corre pruebas de conectividad y config.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Environment variable for the API key:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DD_API_KEY"
+      },
+      {
+        "clave": "b",
+        "texto": "DD_APP_KEY"
+      },
+      {
+        "clave": "c",
+        "texto": "DD_KEY"
+      },
+      {
+        "clave": "d",
+        "texto": "DATADOG_API"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — DD_API_KEY se usa en contenedores y servicios.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/agent-configuration-files/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Typical path for datadog.yaml on Linux:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc/datadog-agent/datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "/opt/datadog/conf.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/datadog.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "/usr/local/etc/datadog.yaml"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Archivo principal de configuración del agente.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/agent-configuration-files/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Role of the Process Agent:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Report processes/containers"
+      },
+      {
+        "clave": "b",
+        "texto": "Replace the Trace Agent"
+      },
+      {
+        "clave": "c",
+        "texto": "Scrape external APIs"
+      },
+      {
+        "clave": "d",
+        "texto": "Serve dashboards"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Visibilidad de procesos y containers.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/process/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Disambiguate duplicate hosts due to DNS:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Set a fixed 'hostname' or 'DD_HOSTNAME'"
+      },
+      {
+        "clave": "b",
+        "texto": "Delete API key"
+      },
+      {
+        "clave": "c",
+        "texto": "Change site"
+      },
+      {
+        "clave": "d",
+        "texto": "Disable DogStatsD"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Hostname fijo evita entidades duplicadas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/how-datadog-agent-determines-the-hostname/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Restart the agent service (systemd):",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "systemctl restart datadog-agent"
+      },
+      {
+        "clave": "b",
+        "texto": "service datadog-agent reload"
+      },
+      {
+        "clave": "c",
+        "texto": "datadog-agent restart"
+      },
+      {
+        "clave": "d",
+        "texto": "ddagent restart"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Usa systemd para reiniciar el servicio.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Autodiscovery via annotations in K8s:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Templates in Pod/Service annotations"
+      },
+      {
+        "clave": "b",
+        "texto": "Use /etc/hosts"
+      },
+      {
+        "clave": "c",
+        "texto": "App keys per Pod"
+      },
+      {
+        "clave": "d",
+        "texto": "DNS wildcard"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Annotations/labels cargan la configuración del check.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/containers/autodiscovery/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which port is used for Network Performance Monitoring eBPF?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Does not require a specific port for local collection"
+      },
+      {
+        "clave": "b",
+        "texto": "UDP 8125"
+      },
+      {
+        "clave": "c",
+        "texto": "TCP 8126"
+      },
+      {
+        "clave": "d",
+        "texto": "TCP 25"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — NPM usa eBPF en el host; egress por HTTPS estándar.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/network/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Where do you enable Live Container?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Enable process/containers in the agent"
+      },
+      {
+        "clave": "b",
+        "texto": "Only in dashboards"
+      },
+      {
+        "clave": "c",
+        "texto": "Only with app key"
+      },
+      {
+        "clave": "d",
+        "texto": "Not supported"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Process Agent debe enviar datos de contenedores.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/livecontainers/"
+      }
+    ]
+  },
+  {
+    "pregunta": "How do you configure logs on Windows?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog.yaml + conf.d\\<integ>.d\\conf.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Only in Registry"
+      },
+      {
+        "clave": "c",
+        "texto": "Cannot be done"
+      },
+      {
+        "clave": "d",
+        "texto": "With an application key"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — La estructura es equivalente a Linux con paths Windows.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/logs/log_collection/?tab=tailfiles"
+      }
+    ]
+  },
+  {
+    "pregunta": "What are 'container autodiscovery templates'?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Dynamic config templates for containers"
+      },
+      {
+        "clave": "b",
+        "texto": "Pre-built dashboards"
+      },
+      {
+        "clave": "c",
+        "texto": "Global alerts"
+      },
+      {
+        "clave": "d",
+        "texto": "Log pipelines"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — Asocian checks a contenedores según labels.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/containers/autodiscovery/"
+      }
+    ]
+  },
+  {
+    "pregunta": "How do you set the correct 'site' (us, us3, eu, etc.)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Parameter 'site' in datadog.yaml or env DD_SITE"
+      },
+      {
+        "clave": "b",
+        "texto": "Cannot be done cambiar"
+      },
+      {
+        "clave": "c",
+        "texto": "With an application key"
+      },
+      {
+        "clave": "d",
+        "texto": "In dashboards"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 2: Infrastructure Development — El 'site' define endpoints de ingestión.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/agent-configuration-files/"
+      }
+    ]
+  },
+  {
+    "pregunta": "What is a 'tag' in Datadog?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Key:value attribute to filter/group"
+      },
+      {
+        "clave": "b",
+        "texto": "Unique ID per request"
+      },
+      {
+        "clave": "c",
+        "texto": "Fixed host name"
+      },
+      {
+        "clave": "d",
+        "texto": "Metric type"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Tags permiten segmentación, filtros, agregaciones.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "How do you filter by environment in metric queries?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Using tags like env:prod"
+      },
+      {
+        "clave": "b",
+        "texto": "SELECT env=prod"
+      },
+      {
+        "clave": "c",
+        "texto": "GROUP BY env=prod"
+      },
+      {
+        "clave": "d",
+        "texto": "FILTER env==prod"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Se filtra por tag: env:prod.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Tagging best practice:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "env, service, version"
+      },
+      {
+        "clave": "b",
+        "texto": "user_id, session_id"
+      },
+      {
+        "clave": "c",
+        "texto": "uuid per request"
+      },
+      {
+        "clave": "d",
+        "texto": "timestamp in tag"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Evita alta cardinalidad con valores controlados.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Count events per second:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "as_rate() over counts"
+      },
+      {
+        "clave": "b",
+        "texto": "gauge"
+      },
+      {
+        "clave": "c",
+        "texto": "histogram"
+      },
+      {
+        "clave": "d",
+        "texto": "set"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — as_rate() transforma counts a tasa.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/advanced/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Endpoint to send metrics via API:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/api/v2/series"
+      },
+      {
+        "clave": "b",
+        "texto": "/api/v1/validate"
+      },
+      {
+        "clave": "c",
+        "texto": "/api/v1/logs"
+      },
+      {
+        "clave": "d",
+        "texto": "/api/v2/events"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — '/series' ingiere puntos de métrica.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/api/latest/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Metric that records unique values:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "set"
+      },
+      {
+        "clave": "b",
+        "texto": "gauge"
+      },
+      {
+        "clave": "c",
+        "texto": "count"
+      },
+      {
+        "clave": "d",
+        "texto": "distribution"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — 'set' mantiene cardinalidad de valores distintos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/types/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Function 'rollup()' on graphs is used to...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Adjust temporal aggregation"
+      },
+      {
+        "clave": "b",
+        "texto": "Add tags"
+      },
+      {
+        "clave": "c",
+        "texto": "Change site"
+      },
+      {
+        "clave": "d",
+        "texto": "Create monitors"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Controla granularidad temporal en la visualización.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "'top()' in a metrics query...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Shows the top N by dimension"
+      },
+      {
+        "clave": "b",
+        "texto": "Sorts by time"
+      },
+      {
+        "clave": "c",
+        "texto": "Converts to rate"
+      },
+      {
+        "clave": "d",
+        "texto": "Groups by host only"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Selecciona líderes por tag/host/etc.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Limit cardinality in custom metrics:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Avoid tags with unique IDs"
+      },
+      {
+        "clave": "b",
+        "texto": "Use tags by request_id"
+      },
+      {
+        "clave": "c",
+        "texto": "Add user_id"
+      },
+      {
+        "clave": "d",
+        "texto": "Incluir timestamp in tag"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Evita valores explosivos en tags.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/custom_metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Endpoint that queries time series:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/api/v2/query/timeseries"
+      },
+      {
+        "clave": "b",
+        "texto": "/api/v1/logs/list"
+      },
+      {
+        "clave": "c",
+        "texto": "/api/v2/series"
+      },
+      {
+        "clave": "d",
+        "texto": "/api/v1/events"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Consulta métricas por rango de tiempo.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/api/latest/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Where are log 'facets' defined?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Log Explorer/Pipelines"
+      },
+      {
+        "clave": "b",
+        "texto": "Host Map"
+      },
+      {
+        "clave": "c",
+        "texto": "Process Explorer"
+      },
+      {
+        "clave": "d",
+        "texto": "Network Map"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Facets indexan campos para filtrar/agrupar.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/logs/explorer/facets/"
+      }
+    ]
+  },
+  {
+    "pregunta": "APM metric for latency:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "duration/latency"
+      },
+      {
+        "clave": "b",
+        "texto": "errors"
+      },
+      {
+        "clave": "c",
+        "texto": "throughput"
+      },
+      {
+        "clave": "d",
+        "texto": "status code"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Tiempos de respuesta agregados por servicio/endpoint.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/tracing/trace_explorer/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Send a custom metric with DogStatsD (CLI):",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "echo 'my.metric:1|c' | nc -u 127.0.0.1 8125"
+      },
+      {
+        "clave": "b",
+        "texto": "curl -X POST /series"
+      },
+      {
+        "clave": "c",
+        "texto": "ddtrace emit"
+      },
+      {
+        "clave": "d",
+        "texto": "kube-emit"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Formato StatsD por UDP/8125.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/datagram_shell/"
+      }
+    ]
+  },
+  {
+    "pregunta": "What is a 'distribution' metric?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aggregates global percentiles (p95, p99)"
+      },
+      {
+        "clave": "b",
+        "texto": "Simple average"
+      },
+      {
+        "clave": "c",
+        "texto": "Count per second"
+      },
+      {
+        "clave": "d",
+        "texto": "Single value"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Distribución calcula percentiles en backend.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/distributions/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Using 'by {service}' in graphs...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Split the series by the service tag"
+      },
+      {
+        "clave": "b",
+        "texto": "Sort alphabetically"
+      },
+      {
+        "clave": "c",
+        "texto": "Change coloring"
+      },
+      {
+        "clave": "d",
+        "texto": "Filter by version"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Crea series separadas por servicio.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Minimum required field for logs:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "service"
+      },
+      {
+        "clave": "b",
+        "texto": "version"
+      },
+      {
+        "clave": "c",
+        "texto": "host"
+      },
+      {
+        "clave": "d",
+        "texto": "trace_id"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — 'service' enruta y clasifica logs.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/logs/log_configuration/attributes_naming_convention/"
+      }
+    ]
+  },
+  {
+    "pregunta": "'count_nonzero()' is used to...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Count non-zero/non-null points"
+      },
+      {
+        "clave": "b",
+        "texto": "Convert to rate"
+      },
+      {
+        "clave": "c",
+        "texto": "Return maximum"
+      },
+      {
+        "clave": "d",
+        "texto": "Normalize to 100"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Ayuda a distinguir 'no data' de ceros.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/advanced/"
+      }
+    ]
+  },
+  {
+    "pregunta": "A 'facet' in logs is...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "An indexed field to filter/group"
+      },
+      {
+        "clave": "b",
+        "texto": "A dashboard panel"
+      },
+      {
+        "clave": "c",
+        "texto": "A metric monitor"
+      },
+      {
+        "clave": "d",
+        "texto": "A reserved tag"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Se derivan de atributos parseados.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/logs/explorer/facets/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Filter by multiple tags:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "env:prod AND service:web"
+      },
+      {
+        "clave": "b",
+        "texto": "env=prod,service=web"
+      },
+      {
+        "clave": "c",
+        "texto": "env:prod && service:web (YAML)"
+      },
+      {
+        "clave": "d",
+        "texto": "Only one at a time"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Combina múltiples filtros de tag.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "'service check' means...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "OK/WARN/CRIT status reported by integrations"
+      },
+      {
+        "clave": "b",
+        "texto": "Log count"
+      },
+      {
+        "clave": "c",
+        "texto": "Host ID"
+      },
+      {
+        "clave": "d",
+        "texto": "Reserved tag"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Checks de salud generados por integraciones.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/types/service_check/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Function 'as_count()' converts...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A series into count of occurrences per window"
+      },
+      {
+        "clave": "b",
+        "texto": "A series into a gauge"
+      },
+      {
+        "clave": "c",
+        "texto": "A series into a percentile"
+      },
+      {
+        "clave": "d",
+        "texto": "A series into a distribution"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Útil para eventos discretos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/advanced/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Function 'as_rate()' calculates...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Rate per second"
+      },
+      {
+        "clave": "b",
+        "texto": "Average"
+      },
+      {
+        "clave": "c",
+        "texto": "Maximum"
+      },
+      {
+        "clave": "d",
+        "texto": "Percentile"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Deriva la tasa a partir de counts.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/advanced/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Best practice: Unified Service Tagging uses...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "env, service, version"
+      },
+      {
+        "clave": "b",
+        "texto": "user_id, ip"
+      },
+      {
+        "clave": "c",
+        "texto": "session_id, uuid"
+      },
+      {
+        "clave": "d",
+        "texto": "timestamp, tz"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Estandariza tags base.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which endpoint queries host metadata?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/api/v1/hosts"
+      },
+      {
+        "clave": "b",
+        "texto": "/api/v1/monitor"
+      },
+      {
+        "clave": "c",
+        "texto": "/api/v1/dashboard"
+      },
+      {
+        "clave": "d",
+        "texto": "/api/v2/series"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — Hosts API lista hosts/metadata.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/api/latest/hosts/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which endpoint ingests logs over HTTP?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/api/v2/logs"
+      },
+      {
+        "clave": "b",
+        "texto": "/api/v2/events"
+      },
+      {
+        "clave": "c",
+        "texto": "/api/v1/series"
+      },
+      {
+        "clave": "d",
+        "texto": "/api/v1/validate"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 3: Data Collection / Tagging / Metrics & Timeseries / API — La API v2 de logs ingiere eventos de log.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/api/latest/logs/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Command to review the agent's general status:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "datadog-agent version"
+      },
+      {
+        "clave": "c",
+        "texto": "datadog-agent help"
+      },
+      {
+        "clave": "d",
+        "texto": "systemctl status"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — 'status' muestra integraciones y conectividad.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "You have 'No Data' on a custom metric (DogStatsD). First check:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "UDP 8125 reachable and correct name"
+      },
+      {
+        "clave": "b",
+        "texto": "Agent application key"
+      },
+      {
+        "clave": "c",
+        "texto": "Change site"
+      },
+      {
+        "clave": "d",
+        "texto": "Restart dashboards"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — DogStatsD usa UDP 8125 y nombres exactos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Command for a support package (config + logs):",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent flare"
+      },
+      {
+        "clave": "b",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "c",
+        "texto": "tar logs"
+      },
+      {
+        "clave": "d",
+        "texto": "ddtrace flare"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — 'flare' empaqueta para soporte.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/troubleshooting/send_a_flare/"
+      }
+    ]
+  },
+  {
+    "pregunta": "After rotating the API key, the host stops reporting. Immediate action:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Update API key and restart the agent"
+      },
+      {
+        "clave": "b",
+        "texto": "Create a new app key"
+      },
+      {
+        "clave": "c",
+        "texto": "Change hostname"
+      },
+      {
+        "clave": "d",
+        "texto": "Lower the monitor threshold"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — El agente requiere API key válida.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Data gaps due to unsynchronized time. Solution:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Synchronize NTP on all nodes"
+      },
+      {
+        "clave": "b",
+        "texto": "Change site"
+      },
+      {
+        "clave": "c",
+        "texto": "Increase renotify"
+      },
+      {
+        "clave": "d",
+        "texto": "Disable logs"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Tiempo consistente evita gaps.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/agent-ntp-sync/"
+      }
+    ]
+  },
+  {
+    "pregunta": "APM without traces. Initial check:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "apm_config.enabled and TCP 8126"
+      },
+      {
+        "clave": "b",
+        "texto": "logs_enabled"
+      },
+      {
+        "clave": "c",
+        "texto": "EU site"
+      },
+      {
+        "clave": "d",
+        "texto": "process agent"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Trace Agent escucha en 8126.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/tracing/trace_collection/agent_trace/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Process Agent not reporting. Key parameter:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "process_config.enabled"
+      },
+      {
+        "clave": "b",
+        "texto": "logs_enabled"
+      },
+      {
+        "clave": "c",
+        "texto": "agent_version"
+      },
+      {
+        "clave": "d",
+        "texto": "ntp"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Habilita process agent.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/process/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Ephemeral nodes cause host monitors to flap. Solution:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Monitors by Service/Workload or exclude by tag"
+      },
+      {
+        "clave": "b",
+        "texto": "Lower threshold"
+      },
+      {
+        "clave": "c",
+        "texto": "Switch to us3"
+      },
+      {
+        "clave": "d",
+        "texto": "Remove APM"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Monitorea niveles lógicos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/guide/monitor-evaluation/"
+      }
+    ]
+  },
+  {
+    "pregunta": "No logs even though 'logs_enabled: true'. Check:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Paths and 'service' attribute defined"
+      },
+      {
+        "clave": "b",
+        "texto": "site us5"
+      },
+      {
+        "clave": "c",
+        "texto": "Numeric-only tags"
+      },
+      {
+        "clave": "d",
+        "texto": "top() in dashboard"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — 'service' y rutas son obligatorios.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Agent network/DNS/SSL diagnostics:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "b",
+        "texto": "curl datadog"
+      },
+      {
+        "clave": "c",
+        "texto": "netstat -plnt"
+      },
+      {
+        "clave": "d",
+        "texto": "dpkg -l"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — 'diag' corre pruebas de conectividad.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Reduce false positives from brief spikes:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Larger window and avg() aggregation"
+      },
+      {
+        "clave": "b",
+        "texto": "Double the threshold"
+      },
+      {
+        "clave": "c",
+        "texto": "Switch to logs"
+      },
+      {
+        "clave": "d",
+        "texto": "Remove tags"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Suaviza la condición con ventana/avg.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/guide/monitor-evaluation/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Cardinality limits. Best practice:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Avoid user_id/request_id as a tag"
+      },
+      {
+        "clave": "b",
+        "texto": "Prefix metrics with env"
+      },
+      {
+        "clave": "c",
+        "texto": "Send everything as gauge"
+      },
+      {
+        "clave": "d",
+        "texto": "Move site"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Evita tags de alta cardinalidad.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/custom_metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Hostname changes due to DNS and duplicates entities. Action:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Set hostname in datadog.yaml or DD_HOSTNAME"
+      },
+      {
+        "clave": "b",
+        "texto": "Disable network agent"
+      },
+      {
+        "clave": "c",
+        "texto": "Rotate API key"
+      },
+      {
+        "clave": "d",
+        "texto": "Always use 'EC2 Unique ID'"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Fija el hostname.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Proxy with TLS inspection breaks connection. Solution:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Install the proxy CA or adjust TLS validation"
+      },
+      {
+        "clave": "b",
+        "texto": "Disable APM"
+      },
+      {
+        "clave": "c",
+        "texto": "Switch to UDP"
+      },
+      {
+        "clave": "d",
+        "texto": "Lower log level"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Confía la CA del proxy o ajusta validación.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/proxy/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Isolate why PostgreSQL is not sending metrics:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Service checks in 'status'"
+      },
+      {
+        "clave": "b",
+        "texto": "Change site"
+      },
+      {
+        "clave": "c",
+        "texto": "New dashboard"
+      },
+      {
+        "clave": "d",
+        "texto": "Live Process"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Service checks muestran conectividad/autenticación.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/integrations/postgres/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Distinguish 'no data' vs zero in a graph:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "count_nonzero() or fill(null)"
+      },
+      {
+        "clave": "b",
+        "texto": "as_count()"
+      },
+      {
+        "clave": "c",
+        "texto": "rollup(max,5m)"
+      },
+      {
+        "clave": "d",
+        "texto": "top()"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Funciones que evidencian ausencia de puntos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Proxy required on a restricted network:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configure HTTP/HTTPS proxy in datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Change site"
+      },
+      {
+        "clave": "c",
+        "texto": "Deshabilitar trazas"
+      },
+      {
+        "clave": "d",
+        "texto": "Habilitar logs"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Proxy permite egress a intake.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/configuration/proxy/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which file to check for integration errors?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "agent.log"
+      },
+      {
+        "clave": "b",
+        "texto": "/var/log/syslog only"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/hosts"
+      },
+      {
+        "clave": "d",
+        "texto": "/etc/shadow"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — agent.log registra carga de checks y errores.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-log-files/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Command to see agent component versions:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent version"
+      },
+      {
+        "clave": "b",
+        "texto": "datadog-agent status"
+      },
+      {
+        "clave": "c",
+        "texto": "uname -a"
+      },
+      {
+        "clave": "d",
+        "texto": "ddtrace version"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — 'version' imprime versiones.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Send a flare with a contact email:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent flare --email you@example.com"
+      },
+      {
+        "clave": "b",
+        "texto": "datadog-agent status --archive"
+      },
+      {
+        "clave": "c",
+        "texto": "agent flare -z"
+      },
+      {
+        "clave": "d",
+        "texto": "ddtrace flare"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Puedes añadir email/comentarios.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/troubleshooting/send_a_flare/"
+      }
+    ]
+  },
+  {
+    "pregunta": "APM reports but without 'env/service/version' tags. Solution:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configure Unified Service Tagging"
+      },
+      {
+        "clave": "b",
+        "texto": "Aumentar threshold"
+      },
+      {
+        "clave": "c",
+        "texto": "Cambiar a gauge"
+      },
+      {
+        "clave": "d",
+        "texto": "Quitar filtros"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Unifica tags base para trazas/logs/métricas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Gaps due to ingestion delay. Action:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Evaluation delay"
+      },
+      {
+        "clave": "b",
+        "texto": "Renotify"
+      },
+      {
+        "clave": "c",
+        "texto": "Downtime"
+      },
+      {
+        "clave": "d",
+        "texto": "Recovery thresholds"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Evalúa tras un retraso para evitar falsos positivos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/guide/monitor-evaluation/"
+      }
+    ]
+  },
+  {
+    "pregunta": "The agent doesn't appear in the UI. Basic check:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "API key válida y egress HTTPS"
+      },
+      {
+        "clave": "b",
+        "texto": "Application key in the agent"
+      },
+      {
+        "clave": "c",
+        "texto": "Restart dashboards"
+      },
+      {
+        "clave": "d",
+        "texto": "Change hostname"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — La API key y conectividad son esenciales.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "DogStatsD not receiving in container. Check:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Socket/puerto mapeado y namespace correcto"
+      },
+      {
+        "clave": "b",
+        "texto": "Change site"
+      },
+      {
+        "clave": "c",
+        "texto": "Habilitar Live Process"
+      },
+      {
+        "clave": "d",
+        "texto": "Borrar conf.d"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Asegura mapeo/namespace de DogStatsD.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Hostname differences between nodes and the agent. What to do?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Set explicit 'hostname'"
+      },
+      {
+        "clave": "b",
+        "texto": "Ignorar duplicados"
+      },
+      {
+        "clave": "c",
+        "texto": "Rotar app key"
+      },
+      {
+        "clave": "d",
+        "texto": "Desactivar process"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 4: Troubleshooting Datadog — Evita duplicidad fijando hostname.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/how-datadog-agent-determines-the-hostname/"
+      }
+    ]
+  },
+  {
+    "pregunta": "In Host Map, how would you group by service?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aplicando tag service como grupo"
+      },
+      {
+        "clave": "b",
+        "texto": "Filtrando por hostname"
+      },
+      {
+        "clave": "c",
+        "texto": "Cambiando site"
+      },
+      {
+        "clave": "d",
+        "texto": "Creando monitor"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Puedes agrupar por cualquier tag, p.ej. service.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Ideal widget for time series:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Timeseries"
+      },
+      {
+        "clave": "b",
+        "texto": "Query Value"
+      },
+      {
+        "clave": "c",
+        "texto": "Note"
+      },
+      {
+        "clave": "d",
+        "texto": "Host Map"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Timeseries muestra la evolución a lo largo del tiempo.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/widgets/timeseries/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Advantage of Screenboard over Timeboard:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Posicionar widgets libremente"
+      },
+      {
+        "clave": "b",
+        "texto": "Mejores filtros"
+      },
+      {
+        "clave": "c",
+        "texto": "Alertas por widget"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo por host"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Ofrece layout libre en el lienzo.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Filter metrics only from production:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Añadir env:prod en la consulta"
+      },
+      {
+        "clave": "b",
+        "texto": "Cambiar color"
+      },
+      {
+        "clave": "c",
+        "texto": "Editar hostname"
+      },
+      {
+        "clave": "d",
+        "texto": "Reiniciar dashboard"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Filtro por tags en la query.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/using_tags/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Function 'as_count()' is used to...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Contabilizar eventos por ventana"
+      },
+      {
+        "clave": "b",
+        "texto": "Mostrar promedio"
+      },
+      {
+        "clave": "c",
+        "texto": "Return maximum"
+      },
+      {
+        "clave": "d",
+        "texto": "Normalize to 100"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Convierte a conteo en el intervalo.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Alert only if the condition lasts 10 min:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ventana de evaluación"
+      },
+      {
+        "clave": "b",
+        "texto": "Subir threshold"
+      },
+      {
+        "clave": "c",
+        "texto": "Renotify 10m"
+      },
+      {
+        "clave": "d",
+        "texto": "Snooze"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Condición sostenida en la ventana.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Detect absence of points for a metric:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "'No Data' en monitor de métrica"
+      },
+      {
+        "clave": "b",
+        "texto": "Monitor de logs"
+      },
+      {
+        "clave": "c",
+        "texto": "Monitor de procesos"
+      },
+      {
+        "clave": "d",
+        "texto": "Monitor RUM"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Monitores de métrica pueden alertar por No Data.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/types/metric/#alerting-on-no-data"
+      }
+    ]
+  },
+  {
+    "pregunta": "'top()' in a query does...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Lista N mayores por dimensión"
+      },
+      {
+        "clave": "b",
+        "texto": "Converts to rate"
+      },
+      {
+        "clave": "c",
+        "texto": "Promedia por minuto"
+      },
+      {
+        "clave": "d",
+        "texto": "Exporta CSV"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Selecciona líderes por tag/host/etc.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Recommended base tags for unification:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "env, service, version"
+      },
+      {
+        "clave": "b",
+        "texto": "user_id"
+      },
+      {
+        "clave": "c",
+        "texto": "session_id"
+      },
+      {
+        "clave": "d",
+        "texto": "container_id completo"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Unified service tagging.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Reduce noise from brief spikes:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aumentar ventana y usar promedio"
+      },
+      {
+        "clave": "b",
+        "texto": "Threshold más alto únicamente"
+      },
+      {
+        "clave": "c",
+        "texto": "Switch to logs"
+      },
+      {
+        "clave": "d",
+        "texto": "Quitar filtros"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Suaviza con ventana/avg.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Widget to show a single value with context:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Query Value"
+      },
+      {
+        "clave": "b",
+        "texto": "Timeseries"
+      },
+      {
+        "clave": "c",
+        "texto": "Note"
+      },
+      {
+        "clave": "d",
+        "texto": "Heatmap"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Muestra el último valor/estadístico.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/widgets/query_value/"
+      }
+    ]
+  },
+  {
+    "pregunta": "See hosts with issues quickly:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Host Map coloreado por métrica/estado"
+      },
+      {
+        "clave": "b",
+        "texto": "Leer logs manualmente"
+      },
+      {
+        "clave": "c",
+        "texto": "Exportar CSV"
+      },
+      {
+        "clave": "d",
+        "texto": "Usar solo APIs"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Host Map ofrece vista de salud por color.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Show the 95th percentile of a series:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "p95()"
+      },
+      {
+        "clave": "b",
+        "texto": "avg()"
+      },
+      {
+        "clave": "c",
+        "texto": "as_count()"
+      },
+      {
+        "clave": "d",
+        "texto": "anomalies()"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Percentiles muestran colas de latencia.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Function 'anomalies()' does...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Detectar comportamiento anómalo"
+      },
+      {
+        "clave": "b",
+        "texto": "Convert to rate"
+      },
+      {
+        "clave": "c",
+        "texto": "Rellenar vacíos"
+      },
+      {
+        "clave": "d",
+        "texto": "Agrupar por tag"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Detección automática de anomalías.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/functions/#anomalies"
+      }
+    ]
+  },
+  {
+    "pregunta": "'evaluation delay' means...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Retraso antes de evaluar para esperar ingestión"
+      },
+      {
+        "clave": "b",
+        "texto": "Tiempo total del monitor"
+      },
+      {
+        "clave": "c",
+        "texto": "Retardo de notificación"
+      },
+      {
+        "clave": "d",
+        "texto": "TTL del monitor"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Evita falsos positivos por latencia de datos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Compare multiple environments in one graph:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "by {env}"
+      },
+      {
+        "clave": "b",
+        "texto": "join(env)"
+      },
+      {
+        "clave": "c",
+        "texto": "merge(env)"
+      },
+      {
+        "clave": "d",
+        "texto": "group(env)"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Divide series por el tag 'env'.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/querying/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Share a dashboard via temporary link:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Public URL (si está habilitado)"
+      },
+      {
+        "clave": "b",
+        "texto": "No es posible"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo export CSV"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo API"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Algunas orgs permiten enlaces públicos controlados.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/sharing/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Widget for value distribution/density:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Heatmap"
+      },
+      {
+        "clave": "b",
+        "texto": "Query Value"
+      },
+      {
+        "clave": "c",
+        "texto": "Note"
+      },
+      {
+        "clave": "d",
+        "texto": "Geomap"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Heatmap visualiza densidad.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/widgets/heatmap/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Re-notify if the condition persists:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Renotify"
+      },
+      {
+        "clave": "b",
+        "texto": "Evaluation window"
+      },
+      {
+        "clave": "c",
+        "texto": "Downtime"
+      },
+      {
+        "clave": "d",
+        "texto": "Recovery thresholds"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Renotify evita alert fatigue.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/notify/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Key tag for canary deploy:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "version"
+      },
+      {
+        "clave": "b",
+        "texto": "user_id"
+      },
+      {
+        "clave": "c",
+        "texto": "trace_id"
+      },
+      {
+        "clave": "d",
+        "texto": "pid"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — 'version' permite comparar releases.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/using_tags/"
+      }
+    ]
+  },
+  {
+    "pregunta": "What does 'rollup()' do on dashboards?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Controla agregación temporal"
+      },
+      {
+        "clave": "b",
+        "texto": "Agrega tags"
+      },
+      {
+        "clave": "c",
+        "texto": "Cambia site"
+      },
+      {
+        "clave": "d",
+        "texto": "Crea monitores"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Define el resumen temporal de puntos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which widget would you choose to compare many hosts and their CPU metric?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Heatmap"
+      },
+      {
+        "clave": "b",
+        "texto": "Note"
+      },
+      {
+        "clave": "c",
+        "texto": "Timeseries con by {host}"
+      },
+      {
+        "clave": "d",
+        "texto": "Geomap"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Heatmap ayuda a comparar distribuciones.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/widgets/heatmap/"
+      }
+    ]
+  },
+  {
+    "pregunta": "For a single KPI (e.g., current error rate):",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Query Value"
+      },
+      {
+        "clave": "b",
+        "texto": "Timeseries"
+      },
+      {
+        "clave": "c",
+        "texto": "Host Map"
+      },
+      {
+        "clave": "d",
+        "texto": "Note"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Query Value muestra un valor puntual con delta.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/widgets/query_value/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Avoid alerts due to late data:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Evaluation delay"
+      },
+      {
+        "clave": "b",
+        "texto": "Renotify"
+      },
+      {
+        "clave": "c",
+        "texto": "Downtime"
+      },
+      {
+        "clave": "d",
+        "texto": "Fijar threshold más alto"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Retrasa evaluación para recibir puntos tardíos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Alert for 'No Data' on a key availability metric:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Monitor de métrica con 'No Data'"
+      },
+      {
+        "clave": "b",
+        "texto": "Monitor de logs"
+      },
+      {
+        "clave": "c",
+        "texto": "Monitor RUM"
+      },
+      {
+        "clave": "d",
+        "texto": "Monitor de procesos"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 5: Data Visualization & Utilization — Útil para detectar huecos de ingestión.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/types/metric/#alerting-on-no-data"
+      }
+    ]
+  },
+  {
+    "pregunta": "To count NGINX requests per second, you would use...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "as_rate() sobre la métrica de count"
+      },
+      {
+        "clave": "b",
+        "texto": "gauge"
+      },
+      {
+        "clave": "c",
+        "texto": "set"
+      },
+      {
+        "clave": "d",
+        "texto": "p95()"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Convierte el conteo en tasa por segundo.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/advanced/"
+      }
+    ]
+  },
+  {
+    "pregunta": "If the agent doesn't appear in the UI after installing, first verify...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Valid API key and HTTPS 443 egress"
+      },
+      {
+        "clave": "b",
+        "texto": "Application key"
+      },
+      {
+        "clave": "c",
+        "texto": "Hostname en mayúsculas"
+      },
+      {
+        "clave": "d",
+        "texto": "Change site inmediatamente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Sin API key/conectividad no hay ingestión.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "In K8s, how do you apply configuration to dynamic containers?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Autodiscovery con labels/annotations"
+      },
+      {
+        "clave": "b",
+        "texto": "Editar cada Pod manualmente"
+      },
+      {
+        "clave": "c",
+        "texto": "Montar /etc/hosts"
+      },
+      {
+        "clave": "d",
+        "texto": "Habilitar RUM"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Autodiscovery asocia plantillas a containers.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/containers/autodiscovery/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which base tag should you NOT use with unique values?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "user_id"
+      },
+      {
+        "clave": "b",
+        "texto": "env"
+      },
+      {
+        "clave": "c",
+        "texto": "service"
+      },
+      {
+        "clave": "d",
+        "texto": "version"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Evita alta cardinalidad con IDs únicos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/custom_metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "To detect absence of critical metrics:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Monitor de 'No Data'"
+      },
+      {
+        "clave": "b",
+        "texto": "Monitor de logs"
+      },
+      {
+        "clave": "c",
+        "texto": "Monitor RUM"
+      },
+      {
+        "clave": "d",
+        "texto": "Monitor de procesos"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Alerta cuando no llegan puntos esperados.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/types/metric/#alerting-on-no-data"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which file do you inspect for integration errors?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "agent.log"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/hosts"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/fstab"
+      },
+      {
+        "clave": "d",
+        "texto": "/var/tmp/readme"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — agent.log muestra carga de checks.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-log-files/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Function to view the 99th percentile:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "p99()"
+      },
+      {
+        "clave": "b",
+        "texto": "avg()"
+      },
+      {
+        "clave": "c",
+        "texto": "as_count()"
+      },
+      {
+        "clave": "d",
+        "texto": "top()"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Percentiles muestran colas de latencia.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "A screenboard lets you...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Posicionar widgets libremente"
+      },
+      {
+        "clave": "b",
+        "texto": "Crear métricas custom"
+      },
+      {
+        "clave": "c",
+        "texto": "Ingerir logs"
+      },
+      {
+        "clave": "d",
+        "texto": "Cambiar sitio"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Layout libre.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/"
+      }
+    ]
+  },
+  {
+    "pregunta": "DogStatsD not receiving in a container. What do you check?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Socket/puerto y namespace correctos"
+      },
+      {
+        "clave": "b",
+        "texto": "Change site"
+      },
+      {
+        "clave": "c",
+        "texto": "Aumentar threshold"
+      },
+      {
+        "clave": "d",
+        "texto": "Borrar conf.d"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Asegura mapeos/namespace de DogStatsD.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/developers/dogstatsd/"
+      }
+    ]
+  },
+  {
+    "pregunta": "For APM traces from apps, the agent must...",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Escuchar en 8126 y tener apm_config.enabled"
+      },
+      {
+        "clave": "b",
+        "texto": "Tener app key"
+      },
+      {
+        "clave": "c",
+        "texto": "Desactivar NTP"
+      },
+      {
+        "clave": "d",
+        "texto": "Usar puerto 25"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Trace Agent en 8126.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/tracing/trace_collection/agent_trace/"
+      }
+    ]
+  },
+  {
+    "pregunta": "How do you group hosts by AZ in Host Map?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usar tag de zona como grupo"
+      },
+      {
+        "clave": "b",
+        "texto": "Filtrar por hostname"
+      },
+      {
+        "clave": "c",
+        "texto": "Cambiar colores"
+      },
+      {
+        "clave": "d",
+        "texto": "No es posible"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Cualquier tag puede ser criterio de agrupación.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Avoid false positives due to late ingestion:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Evaluation delay"
+      },
+      {
+        "clave": "b",
+        "texto": "Renotify"
+      },
+      {
+        "clave": "c",
+        "texto": "Downtime"
+      },
+      {
+        "clave": "d",
+        "texto": "Quitar filtros"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Retrasa evaluación.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/guide/monitor-evaluation/"
+      }
+    ]
+  },
+  {
+    "pregunta": "To view latency distribution of services:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Heatmap"
+      },
+      {
+        "clave": "b",
+        "texto": "Query Value"
+      },
+      {
+        "clave": "c",
+        "texto": "Note"
+      },
+      {
+        "clave": "d",
+        "texto": "Geomap"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Heatmap muestra densidad/distribución.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/widgets/heatmap/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Validate agent connectivity to intake:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "b",
+        "texto": "uname -r"
+      },
+      {
+        "clave": "c",
+        "texto": "cat /etc/hosts"
+      },
+      {
+        "clave": "d",
+        "texto": "date"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — 'diag' prueba red/DNS/SSL.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/guide/agent-commands/"
+      }
+    ]
+  },
+  {
+    "pregunta": "API endpoint to query series:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/api/v2/query/timeseries"
+      },
+      {
+        "clave": "b",
+        "texto": "/api/v1/hosts"
+      },
+      {
+        "clave": "c",
+        "texto": "/api/v1/logs"
+      },
+      {
+        "clave": "d",
+        "texto": "/api/v1/events"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Consulta métricas por rango.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/api/latest/metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which function shows leaders by tag/service?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "top()"
+      },
+      {
+        "clave": "b",
+        "texto": "as_rate()"
+      },
+      {
+        "clave": "c",
+        "texto": "p95()"
+      },
+      {
+        "clave": "d",
+        "texto": "fill(null)"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — 'top()' lista los N mayores.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Logs not arriving despite logs_enabled. What is often missing?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Atributo 'service' y paths correctos"
+      },
+      {
+        "clave": "b",
+        "texto": "Change site"
+      },
+      {
+        "clave": "c",
+        "texto": "Increase renotify"
+      },
+      {
+        "clave": "d",
+        "texto": "Borrar pipelines"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — 'service' enruta logs en Datadog.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/logs/log_collection/?tab=tailfiles"
+      }
+    ]
+  },
+  {
+    "pregunta": "Duplicate hostname due to dynamic DNS. Solution:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Fijar 'hostname' en config"
+      },
+      {
+        "clave": "b",
+        "texto": "Ignorar duplicados"
+      },
+      {
+        "clave": "c",
+        "texto": "Rotar app key"
+      },
+      {
+        "clave": "d",
+        "texto": "Desactivar process"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Hostname fijo evita duplicidad.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/faq/how-datadog-agent-determines-the-hostname/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which metric to use for unique values (active users)?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "set"
+      },
+      {
+        "clave": "b",
+        "texto": "gauge"
+      },
+      {
+        "clave": "c",
+        "texto": "count"
+      },
+      {
+        "clave": "d",
+        "texto": "distribution"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — 'set' contabiliza valores únicos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/types/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Compare services on the same graph:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "by {service}"
+      },
+      {
+        "clave": "b",
+        "texto": "merge(service)"
+      },
+      {
+        "clave": "c",
+        "texto": "join(service)"
+      },
+      {
+        "clave": "d",
+        "texto": "stack(service)"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Divide series por 'service'.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Avoid excessive cardinality:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No usar IDs únicos en tags"
+      },
+      {
+        "clave": "b",
+        "texto": "Agregar request_id"
+      },
+      {
+        "clave": "c",
+        "texto": "Agregar session_id"
+      },
+      {
+        "clave": "d",
+        "texto": "Incluir timestamp in tag"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Evita explosión de series.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/custom_metrics/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Which command packages info for support?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent flare"
+      },
+      {
+        "clave": "b",
+        "texto": "tar /var/log"
+      },
+      {
+        "clave": "c",
+        "texto": "ddtrace pack"
+      },
+      {
+        "clave": "d",
+        "texto": "systemctl journal"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — 'flare' adjunta config y logs.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/agent/troubleshooting/send_a_flare/"
+      }
+    ]
+  },
+  {
+    "pregunta": "How do you share a dashboard temporarily?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Public URL (si habilitado)"
+      },
+      {
+        "clave": "b",
+        "texto": "No es posible"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo CSV"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo API"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Enlace público temporal si la org lo permite.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/sharing/"
+      }
+    ]
+  },
+  {
+    "pregunta": "For a single KPI on the main page:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Query Value"
+      },
+      {
+        "clave": "b",
+        "texto": "Timeseries"
+      },
+      {
+        "clave": "c",
+        "texto": "Note"
+      },
+      {
+        "clave": "d",
+        "texto": "Host Map"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Ideal para un número clave.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/widgets/query_value/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Differentiate no data vs zero:",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "count_nonzero() or fill(null)"
+      },
+      {
+        "clave": "b",
+        "texto": "as_count()"
+      },
+      {
+        "clave": "c",
+        "texto": "p95()"
+      },
+      {
+        "clave": "d",
+        "texto": "rollup(max)"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "Sección 6: Mixed Review (todas las anteriores) — Ayuda a diagnosticar ausencia real de puntos.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/guide/query-to-the-graph/"
+      }
+    ]
+  }
+]
