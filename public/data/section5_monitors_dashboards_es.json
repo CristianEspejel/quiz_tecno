@@ -1,0 +1,1800 @@
+[
+  {
+    "pregunta": "(1) En el área de Problemas de conectividad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "b",
+        "texto": "Configurar proxy en datadog.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Verificar puertos 443 y 8125 abiertos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Problemas de conectividad, datadog-agent diag es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(1) En el área de Integraciones, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ver service checks en datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "Revisar credenciales en conf.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Validar instancia habilitada"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Integraciones, Ver service checks en datadog-agent status es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(1) En el área de Logs, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar logs_enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar rutas y atributos service"
+      },
+      {
+        "clave": "c",
+        "texto": "Activar log collection en conf.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Logs, Revisar logs_enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(1) En el área de APM, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar apm_config.enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar puerto 8126 abierto"
+      },
+      {
+        "clave": "c",
+        "texto": "Asegurar que el tracer envía datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En APM, Revisar apm_config.enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(1) En el área de Cardinalidad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reducir tags de alta cardinalidad"
+      },
+      {
+        "clave": "b",
+        "texto": "Evitar IDs únicos en tags"
+      },
+      {
+        "clave": "c",
+        "texto": "Agrupar métricas con tags estáticos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Cardinalidad, Reducir tags de alta cardinalidad es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(1) En el área de Hostname duplicado, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configurar hostname en datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar DD_HOSTNAME env var"
+      },
+      {
+        "clave": "c",
+        "texto": "Evitar cambios dinámicos de DNS"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Hostname duplicado, Configurar hostname en datadog.yaml es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(2) En el área de Problemas de conectividad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "b",
+        "texto": "Configurar proxy en datadog.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Verificar puertos 443 y 8125 abiertos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Problemas de conectividad, datadog-agent diag es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(2) En el área de Integraciones, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ver service checks en datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "Revisar credenciales en conf.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Validar instancia habilitada"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Integraciones, Ver service checks en datadog-agent status es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(2) En el área de Logs, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar logs_enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar rutas y atributos service"
+      },
+      {
+        "clave": "c",
+        "texto": "Activar log collection en conf.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Logs, Revisar logs_enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(2) En el área de APM, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar apm_config.enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar puerto 8126 abierto"
+      },
+      {
+        "clave": "c",
+        "texto": "Asegurar que el tracer envía datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En APM, Revisar apm_config.enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(2) En el área de Cardinalidad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reducir tags de alta cardinalidad"
+      },
+      {
+        "clave": "b",
+        "texto": "Evitar IDs únicos en tags"
+      },
+      {
+        "clave": "c",
+        "texto": "Agrupar métricas con tags estáticos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Cardinalidad, Reducir tags de alta cardinalidad es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(2) En el área de Hostname duplicado, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configurar hostname en datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar DD_HOSTNAME env var"
+      },
+      {
+        "clave": "c",
+        "texto": "Evitar cambios dinámicos de DNS"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Hostname duplicado, Configurar hostname en datadog.yaml es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(3) En el área de Problemas de conectividad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "b",
+        "texto": "Configurar proxy en datadog.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Verificar puertos 443 y 8125 abiertos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Problemas de conectividad, datadog-agent diag es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(3) En el área de Integraciones, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ver service checks en datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "Revisar credenciales en conf.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Validar instancia habilitada"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Integraciones, Ver service checks en datadog-agent status es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(3) En el área de Logs, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar logs_enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar rutas y atributos service"
+      },
+      {
+        "clave": "c",
+        "texto": "Activar log collection en conf.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Logs, Revisar logs_enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(3) En el área de APM, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar apm_config.enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar puerto 8126 abierto"
+      },
+      {
+        "clave": "c",
+        "texto": "Asegurar que el tracer envía datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En APM, Revisar apm_config.enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(3) En el área de Cardinalidad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reducir tags de alta cardinalidad"
+      },
+      {
+        "clave": "b",
+        "texto": "Evitar IDs únicos en tags"
+      },
+      {
+        "clave": "c",
+        "texto": "Agrupar métricas con tags estáticos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Cardinalidad, Reducir tags de alta cardinalidad es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(3) En el área de Hostname duplicado, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configurar hostname en datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar DD_HOSTNAME env var"
+      },
+      {
+        "clave": "c",
+        "texto": "Evitar cambios dinámicos de DNS"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Hostname duplicado, Configurar hostname en datadog.yaml es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(4) En el área de Problemas de conectividad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "b",
+        "texto": "Configurar proxy en datadog.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Verificar puertos 443 y 8125 abiertos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Problemas de conectividad, datadog-agent diag es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(4) En el área de Integraciones, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ver service checks en datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "Revisar credenciales en conf.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Validar instancia habilitada"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Integraciones, Ver service checks en datadog-agent status es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(4) En el área de Logs, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar logs_enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar rutas y atributos service"
+      },
+      {
+        "clave": "c",
+        "texto": "Activar log collection en conf.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Logs, Revisar logs_enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(4) En el área de APM, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar apm_config.enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar puerto 8126 abierto"
+      },
+      {
+        "clave": "c",
+        "texto": "Asegurar que el tracer envía datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En APM, Revisar apm_config.enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(4) En el área de Cardinalidad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reducir tags de alta cardinalidad"
+      },
+      {
+        "clave": "b",
+        "texto": "Evitar IDs únicos en tags"
+      },
+      {
+        "clave": "c",
+        "texto": "Agrupar métricas con tags estáticos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Cardinalidad, Reducir tags de alta cardinalidad es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(4) En el área de Hostname duplicado, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configurar hostname en datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar DD_HOSTNAME env var"
+      },
+      {
+        "clave": "c",
+        "texto": "Evitar cambios dinámicos de DNS"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Hostname duplicado, Configurar hostname en datadog.yaml es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(5) En el área de Problemas de conectividad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "b",
+        "texto": "Configurar proxy en datadog.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Verificar puertos 443 y 8125 abiertos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Problemas de conectividad, datadog-agent diag es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(5) En el área de Integraciones, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ver service checks en datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "Revisar credenciales en conf.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Validar instancia habilitada"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Integraciones, Ver service checks en datadog-agent status es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(5) En el área de Logs, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar logs_enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar rutas y atributos service"
+      },
+      {
+        "clave": "c",
+        "texto": "Activar log collection en conf.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Logs, Revisar logs_enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(5) En el área de APM, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar apm_config.enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar puerto 8126 abierto"
+      },
+      {
+        "clave": "c",
+        "texto": "Asegurar que el tracer envía datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En APM, Revisar apm_config.enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(5) En el área de Cardinalidad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reducir tags de alta cardinalidad"
+      },
+      {
+        "clave": "b",
+        "texto": "Evitar IDs únicos en tags"
+      },
+      {
+        "clave": "c",
+        "texto": "Agrupar métricas con tags estáticos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Cardinalidad, Reducir tags de alta cardinalidad es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(5) En el área de Hostname duplicado, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configurar hostname en datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar DD_HOSTNAME env var"
+      },
+      {
+        "clave": "c",
+        "texto": "Evitar cambios dinámicos de DNS"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Hostname duplicado, Configurar hostname en datadog.yaml es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(6) En el área de Problemas de conectividad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "b",
+        "texto": "Configurar proxy en datadog.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Verificar puertos 443 y 8125 abiertos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Problemas de conectividad, datadog-agent diag es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(6) En el área de Integraciones, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ver service checks en datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "Revisar credenciales en conf.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Validar instancia habilitada"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Integraciones, Ver service checks en datadog-agent status es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(6) En el área de Logs, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar logs_enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar rutas y atributos service"
+      },
+      {
+        "clave": "c",
+        "texto": "Activar log collection en conf.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Logs, Revisar logs_enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(6) En el área de APM, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar apm_config.enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar puerto 8126 abierto"
+      },
+      {
+        "clave": "c",
+        "texto": "Asegurar que el tracer envía datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En APM, Revisar apm_config.enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(6) En el área de Cardinalidad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reducir tags de alta cardinalidad"
+      },
+      {
+        "clave": "b",
+        "texto": "Evitar IDs únicos en tags"
+      },
+      {
+        "clave": "c",
+        "texto": "Agrupar métricas con tags estáticos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Cardinalidad, Reducir tags de alta cardinalidad es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(6) En el área de Hostname duplicado, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configurar hostname en datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar DD_HOSTNAME env var"
+      },
+      {
+        "clave": "c",
+        "texto": "Evitar cambios dinámicos de DNS"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Hostname duplicado, Configurar hostname en datadog.yaml es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(7) En el área de Problemas de conectividad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "b",
+        "texto": "Configurar proxy en datadog.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Verificar puertos 443 y 8125 abiertos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Problemas de conectividad, datadog-agent diag es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(7) En el área de Integraciones, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ver service checks en datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "Revisar credenciales en conf.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Validar instancia habilitada"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Integraciones, Ver service checks en datadog-agent status es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(7) En el área de Logs, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar logs_enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar rutas y atributos service"
+      },
+      {
+        "clave": "c",
+        "texto": "Activar log collection en conf.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Logs, Revisar logs_enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(7) En el área de APM, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar apm_config.enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar puerto 8126 abierto"
+      },
+      {
+        "clave": "c",
+        "texto": "Asegurar que el tracer envía datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En APM, Revisar apm_config.enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(7) En el área de Cardinalidad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reducir tags de alta cardinalidad"
+      },
+      {
+        "clave": "b",
+        "texto": "Evitar IDs únicos en tags"
+      },
+      {
+        "clave": "c",
+        "texto": "Agrupar métricas con tags estáticos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Cardinalidad, Reducir tags de alta cardinalidad es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(7) En el área de Hostname duplicado, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configurar hostname en datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar DD_HOSTNAME env var"
+      },
+      {
+        "clave": "c",
+        "texto": "Evitar cambios dinámicos de DNS"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Hostname duplicado, Configurar hostname en datadog.yaml es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(8) En el área de Problemas de conectividad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "b",
+        "texto": "Configurar proxy en datadog.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Verificar puertos 443 y 8125 abiertos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Problemas de conectividad, datadog-agent diag es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(8) En el área de Integraciones, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ver service checks en datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "Revisar credenciales en conf.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Validar instancia habilitada"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Integraciones, Ver service checks en datadog-agent status es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(8) En el área de Logs, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar logs_enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar rutas y atributos service"
+      },
+      {
+        "clave": "c",
+        "texto": "Activar log collection en conf.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Logs, Revisar logs_enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(8) En el área de APM, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar apm_config.enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar puerto 8126 abierto"
+      },
+      {
+        "clave": "c",
+        "texto": "Asegurar que el tracer envía datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En APM, Revisar apm_config.enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(8) En el área de Cardinalidad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reducir tags de alta cardinalidad"
+      },
+      {
+        "clave": "b",
+        "texto": "Evitar IDs únicos en tags"
+      },
+      {
+        "clave": "c",
+        "texto": "Agrupar métricas con tags estáticos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Cardinalidad, Reducir tags de alta cardinalidad es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(8) En el área de Hostname duplicado, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configurar hostname en datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar DD_HOSTNAME env var"
+      },
+      {
+        "clave": "c",
+        "texto": "Evitar cambios dinámicos de DNS"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Hostname duplicado, Configurar hostname en datadog.yaml es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(9) En el área de Problemas de conectividad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "b",
+        "texto": "Configurar proxy en datadog.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Verificar puertos 443 y 8125 abiertos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Problemas de conectividad, datadog-agent diag es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(9) En el área de Integraciones, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ver service checks en datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "Revisar credenciales en conf.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Validar instancia habilitada"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Integraciones, Ver service checks en datadog-agent status es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(9) En el área de Logs, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar logs_enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar rutas y atributos service"
+      },
+      {
+        "clave": "c",
+        "texto": "Activar log collection en conf.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Logs, Revisar logs_enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(9) En el área de APM, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar apm_config.enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar puerto 8126 abierto"
+      },
+      {
+        "clave": "c",
+        "texto": "Asegurar que el tracer envía datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En APM, Revisar apm_config.enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(9) En el área de Cardinalidad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reducir tags de alta cardinalidad"
+      },
+      {
+        "clave": "b",
+        "texto": "Evitar IDs únicos en tags"
+      },
+      {
+        "clave": "c",
+        "texto": "Agrupar métricas con tags estáticos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Cardinalidad, Reducir tags de alta cardinalidad es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(9) En el área de Hostname duplicado, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configurar hostname en datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar DD_HOSTNAME env var"
+      },
+      {
+        "clave": "c",
+        "texto": "Evitar cambios dinámicos de DNS"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Hostname duplicado, Configurar hostname en datadog.yaml es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(10) En el área de Problemas de conectividad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "datadog-agent diag"
+      },
+      {
+        "clave": "b",
+        "texto": "Configurar proxy en datadog.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Verificar puertos 443 y 8125 abiertos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Problemas de conectividad, datadog-agent diag es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(10) En el área de Integraciones, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ver service checks en datadog-agent status"
+      },
+      {
+        "clave": "b",
+        "texto": "Revisar credenciales en conf.yaml"
+      },
+      {
+        "clave": "c",
+        "texto": "Validar instancia habilitada"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Integraciones, Ver service checks en datadog-agent status es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(10) En el área de Logs, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar logs_enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar rutas y atributos service"
+      },
+      {
+        "clave": "c",
+        "texto": "Activar log collection en conf.yaml"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Logs, Revisar logs_enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(10) En el área de APM, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar apm_config.enabled: true"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar puerto 8126 abierto"
+      },
+      {
+        "clave": "c",
+        "texto": "Asegurar que el tracer envía datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En APM, Revisar apm_config.enabled: true es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(10) En el área de Cardinalidad, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reducir tags de alta cardinalidad"
+      },
+      {
+        "clave": "b",
+        "texto": "Evitar IDs únicos en tags"
+      },
+      {
+        "clave": "c",
+        "texto": "Agrupar métricas con tags estáticos"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Cardinalidad, Reducir tags de alta cardinalidad es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "(10) En el área de Hostname duplicado, ¿qué acción es recomendada para resolver un problema frecuente?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configurar hostname en datadog.yaml"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar DD_HOSTNAME env var"
+      },
+      {
+        "clave": "c",
+        "texto": "Evitar cambios dinámicos de DNS"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el agente"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "En Hostname duplicado, Configurar hostname en datadog.yaml es la medida inicial recomendada antes de tomar acciones más drásticas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "El Host Map muestra huecos de datos. NTP está desincronizado. ¿Qué harías?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cambiar a otro site"
+      },
+      {
+        "clave": "b",
+        "texto": "Sincronizar hora con NTP"
+      },
+      {
+        "clave": "c",
+        "texto": "Reiniciar dashboard"
+      },
+      {
+        "clave": "d",
+        "texto": "Eliminar tags"
+      }
+    ],
+    "respuesta_correcta": "b",
+    "explicacion": "Sincronizar NTP en todos los nodos es clave para evitar huecos en métricas.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  },
+  {
+    "pregunta": "Tras rotar la API key, los hosts no envían datos. ¿Acción inmediata?",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Actualizar API key en datadog.yaml y reiniciar agente"
+      },
+      {
+        "clave": "b",
+        "texto": "Esperar 24h"
+      },
+      {
+        "clave": "c",
+        "texto": "Crear nueva aplicación"
+      },
+      {
+        "clave": "d",
+        "texto": "Deshabilitar APM"
+      }
+    ],
+    "respuesta_correcta": "a",
+    "explicacion": "El agente necesita la API key válida, actualízala y reinicia el servicio.",
+    "recursos": [
+      {
+        "titulo": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/"
+      }
+    ]
+  }
+]

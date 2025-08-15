@@ -1,0 +1,1742 @@
+[
+  {
+    "question": "In the Host Map, ¿qué acción permite agrupar hosts por un atributo específico (1)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Apply a tag as a group"
+      },
+      {
+        "key": "b",
+        "text": "Change the site"
+      },
+      {
+        "key": "c",
+        "text": "Restart the agent"
+      },
+      {
+        "key": "d",
+        "text": "Create a new monitor"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "You can group hosts by applying a tag as a grouping criterion in the Host Map.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué representa el color de un host en el Host Map (1)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Status or value of the selected metric"
+      },
+      {
+        "key": "b",
+        "text": "Uptime in days"
+      },
+      {
+        "key": "c",
+        "text": "Operating system"
+      },
+      {
+        "key": "d",
+        "text": "Number of tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The color indicates the status or value of the metric you selected in the Host Map.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "question": "In a dashboard, ¿qué tipo de widget usarías para mostrar series temporales (1)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Timeseries"
+      },
+      {
+        "key": "b",
+        "text": "Host Map"
+      },
+      {
+        "key": "c",
+        "text": "Query Value"
+      },
+      {
+        "key": "d",
+        "text": "Note"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'Timeseries' widget shows data over time, ideal for continuous metrics.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/widgets/timeseries/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué permite un dashboard 'Screenboard' que no permite un 'Timeboard' (1)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Place elements freely on the canvas"
+      },
+      {
+        "key": "b",
+        "text": "Filter by tags"
+      },
+      {
+        "key": "c",
+        "text": "Show metrics in real time"
+      },
+      {
+        "key": "d",
+        "text": "Share with public link"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Screenboards allow placing widgets and elements freely on the canvas.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/"
+      }
+    ]
+  },
+  {
+    "question": "In Datadog, ¿qué función usarías para mostrar el promedio de una métrica por minuto (1)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "avg()"
+      },
+      {
+        "key": "b",
+        "text": "as_count()"
+      },
+      {
+        "key": "c",
+        "text": "max()"
+      },
+      {
+        "key": "d",
+        "text": "rollup()"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'avg()' function calculates the average over the selected interval.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué tipo de métrica contarías con as_count() (1)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Discrete events such as requests"
+      },
+      {
+        "key": "b",
+        "text": "Average temperature"
+      },
+      {
+        "key": "c",
+        "text": "CPU usage"
+      },
+      {
+        "key": "d",
+        "text": "Free memory"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "'as_count()' converts a metric into the count of occurrences in a period.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/advanced/"
+      }
+    ]
+  },
+  {
+    "question": "¿Cuál es la mejor práctica al usar tags para métricas (1)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Use tags with controlled values such as env, service"
+      },
+      {
+        "key": "b",
+        "text": "Use unique IDs for each request"
+      },
+      {
+        "key": "c",
+        "text": "Do not use tags"
+      },
+      {
+        "key": "d",
+        "text": "Use only numeric tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Tags should have controlled and reusable values to avoid high cardinality.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "In a graph, ¿cómo filtras métricas para un entorno específico (1)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Applying a tag such as env:prod in the query"
+      },
+      {
+        "key": "b",
+        "text": "Using a partial hostname"
+      },
+      {
+        "key": "c",
+        "text": "Changing the API key"
+      },
+      {
+        "key": "d",
+        "text": "Changing the widget type"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Applying a tag such as env:prod in the query filters metrics for that environment.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/using_tags/"
+      }
+    ]
+  },
+  {
+    "question": "If you want to receive an alert only if the condition is met for 10 minutes, ¿qué configuras (1)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Evaluation window"
+      },
+      {
+        "key": "b",
+        "text": "Threshold"
+      },
+      {
+        "key": "c",
+        "text": "Renotify interval"
+      },
+      {
+        "key": "d",
+        "text": "Downtime"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The evaluation window defines how long the condition must be met before alerting.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué tipo de monitor usarías para detectar ausencia de datos (1)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "'No Data' monitor"
+      },
+      {
+        "key": "b",
+        "text": "Logs monitor"
+      },
+      {
+        "key": "c",
+        "text": "APM monitor"
+      },
+      {
+        "key": "d",
+        "text": "Process monitor"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'No Data' monitor detects when no metrics are received in an expected period.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/types/metric/#alerting-on-no-data"
+      }
+    ]
+  },
+  {
+    "question": "In the Host Map, ¿qué acción permite agrupar hosts por un atributo específico (2)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Apply a tag as a group"
+      },
+      {
+        "key": "b",
+        "text": "Change the site"
+      },
+      {
+        "key": "c",
+        "text": "Restart the agent"
+      },
+      {
+        "key": "d",
+        "text": "Create a new monitor"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "You can group hosts by applying a tag as a grouping criterion in the Host Map.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué representa el color de un host en el Host Map (2)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Status or value of the selected metric"
+      },
+      {
+        "key": "b",
+        "text": "Uptime in days"
+      },
+      {
+        "key": "c",
+        "text": "Operating system"
+      },
+      {
+        "key": "d",
+        "text": "Number of tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The color indicates the status or value of the metric you selected in the Host Map.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "question": "In a dashboard, ¿qué tipo de widget usarías para mostrar series temporales (2)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Timeseries"
+      },
+      {
+        "key": "b",
+        "text": "Host Map"
+      },
+      {
+        "key": "c",
+        "text": "Query Value"
+      },
+      {
+        "key": "d",
+        "text": "Note"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'Timeseries' widget shows data over time, ideal for continuous metrics.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/widgets/timeseries/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué permite un dashboard 'Screenboard' que no permite un 'Timeboard' (2)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Place elements freely on the canvas"
+      },
+      {
+        "key": "b",
+        "text": "Filter by tags"
+      },
+      {
+        "key": "c",
+        "text": "Show metrics in real time"
+      },
+      {
+        "key": "d",
+        "text": "Share with public link"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Screenboards allow placing widgets and elements freely on the canvas.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/"
+      }
+    ]
+  },
+  {
+    "question": "In Datadog, ¿qué función usarías para mostrar el promedio de una métrica por minuto (2)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "avg()"
+      },
+      {
+        "key": "b",
+        "text": "as_count()"
+      },
+      {
+        "key": "c",
+        "text": "max()"
+      },
+      {
+        "key": "d",
+        "text": "rollup()"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'avg()' function calculates the average over the selected interval.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué tipo de métrica contarías con as_count() (2)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Discrete events such as requests"
+      },
+      {
+        "key": "b",
+        "text": "Average temperature"
+      },
+      {
+        "key": "c",
+        "text": "CPU usage"
+      },
+      {
+        "key": "d",
+        "text": "Free memory"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "'as_count()' converts a metric into the count of occurrences in a period.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/advanced/"
+      }
+    ]
+  },
+  {
+    "question": "¿Cuál es la mejor práctica al usar tags para métricas (2)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Use tags with controlled values such as env, service"
+      },
+      {
+        "key": "b",
+        "text": "Use unique IDs for each request"
+      },
+      {
+        "key": "c",
+        "text": "Do not use tags"
+      },
+      {
+        "key": "d",
+        "text": "Use only numeric tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Tags should have controlled and reusable values to avoid high cardinality.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "In a graph, ¿cómo filtras métricas para un entorno específico (2)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Applying a tag such as env:prod in the query"
+      },
+      {
+        "key": "b",
+        "text": "Using a partial hostname"
+      },
+      {
+        "key": "c",
+        "text": "Changing the API key"
+      },
+      {
+        "key": "d",
+        "text": "Changing the widget type"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Applying a tag such as env:prod in the query filters metrics for that environment.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/using_tags/"
+      }
+    ]
+  },
+  {
+    "question": "If you want to receive an alert only if the condition is met for 10 minutes, ¿qué configuras (2)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Evaluation window"
+      },
+      {
+        "key": "b",
+        "text": "Threshold"
+      },
+      {
+        "key": "c",
+        "text": "Renotify interval"
+      },
+      {
+        "key": "d",
+        "text": "Downtime"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The evaluation window defines how long the condition must be met before alerting.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué tipo de monitor usarías para detectar ausencia de datos (2)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "'No Data' monitor"
+      },
+      {
+        "key": "b",
+        "text": "Logs monitor"
+      },
+      {
+        "key": "c",
+        "text": "APM monitor"
+      },
+      {
+        "key": "d",
+        "text": "Process monitor"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'No Data' monitor detects when no metrics are received in an expected period.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/types/metric/#alerting-on-no-data"
+      }
+    ]
+  },
+  {
+    "question": "In the Host Map, ¿qué acción permite agrupar hosts por un atributo específico (3)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Apply a tag as a group"
+      },
+      {
+        "key": "b",
+        "text": "Change the site"
+      },
+      {
+        "key": "c",
+        "text": "Restart the agent"
+      },
+      {
+        "key": "d",
+        "text": "Create a new monitor"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "You can group hosts by applying a tag as a grouping criterion in the Host Map.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué representa el color de un host en el Host Map (3)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Status or value of the selected metric"
+      },
+      {
+        "key": "b",
+        "text": "Uptime in days"
+      },
+      {
+        "key": "c",
+        "text": "Operating system"
+      },
+      {
+        "key": "d",
+        "text": "Number of tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The color indicates the status or value of the metric you selected in the Host Map.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "question": "In a dashboard, ¿qué tipo de widget usarías para mostrar series temporales (3)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Timeseries"
+      },
+      {
+        "key": "b",
+        "text": "Host Map"
+      },
+      {
+        "key": "c",
+        "text": "Query Value"
+      },
+      {
+        "key": "d",
+        "text": "Note"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'Timeseries' widget shows data over time, ideal for continuous metrics.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/widgets/timeseries/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué permite un dashboard 'Screenboard' que no permite un 'Timeboard' (3)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Place elements freely on the canvas"
+      },
+      {
+        "key": "b",
+        "text": "Filter by tags"
+      },
+      {
+        "key": "c",
+        "text": "Show metrics in real time"
+      },
+      {
+        "key": "d",
+        "text": "Share with public link"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Screenboards allow placing widgets and elements freely on the canvas.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/"
+      }
+    ]
+  },
+  {
+    "question": "In Datadog, ¿qué función usarías para mostrar el promedio de una métrica por minuto (3)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "avg()"
+      },
+      {
+        "key": "b",
+        "text": "as_count()"
+      },
+      {
+        "key": "c",
+        "text": "max()"
+      },
+      {
+        "key": "d",
+        "text": "rollup()"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'avg()' function calculates the average over the selected interval.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué tipo de métrica contarías con as_count() (3)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Discrete events such as requests"
+      },
+      {
+        "key": "b",
+        "text": "Average temperature"
+      },
+      {
+        "key": "c",
+        "text": "CPU usage"
+      },
+      {
+        "key": "d",
+        "text": "Free memory"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "'as_count()' converts a metric into the count of occurrences in a period.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/advanced/"
+      }
+    ]
+  },
+  {
+    "question": "¿Cuál es la mejor práctica al usar tags para métricas (3)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Use tags with controlled values such as env, service"
+      },
+      {
+        "key": "b",
+        "text": "Use unique IDs for each request"
+      },
+      {
+        "key": "c",
+        "text": "Do not use tags"
+      },
+      {
+        "key": "d",
+        "text": "Use only numeric tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Tags should have controlled and reusable values to avoid high cardinality.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "In a graph, ¿cómo filtras métricas para un entorno específico (3)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Applying a tag such as env:prod in the query"
+      },
+      {
+        "key": "b",
+        "text": "Using a partial hostname"
+      },
+      {
+        "key": "c",
+        "text": "Changing the API key"
+      },
+      {
+        "key": "d",
+        "text": "Changing the widget type"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Applying a tag such as env:prod in the query filters metrics for that environment.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/using_tags/"
+      }
+    ]
+  },
+  {
+    "question": "If you want to receive an alert only if the condition is met for 10 minutes, ¿qué configuras (3)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Evaluation window"
+      },
+      {
+        "key": "b",
+        "text": "Threshold"
+      },
+      {
+        "key": "c",
+        "text": "Renotify interval"
+      },
+      {
+        "key": "d",
+        "text": "Downtime"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The evaluation window defines how long the condition must be met before alerting.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué tipo de monitor usarías para detectar ausencia de datos (3)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "'No Data' monitor"
+      },
+      {
+        "key": "b",
+        "text": "Logs monitor"
+      },
+      {
+        "key": "c",
+        "text": "APM monitor"
+      },
+      {
+        "key": "d",
+        "text": "Process monitor"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'No Data' monitor detects when no metrics are received in an expected period.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/types/metric/#alerting-on-no-data"
+      }
+    ]
+  },
+  {
+    "question": "In the Host Map, ¿qué acción permite agrupar hosts por un atributo específico (4)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Apply a tag as a group"
+      },
+      {
+        "key": "b",
+        "text": "Change the site"
+      },
+      {
+        "key": "c",
+        "text": "Restart the agent"
+      },
+      {
+        "key": "d",
+        "text": "Create a new monitor"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "You can group hosts by applying a tag as a grouping criterion in the Host Map.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué representa el color de un host en el Host Map (4)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Status or value of the selected metric"
+      },
+      {
+        "key": "b",
+        "text": "Uptime in days"
+      },
+      {
+        "key": "c",
+        "text": "Operating system"
+      },
+      {
+        "key": "d",
+        "text": "Number of tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The color indicates the status or value of the metric you selected in the Host Map.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "question": "In a dashboard, ¿qué tipo de widget usarías para mostrar series temporales (4)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Timeseries"
+      },
+      {
+        "key": "b",
+        "text": "Host Map"
+      },
+      {
+        "key": "c",
+        "text": "Query Value"
+      },
+      {
+        "key": "d",
+        "text": "Note"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'Timeseries' widget shows data over time, ideal for continuous metrics.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/widgets/timeseries/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué permite un dashboard 'Screenboard' que no permite un 'Timeboard' (4)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Place elements freely on the canvas"
+      },
+      {
+        "key": "b",
+        "text": "Filter by tags"
+      },
+      {
+        "key": "c",
+        "text": "Show metrics in real time"
+      },
+      {
+        "key": "d",
+        "text": "Share with public link"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Screenboards allow placing widgets and elements freely on the canvas.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/"
+      }
+    ]
+  },
+  {
+    "question": "In Datadog, ¿qué función usarías para mostrar el promedio de una métrica por minuto (4)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "avg()"
+      },
+      {
+        "key": "b",
+        "text": "as_count()"
+      },
+      {
+        "key": "c",
+        "text": "max()"
+      },
+      {
+        "key": "d",
+        "text": "rollup()"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'avg()' function calculates the average over the selected interval.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué tipo de métrica contarías con as_count() (4)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Discrete events such as requests"
+      },
+      {
+        "key": "b",
+        "text": "Average temperature"
+      },
+      {
+        "key": "c",
+        "text": "CPU usage"
+      },
+      {
+        "key": "d",
+        "text": "Free memory"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "'as_count()' converts a metric into the count of occurrences in a period.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/advanced/"
+      }
+    ]
+  },
+  {
+    "question": "¿Cuál es la mejor práctica al usar tags para métricas (4)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Use tags with controlled values such as env, service"
+      },
+      {
+        "key": "b",
+        "text": "Use unique IDs for each request"
+      },
+      {
+        "key": "c",
+        "text": "Do not use tags"
+      },
+      {
+        "key": "d",
+        "text": "Use only numeric tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Tags should have controlled and reusable values to avoid high cardinality.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "In a graph, ¿cómo filtras métricas para un entorno específico (4)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Applying a tag such as env:prod in the query"
+      },
+      {
+        "key": "b",
+        "text": "Using a partial hostname"
+      },
+      {
+        "key": "c",
+        "text": "Changing the API key"
+      },
+      {
+        "key": "d",
+        "text": "Changing the widget type"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Applying a tag such as env:prod in the query filters metrics for that environment.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/using_tags/"
+      }
+    ]
+  },
+  {
+    "question": "If you want to receive an alert only if the condition is met for 10 minutes, ¿qué configuras (4)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Evaluation window"
+      },
+      {
+        "key": "b",
+        "text": "Threshold"
+      },
+      {
+        "key": "c",
+        "text": "Renotify interval"
+      },
+      {
+        "key": "d",
+        "text": "Downtime"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The evaluation window defines how long the condition must be met before alerting.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué tipo de monitor usarías para detectar ausencia de datos (4)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "'No Data' monitor"
+      },
+      {
+        "key": "b",
+        "text": "Logs monitor"
+      },
+      {
+        "key": "c",
+        "text": "APM monitor"
+      },
+      {
+        "key": "d",
+        "text": "Process monitor"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'No Data' monitor detects when no metrics are received in an expected period.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/types/metric/#alerting-on-no-data"
+      }
+    ]
+  },
+  {
+    "question": "In the Host Map, ¿qué acción permite agrupar hosts por un atributo específico (5)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Apply a tag as a group"
+      },
+      {
+        "key": "b",
+        "text": "Change the site"
+      },
+      {
+        "key": "c",
+        "text": "Restart the agent"
+      },
+      {
+        "key": "d",
+        "text": "Create a new monitor"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "You can group hosts by applying a tag as a grouping criterion in the Host Map.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué representa el color de un host en el Host Map (5)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Status or value of the selected metric"
+      },
+      {
+        "key": "b",
+        "text": "Uptime in days"
+      },
+      {
+        "key": "c",
+        "text": "Operating system"
+      },
+      {
+        "key": "d",
+        "text": "Number of tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The color indicates the status or value of the metric you selected in the Host Map.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "question": "In a dashboard, ¿qué tipo de widget usarías para mostrar series temporales (5)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Timeseries"
+      },
+      {
+        "key": "b",
+        "text": "Host Map"
+      },
+      {
+        "key": "c",
+        "text": "Query Value"
+      },
+      {
+        "key": "d",
+        "text": "Note"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'Timeseries' widget shows data over time, ideal for continuous metrics.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/widgets/timeseries/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué permite un dashboard 'Screenboard' que no permite un 'Timeboard' (5)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Place elements freely on the canvas"
+      },
+      {
+        "key": "b",
+        "text": "Filter by tags"
+      },
+      {
+        "key": "c",
+        "text": "Show metrics in real time"
+      },
+      {
+        "key": "d",
+        "text": "Share with public link"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Screenboards allow placing widgets and elements freely on the canvas.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/"
+      }
+    ]
+  },
+  {
+    "question": "In Datadog, ¿qué función usarías para mostrar el promedio de una métrica por minuto (5)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "avg()"
+      },
+      {
+        "key": "b",
+        "text": "as_count()"
+      },
+      {
+        "key": "c",
+        "text": "max()"
+      },
+      {
+        "key": "d",
+        "text": "rollup()"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'avg()' function calculates the average over the selected interval.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué tipo de métrica contarías con as_count() (5)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Discrete events such as requests"
+      },
+      {
+        "key": "b",
+        "text": "Average temperature"
+      },
+      {
+        "key": "c",
+        "text": "CPU usage"
+      },
+      {
+        "key": "d",
+        "text": "Free memory"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "'as_count()' converts a metric into the count of occurrences in a period.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/advanced/"
+      }
+    ]
+  },
+  {
+    "question": "¿Cuál es la mejor práctica al usar tags para métricas (5)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Use tags with controlled values such as env, service"
+      },
+      {
+        "key": "b",
+        "text": "Use unique IDs for each request"
+      },
+      {
+        "key": "c",
+        "text": "Do not use tags"
+      },
+      {
+        "key": "d",
+        "text": "Use only numeric tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Tags should have controlled and reusable values to avoid high cardinality.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "In a graph, ¿cómo filtras métricas para un entorno específico (5)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Applying a tag such as env:prod in the query"
+      },
+      {
+        "key": "b",
+        "text": "Using a partial hostname"
+      },
+      {
+        "key": "c",
+        "text": "Changing the API key"
+      },
+      {
+        "key": "d",
+        "text": "Changing the widget type"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Applying a tag such as env:prod in the query filters metrics for that environment.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/using_tags/"
+      }
+    ]
+  },
+  {
+    "question": "If you want to receive an alert only if the condition is met for 10 minutes, ¿qué configuras (5)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Evaluation window"
+      },
+      {
+        "key": "b",
+        "text": "Threshold"
+      },
+      {
+        "key": "c",
+        "text": "Renotify interval"
+      },
+      {
+        "key": "d",
+        "text": "Downtime"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The evaluation window defines how long the condition must be met before alerting.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué tipo de monitor usarías para detectar ausencia de datos (5)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "'No Data' monitor"
+      },
+      {
+        "key": "b",
+        "text": "Logs monitor"
+      },
+      {
+        "key": "c",
+        "text": "APM monitor"
+      },
+      {
+        "key": "d",
+        "text": "Process monitor"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'No Data' monitor detects when no metrics are received in an expected period.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/types/metric/#alerting-on-no-data"
+      }
+    ]
+  },
+  {
+    "question": "In the Host Map, ¿qué acción permite agrupar hosts por un atributo específico (6)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Apply a tag as a group"
+      },
+      {
+        "key": "b",
+        "text": "Change the site"
+      },
+      {
+        "key": "c",
+        "text": "Restart the agent"
+      },
+      {
+        "key": "d",
+        "text": "Create a new monitor"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "You can group hosts by applying a tag as a grouping criterion in the Host Map.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué representa el color de un host en el Host Map (6)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Status or value of the selected metric"
+      },
+      {
+        "key": "b",
+        "text": "Uptime in days"
+      },
+      {
+        "key": "c",
+        "text": "Operating system"
+      },
+      {
+        "key": "d",
+        "text": "Number of tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The color indicates the status or value of the metric you selected in the Host Map.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/infrastructure/hostmap/"
+      }
+    ]
+  },
+  {
+    "question": "In a dashboard, ¿qué tipo de widget usarías para mostrar series temporales (6)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Timeseries"
+      },
+      {
+        "key": "b",
+        "text": "Host Map"
+      },
+      {
+        "key": "c",
+        "text": "Query Value"
+      },
+      {
+        "key": "d",
+        "text": "Note"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'Timeseries' widget shows data over time, ideal for continuous metrics.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/widgets/timeseries/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué permite un dashboard 'Screenboard' que no permite un 'Timeboard' (6)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Place elements freely on the canvas"
+      },
+      {
+        "key": "b",
+        "text": "Filter by tags"
+      },
+      {
+        "key": "c",
+        "text": "Show metrics in real time"
+      },
+      {
+        "key": "d",
+        "text": "Share with public link"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Screenboards allow placing widgets and elements freely on the canvas.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/dashboards/"
+      }
+    ]
+  },
+  {
+    "question": "In Datadog, ¿qué función usarías para mostrar el promedio de una métrica por minuto (6)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "avg()"
+      },
+      {
+        "key": "b",
+        "text": "as_count()"
+      },
+      {
+        "key": "c",
+        "text": "max()"
+      },
+      {
+        "key": "d",
+        "text": "rollup()"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'avg()' function calculates the average over the selected interval.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué tipo de métrica contarías con as_count() (6)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Discrete events such as requests"
+      },
+      {
+        "key": "b",
+        "text": "Average temperature"
+      },
+      {
+        "key": "c",
+        "text": "CPU usage"
+      },
+      {
+        "key": "d",
+        "text": "Free memory"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "'as_count()' converts a metric into the count of occurrences in a period.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/metrics/advanced/"
+      }
+    ]
+  },
+  {
+    "question": "¿Cuál es la mejor práctica al usar tags para métricas (6)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Use tags with controlled values such as env, service"
+      },
+      {
+        "key": "b",
+        "text": "Use unique IDs for each request"
+      },
+      {
+        "key": "c",
+        "text": "Do not use tags"
+      },
+      {
+        "key": "d",
+        "text": "Use only numeric tags"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Tags should have controlled and reusable values to avoid high cardinality.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/"
+      }
+    ]
+  },
+  {
+    "question": "In a graph, ¿cómo filtras métricas para un entorno específico (6)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Applying a tag such as env:prod in the query"
+      },
+      {
+        "key": "b",
+        "text": "Using a partial hostname"
+      },
+      {
+        "key": "c",
+        "text": "Changing the API key"
+      },
+      {
+        "key": "d",
+        "text": "Changing the widget type"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "Applying a tag such as env:prod in the query filters metrics for that environment.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/getting_started/tagging/using_tags/"
+      }
+    ]
+  },
+  {
+    "question": "If you want to receive an alert only if the condition is met for 10 minutes, ¿qué configuras (6)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "Evaluation window"
+      },
+      {
+        "key": "b",
+        "text": "Threshold"
+      },
+      {
+        "key": "c",
+        "text": "Renotify interval"
+      },
+      {
+        "key": "d",
+        "text": "Downtime"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The evaluation window defines how long the condition must be met before alerting.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/"
+      }
+    ]
+  },
+  {
+    "question": "¿Qué tipo de monitor usarías para detectar ausencia de datos (6)?",
+    "options": [
+      {
+        "key": "a",
+        "text": "'No Data' monitor"
+      },
+      {
+        "key": "b",
+        "text": "Logs monitor"
+      },
+      {
+        "key": "c",
+        "text": "APM monitor"
+      },
+      {
+        "key": "d",
+        "text": "Process monitor"
+      }
+    ],
+    "correct_answer": "a",
+    "explanation": "The 'No Data' monitor detects when no metrics are received in an expected period.",
+    "resources": [
+      {
+        "title": "Datadog Docs",
+        "url": "https://docs.datadoghq.com/monitors/create/types/metric/#alerting-on-no-data"
+      }
+    ]
+  }
+]
