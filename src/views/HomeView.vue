@@ -143,7 +143,7 @@ const CERTS = [
       { fileBase: 'section1_computer_fundamentals',      title: { es: 'Sección 1: Fundamentos de Computación', en: 'Section 1: Computer Fundamentals' } },
       { fileBase: 'section2_infrastructure_development', title: { es: 'Sección 2: Infraestructura y Desarrollo', en: 'Section 2: Infrastructure Development' } },
       { fileBase: 'section3_data_collection',            title: { es: 'Sección 3: Recolección de Datos', en: 'Section 3: Data Collection' } },
-      { fileBase: 'section4_metrics_logs_traces',        title: { es: 'Sección 4: Métricas/Logs/Traces', en: 'Section 4: Metrics/Logs/Traces' } },
+      { fileBase: 'section4_tagging_best_practices',        title: { es: 'Sección 4: Métricas/Logs/Traces', en: 'Section 4: Metrics/Logs/Traces' } },
       { fileBase: 'section5_monitors_dashboards',        title: { es: 'Sección 5: Monitores y Tableros', en: 'Section 5: Monitors & Dashboards' } },
       { fileBase: 'section6_best_practices',             title: { es: 'Sección 6: Buenas prácticas', en: 'Section 6: Best Practices' } },
     ],
